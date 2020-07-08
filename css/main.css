@@ -55,6 +55,7 @@ header ul li .bold {
 section {
   background-image: url("../img/main-bg.jpg");
   background-size: cover;
+  background-position: center;
   height: 100%;
 }
 
@@ -64,7 +65,7 @@ section > div {
   display: inline-block;
   position: relative;
   padding-top: 264px;
-  width: 48%;
+  width: 47%;
   font-family: "Poppins";
 }
 
@@ -214,9 +215,6 @@ section nav ul li:before {
   }
   header ul li {
     margin-right: 35px;
-  }
-  section {
-    background-position: center;
   }
   section > div {
     width: 45.3%;
