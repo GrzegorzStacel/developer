@@ -207,3 +207,59 @@ section {
         }
     } 
 }
+
+
+@media(max-width: 1333px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    header{
+
+        img{
+            margin-left: 10%;
+        }
+
+        ul{
+            li{
+                margin-right: 35px;
+            }
+        }
+    }
+
+    section {
+        background-position: center;
+
+        >div {
+            width: 45.3%;
+        }
+        
+        .main-left::before {
+            width: 530px;
+        }
+
+        .main-right{
+
+            &:after{
+                width: 340px;
+            }
+        }
+
+        nav {
+            padding-top: 108px;
+            padding-bottom: 89px;
+
+            ul {
+                li {
+                    width: 300px;
+                    height: 40%;
+
+                    a {
+                        line-height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
