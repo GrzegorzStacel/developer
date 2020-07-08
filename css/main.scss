@@ -17,6 +17,7 @@ body {
     background: green;
     margin: 0;
     font-family: "Muli", "Poppins", sans-serif;
+    font-size: 16px;
 }
 
 header {
@@ -41,7 +42,7 @@ header {
         li {
             display: inline-block;
             margin-right: 65px;
-            font-size: 15px;
+            font-size: 1em;
             color: #151720;
 
             &:last-of-type {
@@ -157,7 +158,7 @@ section {
     nav {
         text-align: center;
         padding-top: 100px;
-        padding-bottom: 83px;   
+        padding-bottom: 83px;
 
         ul {
             list-style: none;
