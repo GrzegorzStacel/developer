@@ -191,3 +191,19 @@ section {
         }
     }
 }
+
+@media(max-width: 1500px) {
+    body{
+        font-size: 14px;
+    }
+
+    header{
+        img{
+            margin-left: 14.5%;
+        }
+
+        ul li{
+            margin-right: 50px;
+        }
+    } 
+}
