@@ -30,10 +30,27 @@
 
     <header>
         <img src="img/logo.jpg" alt="logo">
-        <ul>
-            <li>42-202 Częstochowa, ul Żyzna 11/o </li>
-            <li>email: <span>biuro@budowymodulowe.pl</span></li>
-            <li>tel: <span>504 424 836</span></li>
+
+        <ul itemscope itemtype="http://schema.org/LocalBusiness">
+
+            <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="postalCode">42-202</span> 
+                <span itemprop="addressLocality">Częstochowa</span>, ul <span itemprop="streetAddress">Żyzna 11/o</span>
+            </li>
+
+            <li>
+                email: 
+                <a href="mailto:biuro@budowymodulowe.pl" itemprop="email">
+                    <span class="bold">biuro@budowymodulowe.pl</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="tel:+48-504-424-836" itemprop="telephone">
+                    tel: <span class="bold">504 424 836</span>
+                </a>
+            </li>
+            
         </ul>
     </header>
 
