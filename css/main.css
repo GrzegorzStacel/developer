@@ -39,11 +39,16 @@ header ul li {
   color: #151720;
 }
 
+header ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
 header ul li:last-of-type {
   margin-right: 45px;
 }
 
-header ul li span {
+header ul li .bold {
   font-weight: bold;
 }
 

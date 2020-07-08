@@ -45,11 +45,16 @@ header {
             font-size: 1em;
             color: #151720;
 
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+
             &:last-of-type {
                 margin-right: 45px;
             }
 
-            span {
+            .bold {
                 font-weight: bold;
             }
         }
