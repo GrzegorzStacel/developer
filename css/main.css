@@ -2,6 +2,7 @@ body {
   background: green;
   margin: 0;
   font-family: "Muli", "Poppins", sans-serif;
+  font-size: 16px;
 }
 
 header {
@@ -34,7 +35,7 @@ header ul {
 header ul li {
   display: inline-block;
   margin-right: 65px;
-  font-size: 15px;
+  font-size: 1em;
   color: #151720;
 }
 
@@ -185,5 +186,52 @@ section nav ul li:before {
   left: -8px;
   margin-right: 10px;
   height: 100%;
+}
+
+@media (max-width: 1500px) {
+  body {
+    font-size: 14px;
+  }
+  header img {
+    margin-left: 14.5%;
+  }
+  header ul li {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1333px) {
+  body {
+    font-size: 12px;
+  }
+  header img {
+    margin-left: 10%;
+  }
+  header ul li {
+    margin-right: 35px;
+  }
+  section {
+    background-position: center;
+  }
+  section > div {
+    width: 45.3%;
+  }
+  section .main-left::before {
+    width: 530px;
+  }
+  section .main-right:after {
+    width: 340px;
+  }
+  section nav {
+    padding-top: 108px;
+    padding-bottom: 89px;
+  }
+  section nav ul li {
+    width: 300px;
+    height: 40%;
+  }
+  section nav ul li a {
+    line-height: 100px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
