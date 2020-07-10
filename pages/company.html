@@ -1,11 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budowy modułowe</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700,800&display=swap">
+
+
+    <!-- Main styles -->
+    <link rel="stylesheet" href="../css/main.css">
+
+
+    <!-- Librares -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous" defer></script>
+
+
+    <!-- Main scripts -->
+    <script src="js/main.js" defer></script>
+
 </head>
+
 <body>
-    
+    <header>
+        <a href="../index.html"><img src="../img/logo.jpg" alt="logo"></a>
+
+        <nav>
+            <!-- <a href="#" class="hide-desktop">
+                <img src="../img/" alt="toggle menu" class="menu" id="menu">
+            </a> -->
+
+            <ul class="show-desktop hide-mobile" id="nav">
+                <!-- <li id="exit" class="exit-btn hide-desktop">
+                    <img src="img/hamburger/exit.svg" alt="exit menu">
+                </li> -->
+                <li>
+                    <a href="index.html">o firmie</a>
+                </li>
+                <li>
+                    <a href="pages/offer.html">technologia</a>
+                </li>
+                <li>
+                    <a href="pages/about.html">oferta</a>
+                </li>
+                <li>
+                    <a href="#contact-label">kontakt</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="nav-belt">
+            <div itemscope itemtype="http://schema.org/LocalBusiness">
+
+                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="postalCode">42-202</span>
+                    <span itemprop="addressLocality">Częstochowa</span>, ul <span itemprop="streetAddress">Żyzna
+                        11/o</span>
+                </p>
+
+                <p>
+                    email:
+                    <a href="mailto:biuro@budowymodulowe.pl" itemprop="email">
+                        <span class="bold">biuro@budowymodulowe.pl</span>
+                    </a>
+                </p>
+
+                <p>
+                    tel:
+                    <a href="tel:+48-504-424-836" itemprop="telephone">
+                        <span class="bold">504 424 836</span>
+                    </a>
+                </p>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="main-company">
+        <div class="gradient"></div>
+        <h1>O firmie</h1>
+
+        <div class="box">
+            <div class="box-left-about">
+                <img src="../img/construction.jpg" alt="">
+                <div class="nav-belt">
+                    <div class="">
+                        Naszym działaniem obejmujemy teren całego kraju.
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-right-about">
+                <p>
+                    W myśl zasady wybuduj dostarcz zamieszkaj firma solidne fundamenty zajmuje się budową domów,
+                    mieszkań oraz
+                    obiektów użyteczności publicznej w nowatorskiej technologi modułu żelbetowego.
+                </p>
+
+                <p>
+                    Powyższa technologia pozwala nam wybudować dany obiekt nawet w kilka dni. dodatkowym atutem jest
+                    możliwość
+                    rozbudowy takiego budynku, jak i również jego powtórny montaż w dowolnym miejscu.
+                </p>
+                <p>
+                    Bez wpływu na jakość modułu, proces demontażu możemy powtarzać wielokrotnie.
+                </p>
+                <p>
+                    W naszych modułach łączymy znane technologie z wykorzystaniem odnawialnych żródeł energii
+                    stosowanych w
+                    systemach grzania czy też rekuperacji powietrza.
+                </p>
+                <p>
+                    Energia odnawialna jak i oświetlenie naturalne jest nieodzowną częścią naszych obiektów, dążąc do
+                    uzyskania
+                    budynku w klasie "0" energetyczny.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="container" id="contact-label">
+
+            <div class="box-logo">
+                <img src="../img/logo.jpg" alt="logo">
+            </div>
+
+            <div class="box-data">
+                <h2>Wiemy, że decyzja o budowie nawet małego domu to złożona sprawa i pewnie sporo pytań chodzi Ci po
+                    głowie.<br>
+                    Mamy już trochę doświadczenia, więc pewnie będziemy mogli pomóc.<br>
+                    Śmiało zadzwoń i zapytaj lub napisz do nas.</h2>
+
+                <div class="icon-datum">
+                    <div>
+                        <img src="../img/phone.jpg" alt="phone icon">
+                        <a href="tel:+48-504-424-836" class="bold">
+                            504 424 836
+                        </a>
+                    </div>
+
+                    <div>
+                        <img src="../img/email.jpg" alt="email icon">
+                        <a href="mailto:biuro@budowymodulowe.pl" class="bold">
+                            biuro@budowymodulowe.pl
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="yellow-beam">
+            <h1>Odwiedziło nas</h1>
+            <div class="">
+                <p><span id="counter-week">17</span> użytkowników w tym tygodniu</p>
+            </div>
+            <div class="">
+                <p><span id="counter-all">733</span> użytkowników od początku</p>
+            </div>
+        </div>
+
+        <div class="gray-beam">
+            <h2>SOLIDNE FUNDAMENTY</h2>
+            <p>42-202 Częstochowa, ul Żyzna 11/o</p>
+        </div>
+
+    </footer>
 </body>
+
 </html>
