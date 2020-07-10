@@ -127,10 +127,12 @@ header {
     }
 }
 
-section {
+.main-page {
     background-image: url("../img/main-bg.jpg");
     background-size: cover;
     background-position: center;
+    font-size: 1.53vh;
+    height: calc(100vh - 96px);
 
     >div {
         z-index: 1;
