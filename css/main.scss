@@ -561,7 +561,20 @@ footer {
         font-size: 10.5px;
     }
 }
-            }
-        }
+
+@media(max-width: 1366px) {
+
+    body {
+        font-size: 0.934vw;
     }
+
+
+    header {
+        #nav{
+            right: 4em;
+        }
+
+    }
+
+   
 }
