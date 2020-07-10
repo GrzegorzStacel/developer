@@ -251,12 +251,76 @@ section {
             width: 530px;
         }
 
-        .main-right{
+footer {
+    text-align: center;
+    padding-top: 29px;
+    background: $color-yellow;
 
-            &:after{
-                width: 340px;
-            }
+    .yellow-beam{
+        padding-bottom: 3.4em;
+        position: relative;
+
+        div:first-of-type{
+            margin-right: 3.1em;
         }
+
+        &:after{
+            content: '';
+            display: block;
+            border-left: 1px solid #c4a11e;
+            height: 3em;
+            position: absolute;
+            right: 48%;
+            top: 38%;
+        }
+    }
+
+    div{
+        display: inline-block;
+    
+        #counter-week, #counter-all{
+            font-size: 1.3em;
+        }
+
+        #counter-week{
+            padding-right: 0.5em;
+        }
+    }
+
+    h1, p{
+        font-size: 1.5em;
+        line-height: 1.26em;
+        color: #3b5165;
+        font-weight: 400;
+        font-family: "Poppins";
+    }
+
+    p{
+        display: inline-block;
+        margin: 0;
+        padding-top: 0.3em;
+        padding-left: 2.5em;
+        padding-right: 1.7em;
+        font-size: 1.13em;
+    }
+
+    .gray-beam{
+        display: block;
+        background: #3b5165;
+        padding-top: 2.1em;
+        padding-bottom: 2em;
+        line-height: 0.63em;
+        font-style: italic;
+        font-family: "Muli";
+
+        h2, p{
+            margin: 0;
+            font-size: 1em;
+            color: #ffffff;
+            font-weight: 300;
+        }
+    }
+}
 
         nav {
             padding-top: 108px;
