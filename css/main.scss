@@ -192,6 +192,21 @@ section {
                     display: block;
                 }
 
+                &:hover {
+                    background: rgba(black, 0.9);
+                    transition: 0.1s;
+
+                    a {
+                        color: $color-yellow;
+                    }
+                    
+                    &::before{
+                        box-shadow:
+                        -9px 0px 30px 24px rgba($color-yellow, .1),
+                        0 4px 4px 0 rgba($color-yellow, .15);
+                    }
+                }
+
                 &:before {
                     content: '';
                     border-left: 6px solid $color-yellow;
