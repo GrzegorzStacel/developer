@@ -521,9 +521,31 @@ footer {
     }
 }
 
-        nav {
-            padding-top: 108px;
-            padding-bottom: 89px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1820px) {
+    header #nav{
+            right: 11em;
+            
+            li{
+                margin-right: 4.7em;
+            }
+        }
+}
 
             ul {
                 li {
