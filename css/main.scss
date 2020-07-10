@@ -221,35 +221,82 @@ section {
     } 
 }
 
+section {
+    background: white;
+    padding-bottom: 6.2em;
 
-@media(max-width: 1333px) {
+    .container {
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
 
-    body {
-        font-size: 12px;
-    }
-
-    header{
-
-        img{
-            margin-left: 10%;
+        &:before {
+            content: '';
+            display: block;
+            width: 90.3%;
+            border-top: 1px solid #dbdcde;
+            @include horizontally-center();
         }
 
-        ul{
-            li{
-                margin-right: 35px;
+        .box-logo {
+            margin-left: 6.2em;
+            margin-top: 3.6em;
+
+            img {
+                width: 16.8em;
+            }
+        }
+
+        .box-data {
+            text-align: right;
+            padding-right: 5.7em;
+
+            h2 {
+                padding-top: 20px;
+                color: #505050;
+                font-weight: 500;
+                font-family: "Poppins", sans-serif;
+                font-size: 1.1em;
+                padding-top: 32px;
+                letter-spacing: 0.4px;
+                line-height: 30px;
+            }
+
+            .icon-datum {
+                padding-top: 13px;
+            }
+
+            div>div {
+                display: inline-block;
+                padding-left: 1.1em;
+                padding-top: 1.25em;
+
+                img {
+                    vertical-align: middle;
+                    padding-right: 0.8em;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 1.12em;
+                    color: #007ebf;
+                    font-family: "Poppins";
+                    // letter-spacing: -0.1px;
+
+                }
+
+                &:first-child {
+                    padding-right: 0.9em;
+
+                    a {
+                        padding-right: 0.6em;
+                    }
+                }
             }
         }
     }
-
-    section {
-
-        >div {
-            width: 45.3%;
-        }
-        
-        .main-left::before {
-            width: 530px;
-        }
+}
 
 footer {
     text-align: center;
