@@ -547,15 +547,20 @@ footer {
         }
 }
 
-            ul {
-                li {
-                    width: 300px;
-                    height: 40%;
+@media(max-width: 1720px) {
+    header #nav{
+        right: 9em;
 
-                    a {
-                        line-height: 100px;
-                    }
-                }
+        li{
+            margin-right: 3.7em;
+            font-size: 1.1em;
+        }
+    }
+
+    .nav-belt div p {
+        font-size: 10.5px;
+    }
+}
             }
         }
     }
