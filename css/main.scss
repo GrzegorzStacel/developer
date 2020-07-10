@@ -36,6 +36,7 @@ header {
     img {
         @include perpendicularly-center();
         margin-left: 18.7%;
+        width: 269px;
     }
 
     ul {
@@ -47,22 +48,32 @@ header {
 
         li {
             display: inline-block;
-            margin-right: 65px;
+            margin-right: 3.1em;
             font-size: 1em;
             color: #151720;
 
-            a{
+            a {
                 color: inherit;
                 text-decoration: none;
             }
 
             &:last-of-type {
-                margin-right: 45px;
+                margin-right: 2.8em;
             }
 
             .bold {
                 font-weight: bold;
             }
+        }
+    }
+
+    #nav {
+        font-size: 1.13em;
+        text-align: left;
+        right: 10.5%;
+
+        li {
+            margin-right: 6.1em;
         }
     }
 }
@@ -72,40 +83,36 @@ section {
     background-size: cover;
     background-position: center;
 
-    height: 100%;
-
     >div {
         z-index: 1;
         color: white;
         display: inline-block;
         position: relative;
-        padding-top: 264px;
+        padding-top: 5.1em;
         width: 47%;
         font-family: "Poppins";
 
         h1 {
             font-size: 5.1em;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            line-height: 98px;
+            margin-top: 0.4em;
+            margin-bottom: 0.3em;
+            padding-right: 0.61em;
+            line-height: 1.2em;
             letter-spacing: -4px;
             font-weight: normal;
-            padding-right: 50px;
         }
 
         .box-blue {
             background: rgba(21, 35, 56, .6);
-            height: 110px;
+            height: 6.9em;
             position: relative;
 
             p {
-                position: absolute;
-                top: 50%;
-                right: 50px;
-                transform: translateY(-50%);
+                @include perpendicularly-center();
+                right: 2.2em;
                 margin: 0;
                 font-size: 1.4em;
-                line-height: 33px;
+                line-height: 1.5em;
                 font-weight: 300;
             }
         }
@@ -115,7 +122,7 @@ section {
             color: #162132;
             font-weight: 600;
             display: inline-block;
-            padding: 13px 50px 13px 55px;
+            padding: 0.62em 2.4em 0.62em 2.64em;
             font-size: 1.3em;
         }
     }
@@ -127,7 +134,7 @@ section {
             content: '';
             display: block;
             border-top: 3px solid white;
-            width: 661px;
+            width: 40em;
             position: absolute;
             right: 0;
         }
@@ -138,18 +145,18 @@ section {
         letter-spacing: -2px;
 
         p {
-            padding-left: 155px;
-            line-height: 77px;
+            padding-left: 3.46em;
+            line-height: 1.72em;
             margin: 0;
-            bottom: 9px;
+            bottom: 0.2em;
             position: relative;
 
             &::before {
                 content: '';
-                left: 120px;
+                left: 2.53em;
                 @include perpendicularly-center();
-                width: 6px;
-                height: 6px;
+                width: 0.14em;
+                height: 0.14em;
                 background: white;
             }
         }
@@ -157,21 +164,21 @@ section {
         &::after {
             content: '';
             position: absolute;
-            bottom: 60px;
+            bottom: 1.34em;
             background: rgba(black, 0.4);
-            box-shadow: 0 0 90px 80px rgba(black, 0.4);
+            box-shadow: 0 0 2.01em 1.8em rgba(black, 0.4);
             border-radius: 40px;
-            width: 380px;
-            height: 45%;
+            width: 8.5em;
+            height: 6.2em;
             z-index: -1;
-            left: 100px;
+            left: 2.24em;
         }
     }
 
     nav {
         text-align: center;
-        padding-top: 100px;
-        padding-bottom: 83px;
+        padding-top: 6.25em;
+        padding-bottom: 5.19em;
 
         ul {
             list-style: none;
@@ -179,13 +186,14 @@ section {
 
             li {
                 position: relative;
-                width: 375px;
+                width: 23.44em;
                 background: rgba(black, 0.4);
                 display: inline-block;
-                margin-right: 50px;
+                margin-right: 3.1em;
+                transition: 0.3s;
 
                 a {
-                    line-height: 112px; //Wyśrodkowanie tekstu w pionie oraz ustawienie szerokości przycisku
+                    line-height: 5.4em; //Wyśrodkowanie tekstu w pionie oraz ustawienie szerokości przycisku
                     text-decoration: none;
                     color: white;
                     font-size: 1.3em;
