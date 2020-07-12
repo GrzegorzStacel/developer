@@ -23,7 +23,6 @@ body {
     background: gray;
     margin: 0;
     font-family: "Muli", "Poppins", sans-serif;
-    // font-size: 16px;
     font-size: 0.834vw;
 }
 
@@ -281,40 +280,40 @@ header {
 .gradient {
     position: absolute;
     z-index: 0;
-    background: linear-gradient(180deg, 
-        rgba(213, 220, 230, 1) 0%, 
-        rgba(222, 227, 235, 1) 47%, 
-        rgba(229, 233, 239, 1) 58%, 
-        rgba(233, 236, 242, 1) 68%, 
-        rgba(235, 238, 243, 1) 74%, 
-        rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(180deg,
+            rgba(213, 220, 230, 1) 0%,
+            rgba(222, 227, 235, 1) 47%,
+            rgba(229, 233, 239, 1) 58%,
+            rgba(233, 236, 242, 1) 68%,
+            rgba(235, 238, 243, 1) 74%,
+            rgba(255, 255, 255, 1) 100%);
     width: 100%;
     height: 16.7em;
 }
 
 .title {
-        color: #49515c;
-        font-size: 4.9em;
-        font-weight: 400;
-        font-family: "Muli", sans-serif;
-        margin: 0;
-        margin-left: 3em;
-        padding-left: 0.6em;
-        padding-top: 1.77em;
-        margin-bottom: 0.7em;
-        position: relative;
+    color: #49515c;
+    font-size: 4.9em;
+    font-weight: 400;
+    font-family: "Muli", sans-serif;
+    margin: 0;
+    margin-left: 3em;
+    padding-left: 0.6em;
+    padding-top: 1.77em;
+    margin-bottom: 0.7em;
+    position: relative;
 
-        &:after {
-            content: '';
-            border-bottom: 2px solid #000;
-            opacity: 0.1;
-            width: 100%;
-            display: block;
-            position: absolute;
-            bottom: -20px;
-            left: 0;
-        }
+    &:after {
+        content: '';
+        border-bottom: 2px solid #000;
+        opacity: 0.1;
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
     }
+}
 
 .main-company {
     padding-bottom: 16.7em;
@@ -458,15 +457,15 @@ footer {
     padding-top: 29px;
     background: $color-yellow;
 
-    .yellow-beam{
+    .yellow-beam {
         padding-bottom: 3.4em;
         position: relative;
 
-        div:first-of-type{
+        div:first-of-type {
             margin-right: 3.1em;
         }
 
-        &:after{
+        &:after {
             content: '';
             display: block;
             border-left: 1px solid #c4a11e;
@@ -477,19 +476,21 @@ footer {
         }
     }
 
-    div{
+    div {
         display: inline-block;
-    
-        #counter-week, #counter-all{
+
+        #counter-week,
+        #counter-all {
             font-size: 1.3em;
         }
 
-        #counter-week{
+        #counter-week {
             padding-right: 0.5em;
         }
     }
 
-    h1, p{
+    h1,
+    p {
         font-size: 1.5em;
         line-height: 1.26em;
         color: #3b5165;
@@ -497,7 +498,7 @@ footer {
         font-family: "Poppins";
     }
 
-    p{
+    p {
         display: inline-block;
         margin: 0;
         padding-top: 0.3em;
@@ -506,7 +507,7 @@ footer {
         font-size: 1.13em;
     }
 
-    .gray-beam{
+    .gray-beam {
         display: block;
         background: #3b5165;
         padding-top: 2.1em;
@@ -515,7 +516,8 @@ footer {
         font-style: italic;
         font-family: "Muli";
 
-        h2, p{
+        h2,
+        p {
             margin: 0;
             font-size: 1em;
             color: #ffffff;
