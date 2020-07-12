@@ -714,20 +714,20 @@ footer {
 
 
 @media(max-width: 1820px) {
-    header #nav{
-            right: 11em;
-            
-            li{
-                margin-right: 4.7em;
-            }
+    header #nav {
+        right: 11em;
+
+        li {
+            margin-right: 4.7em;
         }
+    }
 }
 
 @media(max-width: 1720px) {
-    header #nav{
+    header #nav {
         right: 9em;
 
-        li{
+        li {
             margin-right: 3.7em;
             font-size: 1.1em;
         }
@@ -740,17 +740,12 @@ footer {
 
 @media(max-width: 1366px) {
 
-    body {
-        font-size: 0.934vw;
-    }
-
-
     header {
-        #nav{
+        #nav {
             right: 4em;
         }
 
     }
 
-   
+
 }
