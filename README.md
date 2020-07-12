@@ -1,0 +1,6 @@
+....Strona w budowie....
+
+To jest moja 5# piąta strona internetowa. 
+Jest to strona firmowa z ofertą budowy domów modułowych.
+
+Stronę robię według projektu graficznego dostarczonego od grafika...
