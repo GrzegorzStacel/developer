@@ -390,6 +390,10 @@ section {
             @include horizontally-center();
         }
 
+        &.no-border-top:before{
+            display: none;
+        }
+
         .box-logo {
             margin-left: 6.2em;
             margin-top: 3.6em;
