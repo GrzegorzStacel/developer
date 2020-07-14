@@ -365,7 +365,6 @@ header #nav li {
 
 section {
   background: white;
-  padding-bottom: 6.2em;
 }
 
 section .container {
@@ -775,7 +774,7 @@ footer .gray-beam p {
 }
 
 .main-offer .offer-title h2 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 7em;
   color: #3b5165;
   display: inline-block;
@@ -793,13 +792,13 @@ footer .gray-beam p {
   font-size: 1.32em;
   letter-spacing: 0.08em;
   color: #3b5165;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   margin-top: 6.4em;
   margin-left: 3.9em;
 }
 
 .main-offer .offer-box {
-  background-image: url(../img/offer/1_background.jpg);
+  background-image: url(../img/offer/house_background.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
@@ -1070,6 +1069,145 @@ footer .gray-beam p {
 .main-offer .offer-box .offer-box-wrapper .offer-photo .gallery-btn span:nth-child(3) {
   right: 2.2em;
   bottom: 1.3em;
+}
+
+.main-offer .row-section .offer-title {
+  margin-top: 3em;
+}
+
+.main-offer .row-section .offer-title h2 {
+  position: relative;
+  top: auto;
+  right: auto;
+  margin-left: 1.4em;
+  margin-top: 0.4em;
+}
+
+.main-offer .row-section .offer-title p {
+  position: absolute;
+  margin-top: 5.7em;
+  margin-left: 5.4em;
+  text-align: right;
+  width: 44.1em;
+}
+
+.main-offer .row-section .offer-title .developer-beam {
+  background: #ffd200;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 10.5em;
+  bottom: -2em;
+  width: 24.5em;
+  height: 3.2em;
+}
+
+.main-offer .row-section .offer-title .developer-beam p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.02em;
+  left: -0.8em;
+  top: 0.7em;
+}
+
+.main-offer .row-section .offer-title::after {
+  left: 5.1em;
+  top: 5.2em;
+  right: auto;
+}
+
+.main-offer .row-section .offer-title:before {
+  bottom: -0.6em;
+  right: 0;
+  left: auto;
+}
+
+.main-offer .row-section .offer-box {
+  background-image: none;
+  padding-bottom: 4.2em;
+}
+
+.main-offer .row-section .offer-box .img-background-top, .main-offer .row-section .offer-box .img-background-bottom {
+  position: absolute;
+  top: -4.6em;
+  right: -1.3em;
+  width: 73.8%;
+  height: 53%;
+  -webkit-transform: rotateX(24deg);
+          transform: rotateX(24deg);
+  z-index: 0;
+}
+
+.main-offer .row-section .offer-box .img-background-bottom {
+  top: auto;
+  right: auto;
+  bottom: 1.1em;
+  height: 93%;
+  width: 81.4%;
+  z-index: -1;
+}
+
+.main-offer .row-section .offer-box .offer-box-wrapper {
+  padding-bottom: 12.9em;
+}
+
+.main-offer .row-section .offer-box .offer-box-wrapper .offer-photo {
+  left: 5.1em;
+  top: -1em;
+}
+
+.main-offer .row-section .offer-box .offer-box-wrapper .offer-photo .shadow-mirror {
+  opacity: 1;
+}
+
+.main-offer .row-section .offer-box .offer-box-wrapper .offer-info {
+  position: relative;
+  left: -15.2em;
+}
+
+.main-offer .row-section .offer-box .offer-box-wrapper .offer-info > p {
+  margin-left: -1.3em;
+  top: -2em;
+}
+
+.main-offer .row-section .offer-box .offer-box-wrapper .offer-info .size-medium .number-square {
+  font-size: 0.5em;
+}
+
+.main-offer .row-section .offer-box .offer-box-wrapper .offer-info .offer-box-price {
+  position: absolute;
+  left: -3.4em;
+  margin-top: 10.7em;
+  width: 39em;
+  height: 14.4em;
+  padding-top: 0;
+  padding-left: 2.5em;
+}
+
+.main-offer .row-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price {
+  padding-top: 1.1em;
+  letter-spacing: 0.1em;
+}
+
+.main-offer .row-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-medium {
+  padding-left: 0em;
+  padding-top: 1.6em;
+  margin-bottom: 0.4em;
+}
+
+.main-offer .row-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-to-m2 {
+  padding-left: 0em;
+  padding-top: 0em;
+  margin-top: 0em;
+}
+
+.main-offer .row-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .time {
+  margin-top: 1.6em;
+  margin-left: 2.6em;
 }
 
 @media (max-width: 1820px) {
