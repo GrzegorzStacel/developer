@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $("#lightgallery").lightGallery();
+    $("#lightgallery1, #lightgallery2, #lightgallery3, #lightgallery4, #lightgallery5").lightGallery();
 
     navigation();
 })
