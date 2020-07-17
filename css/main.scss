@@ -1764,8 +1764,10 @@ section .container-offer {
                 border-top-width: 6.8em;
                 width: 78.1%;
                 position: relative;
-
+                height: 0;
+                
                 .belt-middle {
+                    position: relative;
                     font-size: 1.7em;
                     right: 2.4em;
                     top: -2.2em;
@@ -1996,7 +1998,7 @@ section .container-offer {
             }
 
             .box-right-about {
-                width: 95%;
+                width: 93%;
                 padding: 15px;
 
                 p {
@@ -2017,6 +2019,7 @@ section .container-offer {
                 .icon-datum {
                     flex-direction: column;
                     padding-top: 4em;
+                    padding-left: 0em;
 
                     .ico-phone-big {
                         display: inline;
@@ -2026,15 +2029,10 @@ section .container-offer {
                     .ico-phone {
                         display: none;
                     }
-
-
+                    
                     .ico-phone-container {
                         padding: 0;
                         padding-bottom: 2.1em;
-                    }
-
-                    div>a {
-                        font-size: 2.2em;
                     }
                 }
 
@@ -2143,8 +2141,8 @@ section .container-offer {
         bottom: -85em;
     }
 
-    section .container .box-data .icon-datum div > a{
-        font-size: 2.4em;
+    .ico-email-container img{
+        width: 6.9em;
     }
 
     footer .yellow-beam{
