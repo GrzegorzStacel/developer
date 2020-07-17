@@ -34,11 +34,13 @@
         <a href="../index.html"><img src="../img/logo.svg" alt="logo"></a>
 
         <nav>
+            <a href="#" class="hide-mobile show-mobile">
                 <img src="../img/ico-ham.svg" alt="toggle menu" class="menu" id="menu">
+            </a>
 
-            <ul class="show-desktop hide-mobile" id="nav">
+            <ul class="hide-desktop" id="nav">
                 <!-- <li id="exit" class="exit-btn hide-desktop">
-                    <img src="img/hamburger/exit.svg" alt="exit menu">
+                    <img src="../img/exit.svg" alt="exit menu">
                 </li> -->
                 <li>
                     <a href="company.html">o firmie</a>
@@ -56,27 +58,35 @@
         </nav>
 
         <div class="nav-belt">
-            <div itemscope itemtype="http://schema.org/LocalBusiness">
+            <div class="nav-belt-container" itemscope itemtype="http://schema.org/LocalBusiness">
 
-                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="postalCode">42-202</span>
-                    <span itemprop="addressLocality">Częstochowa</span>, ul <span itemprop="streetAddress">Żyzna
-                        11/o</span>
+                <p class="container-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span>
+                        <span itemprop="postalCode">42-202</span>
+                        <span itemprop="addressLocality">Częstochowa</span>
+                        <span class="edit-coma">,</span>
+                    </span> 
+                    <span>
+                        ul <span itemprop="streetAddress">Żyzna
+                            11/o</span>
+                    </span>
                 </p>
 
-                <p>
-                    email:
-                    <a href="mailto:biuro@budowymodulowe.pl" itemprop="email">
-                        <span class="bold">biuro@budowymodulowe.pl</span>
-                    </a>
-                </p>
-
-                <p>
-                    tel:
-                    <a href="tel:+48-504-424-836" itemprop="telephone">
-                        <span class="bold">504 424 836</span>
-                    </a>
-                </p>
+                <div class="container-data">
+                    <p class="email-p">
+                        email:
+                        <a href="mailto:biuro@budowymodulowe.pl" itemprop="email">
+                            <span class="bold">biuro@budowymodulowe.pl</span>
+                        </a>
+                    </p>
+    
+                    <p class="phone-p">
+                        tel:
+                        <a href="tel:+48-504-424-836" itemprop="telephone">
+                            <span class="bold">504 424 836</span>
+                        </a>
+                    </p>
+                </div>
 
             </div>
         </div>
@@ -89,9 +99,11 @@
         <div class="box">
             <div class="box-left-about">
                 <img src="../img/construction.jpg" alt="">
-                <div class="nav-belt">
-                    <div class="">
-                        Naszym działaniem obejmujemy teren całego kraju.
+                <div class="nav-belt nav-belt-middle">
+                    <div class="belt-middle">
+                        <p>
+                            Naszym działaniem obejmujemy teren całego kraju.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -139,6 +151,7 @@
                     Śmiało zadzwoń i zapytaj lub napisz do nas.</h2>
 
                 <div class="icon-datum">
+                    <div class="ico-phone-container">
                         <img class="ico-phone" src="../img/ico-phone.svg" alt="phone icon">
                         <img class="ico-phone-big" src="../img/ico-phone-big.svg" alt="phone icon">
                         <a href="tel:+48-504-424-836" class="bold">
@@ -169,7 +182,7 @@
         </div>
 
         <div class="gray-beam">
-            <h2>SOLIDNE FUNDAMENTY</h2>
+            <h2>BUDOWY MODUŁOWE Sp. z o.o.</h2>
             <p>42-202 Częstochowa, ul Żyzna 11/o</p>
         </div>
 
