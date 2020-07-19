@@ -8,8 +8,9 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap">
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700,800&display=swap">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700,800&display=swap">
 
 
     <!-- Main styles -->
@@ -20,6 +21,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous" defer></script>
 
+    <!-- Gallery scripts -->
+    <script src="js/lightgallery.min.js" defer></script>
 
     <!-- Main scripts -->
     <script src="js/main.js" defer></script>
@@ -28,30 +31,47 @@
 
 <body>
 
-    <header>
-        <a href="../index.html"><img src="../img/logo.svg" alt="logo"></a>
+    <header class="main-page-header">
+        <a href="../index.html"><img class="logo" src="../img/logo.svg" alt="logo"></a>
 
-        <ul itemscope itemtype="http://schema.org/LocalBusiness">
+        <div class="company-data">
+            <ul itemscope itemtype="http://schema.org/LocalBusiness">
 
-            <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span itemprop="postalCode">42-202</span> 
-                <span itemprop="addressLocality">Częstochowa</span>, ul <span itemprop="streetAddress">Żyzna 11/o</span>
-            </li>
+                <li class="cd-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span>
+                        <span itemprop="postalCode">42-202</span>
+                        <span itemprop="addressLocality">Częstochowa</span>
+                        <span class="edit-coma">,</span>
+                    </span> 
+                    <span>
+                        ul <span itemprop="streetAddress">Żyzna
+                            11/o</span>
+                    </span>
+                </li>
 
-            <li>
-                email: 
-                <a href="mailto:biuro@budowymodulowe.pl" itemprop="email">
-                    <span class="bold">biuro@budowymodulowe.pl</span>
-                </a>
-            </li>
+                <li class="cd-email">
+                    email:
+                    <a href="mailto:biuro@budowymodulowe.pl" itemprop="email">
+                        <span class="bold">biuro@budowymodulowe.pl</span>
+                    </a>
+                </li>
 
-            <li>
-                <a href="tel:+48-504-424-836" itemprop="telephone">
-                    tel: <span class="bold">504 424 836</span>
-                </a>
-            </li>
+                <li class="mp-company-datum-phone">
+                    <a href="tel:+48-504-424-836" itemprop="telephone">
+                        tel: <span class="bold">504 424 836</span>
+                    </a>
+                </li>
 
-        </ul>
+            </ul>
+
+            <a class="main-page-big-ico" href="tel:+48-504-424-836">
+                <img src="img/ico-phone-retro.png" alt="Słuchawka telefoniczna">
+            </a>
+        </div>
+
+        <a href="#" class="hide-mobile show-mobile">
+            <img src="../img/ico-ham.svg" alt="toggle menu" class="menu" id="menu">
+        </a>
     </header>
 
 
@@ -68,19 +88,20 @@
         </div>
 
         <div class="main-right">
+            <div class="main-right-container">
                 <p>DOMY</p>
                 <p>MIESZKANIA</p>
                 <p>PAWILONY</p>
                 <p>GARAŻE</p>
                 <p>OBIEKTY HOTELOWE</p>
+            </div>
         </div>
 
-        <nav>
+        <nav class="hide-desktop main-page-nav" id="nav">
             <ul>
                 <li><a href="pages/o-firmie.html">o firmie</a></li>
                 <li><a href="pages/technologia.html">technologia</a></li>
                 <li><a href="pages/oferta.html">oferta</a></li>
-                <!-- <li><a href="#">kontakt</a></li> -->
             </ul>
         </nav>
     </main>
