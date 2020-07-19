@@ -2467,7 +2467,7 @@ section .container-offer:before {
   .main-page .main-right .main-right-container {
     top: 40vh;
     width: 80%;
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 
