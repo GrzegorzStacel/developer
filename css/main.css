@@ -117,7 +117,7 @@ header {
   position: relative;
 }
 
-header .logo {
+header .logo, header .menu {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -127,40 +127,40 @@ header .logo {
 }
 
 @media (max-width: 1300px) {
-  header .logo {
+  header .logo, header .menu {
     margin-left: 14%;
   }
 }
 
 @media (max-width: 1100px) {
-  header .logo {
+  header .logo, header .menu {
     width: 250px;
     margin-left: 10%;
   }
 }
 
 @media (max-width: 1000px) {
-  header .logo {
+  header .logo, header .menu {
     margin-left: 5%;
     width: 225px;
   }
 }
 
 @media (max-width: 880px) {
-  header .logo {
+  header .logo, header .menu {
     width: 190px;
   }
 }
 
 @media (max-width: 800px) {
-  header .logo {
+  header .logo, header .menu {
     width: 210px;
     margin-left: 5.5%;
   }
 }
 
 @media (max-width: 360px) {
-  header .logo {
+  header .logo, header .menu {
     width: 161px;
   }
 }
