@@ -7,12 +7,12 @@ $(document).ready(function () {
 
 function navigation() {
 
-    var menu = document.getElementById('menu');
+    var menuSymbol = document.getElementById('menuSymbol');
     var nav = document.getElementById('nav');
     // var exit = document.getElementById('exit');
 
-    menu.addEventListener('click', function (e) {
-        nav.classList.toggle('hide-mobile');
+    menuSymbol.addEventListener('click', function (e) {
+        nav.classList.toggle('ON');
         console.log('show');
         e.preventDefault();
     });
