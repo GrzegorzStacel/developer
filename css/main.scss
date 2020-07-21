@@ -37,10 +37,6 @@ $color-yellow: #ffc300;
         display: block;
     }
 
-    @media(orientation: landscape) and (max-height: 700px) {
-        top: 9px;
-    }
-
     .bar {
         width: 30px;
         height: 3px;
@@ -51,7 +47,6 @@ $color-yellow: #ffc300;
         transform: translateY(-50%);
         border-radius: 2px;
         transition: .3s;
-        // box-shadow:-6px 6px 4px rgba(black,0.3);
 
         &.mobile {
             top: 15px;
@@ -67,7 +62,6 @@ $color-yellow: #ffc300;
             top: -10px;
             position: absolute;
             transition: .3s;
-            // box-shadow:-6px 6px 4px rgba(black,0.3);
         }
 
         &:after {
@@ -124,14 +118,6 @@ body {
     @media(max-width: 440px) {
         font-size: 1.75vw;
     }
-}
-
-.hide-mobile {
-    display: none;
-}
-
-.show-desktop {
-    display: block;
 }
 
 .nav-belt {
@@ -201,10 +187,6 @@ header {
     margin: 0;
     position: relative;
 
-    @media(orientation: landscape) and (max-height: 700px) {
-        height: 55px;
-    }
-
     .logo,
     .menu {
         @include perpendicularly-center();
@@ -236,10 +218,6 @@ header {
 
         @media(max-width: 360px) {
             width: 161px;
-        }
-
-        @media(orientation: landscape) and (max-height: 700px) {
-            width: 160px;
         }
     }
 
@@ -369,10 +347,6 @@ header {
                     padding-top: 0.5em;
                 }
 
-                // @media(orientation: landscape) {
-                //     font-size: 1.04em;
-                // }
-
                 >span {
                     @media(max-width: 640px) {
                         line-height: 1.6em;
@@ -424,6 +398,13 @@ header {
                 position: relative;
                 margin: auto;
             }
+        }
+    }
+
+    #menuSymbol{
+        display: none;
+        @media(max-width:800px){
+            display: block;
         }
     }
 
@@ -685,7 +666,6 @@ header {
         margin-top: 4.5em;
         align-self: flex-end;
 
-
         @media(max-width: 1200px) {
             flex-basis: 48%;
         }
@@ -732,14 +712,12 @@ header {
                 position: fixed;
                 top: 17em;
                 top: 40%;
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 right: 0;
                 left: 0;
                 font-size: 3.8vw;
-
             }
 
             @media(max-width: 580px) {
@@ -838,8 +816,6 @@ header {
         }
     }
 
-    
-
     #topBar {
         text-align: center;
         padding-top: 6.25em;
@@ -867,12 +843,7 @@ header {
             transition: 1s;
             transform: translate3d(-100%, 0, 0);
 
-            // &.hide-desktop {
-            //     display: none;
-            // }
-
             &.ON {
-                // display: block;
                 transform: translate3d(0, 0, 0);
             }
         }
@@ -888,12 +859,7 @@ header {
         ul {
             list-style: none;
             margin: 0;
-
-            // display: flex;
-            // flex-direction: column;
             padding: 0;
-
-
 
             li {
                 position: relative;
@@ -907,8 +873,6 @@ header {
                     display: block;
                     background: white;
                     margin-right: auto;
-
-
                     max-width: none;
                     width: 100%;
                     border-bottom: 1px solid #333;
@@ -916,7 +880,7 @@ header {
                 }
 
                 a {
-                    line-height: 5.4em; //Wyśrodkowanie tekstu w pionie oraz ustawienie szerokości przycisku
+                    line-height: 5.4em;
                     text-decoration: none;
                     color: white;
                     font-size: 1.3em;
@@ -2399,24 +2363,15 @@ section .container-offer {
     // ***
 
     header {
-        // height: 85px;
+        height: 85px;
 
         .menu {
             width: 29px;
             right: 31px;
         }
-
         img {
             margin-left: 44px;
             width: 213px;
-        }
-
-        .hide-desktop {
-            display: none;
-        }
-
-        .hide-mobile {
-            display: block;
         }
     }
 

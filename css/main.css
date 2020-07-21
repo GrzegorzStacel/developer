@@ -19,12 +19,6 @@
   }
 }
 
-@media (orientation: landscape) and (max-height: 700px) {
-  #hamburgermenu {
-    top: 9px;
-  }
-}
-
 #hamburgermenu .bar {
   width: 30px;
   height: 3px;
@@ -125,14 +119,6 @@ body {
   }
 }
 
-.hide-mobile {
-  display: none;
-}
-
-.show-desktop {
-  display: block;
-}
-
 .nav-belt {
   width: 58.5em;
   border-right: 19px solid transparent;
@@ -207,12 +193,6 @@ header {
   position: relative;
 }
 
-@media (orientation: landscape) and (max-height: 700px) {
-  header {
-    height: 55px;
-  }
-}
-
 header .logo,
 header .menu {
   position: absolute;
@@ -265,13 +245,6 @@ header .menu {
   header .logo,
   header .menu {
     width: 161px;
-  }
-}
-
-@media (orientation: landscape) and (max-height: 700px) {
-  header .logo,
-  header .menu {
-    width: 160px;
   }
 }
 
@@ -513,6 +486,16 @@ header .main-page-big-ico {
             transform: none;
     position: relative;
     margin: auto;
+  }
+}
+
+header #menuSymbol {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  header #menuSymbol {
+    display: block;
   }
 }
 
@@ -2552,6 +2535,9 @@ section .container-offer:before {
 }
 
 @media (max-width: 800px) {
+  header {
+    height: 85px;
+  }
   header .menu {
     width: 29px;
     right: 31px;
@@ -2559,12 +2545,6 @@ section .container-offer:before {
   header img {
     margin-left: 44px;
     width: 213px;
-  }
-  header .hide-desktop {
-    display: none;
-  }
-  header .hide-mobile {
-    display: block;
   }
   .nav-belt {
     width: 79.5%;
