@@ -23,6 +23,74 @@ $color-yellow: #ffc300;
     white-space: nowrap;
 }
 
+#hamburgermenu {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 20px;
+    z-index: 21;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+
+    @media(max-width: 800px) {
+        display: block;
+    }
+
+    @media(orientation: landscape) and (max-height: 700px) {
+        top: 9px;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        border-radius: 2px;
+        transition: .3s;
+        // box-shadow:-6px 6px 4px rgba(black,0.3);
+
+        &.mobile {
+            top: 15px;
+        }
+
+        &:before,
+        &:after {
+            border-radius: 2px;
+            content: "";
+            width: 30px;
+            height: 3px;
+            background-color: #333;
+            top: -10px;
+            position: absolute;
+            transition: .3s;
+            // box-shadow:-6px 6px 4px rgba(black,0.3);
+        }
+
+        &:after {
+            top: 10px;
+        }
+
+        &.active {
+            width: 0;
+            top: 50%;
+
+            &:before {
+                transform: rotate(45deg) scaleX(1.2);
+                top: 0px;
+            }
+            
+            &:after {
+                transform: rotate(-45deg) scaleX(1.2);
+                top: 0px;
+            }
+        }
+    }
+}
+
 body {
     background: white;
     margin: 0;
@@ -133,6 +201,10 @@ header {
     margin: 0;
     position: relative;
 
+    @media(orientation: landscape) and (max-height: 700px) {
+        height: 55px;
+    }
+
     .logo,
     .menu {
         @include perpendicularly-center();
@@ -164,6 +236,10 @@ header {
 
         @media(max-width: 360px) {
             width: 161px;
+        }
+
+        @media(orientation: landscape) and (max-height: 700px) {
+            width: 160px;
         }
     }
 
@@ -292,6 +368,10 @@ header {
                 @media(max-width: 640px) {
                     padding-top: 0.5em;
                 }
+
+                // @media(orientation: landscape) {
+                //     font-size: 1.04em;
+                // }
 
                 >span {
                     @media(max-width: 640px) {
@@ -623,6 +703,7 @@ header {
                     rgba(9, 26, 47, 0.04525560224089631) 100%);
             padding-top: 5em;
             margin: 0;
+            width: 100%;
         }
 
         @media(max-width: 700px) {
@@ -757,7 +838,9 @@ header {
         }
     }
 
-    #nav {
+    
+
+    #topBar {
         text-align: center;
         padding-top: 6.25em;
         padding-bottom: 5.19em;
@@ -782,14 +865,14 @@ header {
             box-shadow: 0 6vw 7vw -2vw rgba(0, 0, 0, 0.8);
             font-size: 2.4vw;
             transition: 1s;
+            transform: translate3d(-100%, 0, 0);
 
-            &.hide-desktop {
-                display: none;
-                transform: translate3d(-100%, 0, 0);
-            }
+            // &.hide-desktop {
+            //     display: none;
+            // }
 
-            &.hide-mobile {
-                display: block;
+            &.ON {
+                // display: block;
                 transform: translate3d(0, 0, 0);
             }
         }
@@ -2316,7 +2399,7 @@ section .container-offer {
     // ***
 
     header {
-        height: 85px;
+        // height: 85px;
 
         .menu {
             width: 29px;
