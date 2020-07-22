@@ -30,6 +30,208 @@ body {
     white-space: nowrap;
 }
 
+#hamburgermenu {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 20px;
+    z-index: 21;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+
+    @media(max-width: 980px) and (orientation: portrait) {
+        display: block;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        border-radius: 2px;
+        transition: .3s;
+
+        &.mobile {
+            top: 15px;
+        }
+
+        &:before,
+        &:after {
+            border-radius: 2px;
+            content: "";
+            width: 30px;
+            height: 3px;
+            background-color: #333;
+            top: -10px;
+            position: absolute;
+            transition: .3s;
+        }
+
+        &:after {
+            top: 10px;
+        }
+
+        &.active {
+            width: 0;
+            top: 50%;
+
+            &:before {
+                transform: rotate(45deg) scaleX(1.2);
+                top: 0px;
+            }
+
+            &:after {
+                transform: rotate(-45deg) scaleX(1.2);
+                top: 0px;
+            }
+        }
+    }
+}
+
+#topBar {
+    text-align: center;
+    padding-top: 6.25em;
+    padding-bottom: 5.19em;
+
+    @media(max-width: 1100px) {
+        padding-top: 4em;
+        padding-bottom: 9em;
+    }
+
+    @media(max-width: 880px) {
+        padding-top: 1em;
+        padding-bottom: 12em;
+    }
+
+    @media(max-width: 980px) and (orientation: portrait) {
+        position: fixed;
+        top: 0;
+        padding: 0;
+        z-index: 10;
+        width: 100vw;
+        right: 0;
+        box-shadow: 0 6vw 7vw -2vw rgba(0, 0, 0, 0.8);
+        font-size: 2.4vw;
+        transition: .3s;
+        transform: translate3d(-100%, 0, 0);
+
+        &.ON {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @media(max-width: 480px) {
+        font-size: 3.2vw;
+    }
+
+    @media(max-width: 320px) {
+        font-size: 14px;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            position: relative;
+            max-width: 23.44em;
+            width: 22.8vw;
+            background: rgba(black, 0.4);
+            display: inline-block;
+            margin-right: 3.1em;
+
+            @media(max-width: 980px) and (orientation: portrait) {
+                display: block;
+                background: white;
+                margin-right: auto;
+                max-width: none;
+                width: 100%;
+                border-bottom: 1px solid #333;
+                height: 13vh;
+            }
+
+            a {
+                line-height: 5.4em;
+                text-decoration: none;
+                color: white;
+                font-size: 1.3em;
+                display: block;
+
+                @media(max-width: 980px) and (orientation: portrait) {
+                    color: #333;
+                    line-height: 13vh;
+                }
+            }
+
+// TODO hover do refaktoryzacji
+
+            &:hover {
+                @media(min-width: 800px) {
+                    background: rgba(black, 0.9);
+                    transition: 0.1s;
+                }
+
+                // #1 z 4
+                @media(max-width: 800px) and (max-height: 800px) {
+                    background: rgba(black, 0.9);
+                    transition: 0.1s;
+                }
+
+                a {
+                    @media(min-width: 800px) {
+                        color: $color-yellow;
+                    }
+
+                     // #2 z 4
+                    @media(max-width: 800px) and (max-height: 800px) {
+                        color: $color-yellow;
+                    }
+                }
+
+                &::before {
+                    
+                    @media(min-width: 800px) {
+                        box-shadow: 0px 0px 15px 4px #ffc500, -9px 0px 50px 14px rgba(255, 195, 0, 0.73);
+                        transition: 0.2s;
+                    }
+
+                     // #3 z 4
+                    @media(max-width: 800px) and (max-height: 800px) {
+                        box-shadow: 0px 0px 15px 4px #ffc500, -9px 0px 50px 14px rgba(255, 195, 0, 0.73);
+                    }
+                }
+            }
+
+            &:before {
+                
+                @media(min-width: 800px) {
+                    content: '';
+                    border-left: 6px solid $color-yellow;
+                    position: absolute;
+                    left: -8px;
+                    margin-right: 0.7em;
+                    height: 100%;
+                }
+
+                 // #4 z 4
+                @media(max-width: 800px) and (max-height: 800px) {
+                    content: '';
+                    border-left: 6px solid $color-yellow;
+                    position: absolute;
+                    left: -8px;
+                    margin-right: 0.7em;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
 .nav-belt {
     width: 58.5em;
     border-right: 19px solid transparent;
