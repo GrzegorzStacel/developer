@@ -30,8 +30,11 @@
 </head>
 
 <body>
+    <div id="hamburgermenu">
+        <div class="bar"></div>
+    </div>
 
-    <header class="main-page-header">
+    <header>
         <a href="../index.html"><img class="logo" src="../img/logo.svg" alt="logo"></a>
 
         <div class="company-data">
@@ -56,7 +59,7 @@
                     </a>
                 </li>
 
-                <li class="mp-company-datum-phone">
+                <li class="cd-phone">
                     <a href="tel:+48-504-424-836" itemprop="telephone">
                         tel: <span class="bold">504 424 836</span>
                     </a>
@@ -68,10 +71,6 @@
                 <img src="img/ico-phone-retro.png" alt="Słuchawka telefoniczna">
             </a>
         </div>
-
-        <a href="#" class="hide-mobile show-mobile">
-            <img src="../img/ico-ham.svg" alt="toggle menu" class="menu" id="menu">
-        </a>
     </header>
 
 
@@ -79,7 +78,8 @@
         <div class="main-left">
             <h1>Budownictwo<br> modułowe</h1>
             <div class="box-blue">
-                <p>Gotowa do użytku konstrukcja w stanie deweloperskim<br> w ciągu 7 dni, bez bałaganu na budowie</p>
+                <span class="nowrap">Gotowa do użytku konstrukcja w stanie deweloperskim</span>
+                <span class="nowrap"> w ciągu 7 dni, bez bałaganu na budowie</span>
             </div>
 
             <div class="box-yellow">
@@ -97,16 +97,12 @@
             </div>
         </div>
 
-        <nav class="hide-desktop main-page-nav" id="nav">
-            <ul>
-                <li><a href="pages/o-firmie.html">o firmie</a></li>
-                <li><a href="pages/technologia.html">technologia</a></li>
-                <li><a href="pages/oferta.html">oferta</a></li>
-            </ul>
+        <nav id="topBar" class="nav-index">
+            <a href="pages/o-firmie.html">o firmie</a>
+            <a href="pages/technologia.html">technologia</a>
+            <a href="pages/oferta.html">oferta</a>
         </nav>
     </main>
-
-
 </body>
 
 </html>
