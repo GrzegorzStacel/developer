@@ -580,16 +580,28 @@ header a img {
 
 .title {
   color: #49515c;
-  font-size: 4.9em;
-  font-weight: 400;
-  font-family: "Muli", sans-serif;
-  margin: 0;
-  margin-left: 3em;
-  padding-left: 0.6em;
-  padding-top: 1.97em;
-  margin-bottom: 0.7em;
+  font: 400 4.9em "Muli", sans-serif;
+  margin: 0 0 0.7em 3em;
+  padding: 1.97em 0 0 0.6em;
   position: relative;
   z-index: 1;
+}
+
+@media (max-width: 980px) and (orientation: portrait) {
+  .title {
+    margin-left: 0.5em;
+    padding-left: 0.7em;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    padding: 2.8em 0 0;
+    margin: 0 auto 1em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 88vw;
+  }
 }
 
 .title:after {
@@ -597,32 +609,21 @@ header a img {
   border-bottom: 2px solid #000;
   opacity: 0.1;
   width: 100%;
-  display: block;
   position: absolute;
   bottom: -20px;
   left: 0;
 }
 
-@media (max-width: 800px) {
-  .title {
-    margin-left: 0.5em;
-    padding-left: 0.3em;
-  }
+@media (max-width: 980px) and (orientation: portrait) {
   .title:after {
+    width: 95%;
     bottom: -8px;
+    right: 0;
   }
 }
 
 @media (max-width: 640px) {
-  .title {
-    padding-top: 2.8em;
-    padding-left: 0;
-    margin: 0 auto 1em;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 88vw;
-  }
-  .title::after {
+  .title:after {
     border-bottom-width: 1px;
     -webkit-transform: scaleX(1.03);
             transform: scaleX(1.03);
@@ -631,12 +632,11 @@ header a img {
 
 .main-company {
   padding-bottom: 10.1em;
-  background: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   .main-company {
-    padding-bottom: 4em;
+    padding-bottom: 0em;
   }
 }
 
@@ -648,6 +648,18 @@ header a img {
   display: flex;
 }
 
+@media (max-width: 980px) and (orientation: portrait) {
+  .main-company .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .main-company .box .box-left-about {
   position: relative;
   -webkit-box-flex: 1;
@@ -656,20 +668,23 @@ header a img {
   margin-right: 1em;
 }
 
-.main-company .box .box-left-about img {
-  width: 100%;
-}
-
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   .main-company .box .box-left-about {
     width: auto;
   }
-  .main-company .box .box-left-about img {
+}
+
+.main-company .box img {
+  width: 100%;
+}
+
+@media (max-width: 980px) and (orientation: portrait) {
+  .main-company .box img {
     display: none;
   }
 }
 
-.main-company .box .box-left-about .nav-belt-middle {
+.main-company .box .nav-belt-middle {
   position: relative;
   bottom: 4vw;
   width: 72.6%;
@@ -677,7 +692,27 @@ header a img {
   border-top: 4.5em solid #49515c;
 }
 
-.main-company .box .box-left-about .nav-belt-middle div {
+@media (max-width: 980px) and (orientation: portrait) {
+  .main-company .box .nav-belt-middle {
+    font-size: 2em;
+    width: 80%;
+    border-right: 1.5em solid transparent;
+    border-top: 3.5em solid #49515c;
+    bottom: 5em;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-company .box .nav-belt-middle {
+    background: #49515c;
+    border: none;
+    position: relative;
+    width: 89%;
+    margin: 0 auto;
+  }
+}
+
+.main-company .box .nav-belt-middle div {
   position: absolute;
   color: #ffc300;
   text-align: right;
@@ -688,36 +723,22 @@ header a img {
 }
 
 @media (max-width: 1024px) {
-  .main-company .box .box-left-about .nav-belt-middle div {
+  .main-company .box .nav-belt-middle div {
     font-size: 0.9em;
     top: -3em;
     right: 1em;
   }
 }
 
-@media (max-width: 800px) {
-  .main-company .box .box-left-about .nav-belt-middle {
-    font-size: 2em;
-    width: 80%;
-    border-right: 1.5em solid transparent;
-    border-top: 3.5em solid #49515c;
-    bottom: 0;
-  }
-  .main-company .box .box-left-about .nav-belt-middle div {
+@media (max-width: 980px) and (orientation: portrait) {
+  .main-company .box .nav-belt-middle div {
     top: -2.6em;
     right: 2em;
   }
 }
 
-@media (max-width: 640px) {
-  .main-company .box .box-left-about .nav-belt-middle {
-    background: #49515c;
-    border: none;
-    position: relative;
-    width: 89%;
-    margin: 0 auto;
-  }
-  .main-company .box .box-left-about .nav-belt-middle div {
+@media (max-width: 640px) and (orientation: portrait) {
+  .main-company .box .nav-belt-middle div {
     text-align: center;
     position: relative;
     top: auto;
@@ -733,17 +754,6 @@ header a img {
   padding-top: 6.2em;
 }
 
-.main-company .box .box-right-about p {
-  padding-right: 11em;
-  padding-left: 1.3em;
-  line-height: 1.7em;
-  letter-spacing: 0.48px;
-  color: #49515c;
-  margin: 0;
-  font-size: 1.1em;
-  padding-bottom: 1.7em;
-}
-
 @media (max-width: 1200px) {
   .main-company .box .box-right-about {
     width: 46%;
@@ -757,19 +767,14 @@ header a img {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   .main-company .box .box-right-about {
-    background: url(../img/construction.png) no-repeat bottom;
+    background: url(../img/construction.png) no-repeat center;
     background-size: contain;
     font-size: 1.6em;
     padding: 0 2.5em 5em;
     width: auto;
     margin-bottom: 4em;
-  }
-  .main-company .box .box-right-about p {
-    padding-bottom: 1.3em;
-    line-height: 1.7em;
-    letter-spacing: 0em;
   }
 }
 
@@ -777,9 +782,6 @@ header a img {
   .main-company .box .box-right-about {
     padding-bottom: 0;
     background-size: cover;
-  }
-  .main-company .box .box-right-about p {
-    color: #333;
   }
 }
 
@@ -789,8 +791,30 @@ header a img {
   }
 }
 
+.main-company .box .box-right-about p {
+  padding: 0 11em 1.7em 1.3em;
+  margin: 0;
+  line-height: 1.7em;
+  letter-spacing: 0.48px;
+  color: #49515c;
+  font-size: 1.1em;
+}
+
+@media (max-width: 980px) and (orientation: portrait) {
+  .main-company .box .box-right-about p {
+    padding-bottom: 1.3em;
+    line-height: 1.7em;
+    letter-spacing: 0em;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-company .box .box-right-about p {
+    color: #333;
+  }
+}
+
 .contact-label {
-  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -801,7 +825,7 @@ header a img {
   padding-bottom: 6.2em;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   .contact-label {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -827,18 +851,17 @@ header a img {
           transform: translateX(-50%);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   .contact-label:before {
     display: none;
   }
 }
 
 .contact-label .box-logo {
-  margin-left: 6.2em;
-  margin-top: 3.6em;
+  margin: 3.6em 0 0 6.2em;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   .contact-label .box-logo {
     display: none;
   }
@@ -853,7 +876,7 @@ header a img {
   padding-right: 5.7em;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   .contact-label .box-data {
     padding-right: 0em;
     text-align: center;
@@ -862,12 +885,9 @@ header a img {
 
 .contact-label .box-data h2 {
   color: #505050;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1em;
+  font: 500 1.1em / 30px "Poppins", sans-serif;
   padding-top: 1.8em;
   letter-spacing: 0.4px;
-  line-height: 30px;
 }
 
 @media (max-width: 1200px) {
@@ -882,7 +902,7 @@ header a img {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   .contact-label .box-data h2 {
     padding-top: 5.2em;
     margin-top: 0;
@@ -910,7 +930,7 @@ header a img {
   padding-top: 13px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   .contact-label .box-data .icon-datum {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -918,8 +938,7 @@ header a img {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    padding-left: 1.2em;
-    padding-top: 22px;
+    padding: 22px 0 0 1.2em;
   }
 }
 
@@ -929,15 +948,13 @@ header a img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 4em;
-    padding-left: 0em;
+    padding: 4em 0 0;
   }
 }
 
 @media (max-width: 640px) {
   .contact-label .box-data .icon-datum .ico-phone-container {
-    padding: 0;
-    padding-bottom: 2.1em;
+    padding: 0 0 2.1em;
   }
 }
 
@@ -966,8 +983,7 @@ header a img {
 
 .contact-label .box-data div > div {
   display: inline-block;
-  padding-left: 1.1em;
-  padding-top: 1.25em;
+  padding: 1.25em 0 0 1.1em;
 }
 
 .contact-label .box-data div > div img {
@@ -977,9 +993,8 @@ header a img {
 
 .contact-label .box-data div > div a {
   text-decoration: none;
-  font-size: 1.12em;
+  font: 1.12em "Poppins", sans-serif;
   color: #007ebf;
-  font-family: "Poppins";
 }
 
 @media (max-width: 800px) {
@@ -1022,7 +1037,7 @@ footer .yellow-beam {
   position: relative;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   footer .yellow-beam {
     padding-bottom: 0em;
     height: 16.2em;
@@ -1043,6 +1058,7 @@ footer .yellow-beam {
 @media (max-width: 640px) {
   footer .yellow-beam {
     margin-left: 9em;
+    padding: 4.5em 0em 4.6em 0em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1050,7 +1066,6 @@ footer .yellow-beam {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 4.5em 0em 4.6em 0em;
     height: auto;
   }
 }
@@ -1066,8 +1081,7 @@ footer .yellow-beam {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
     padding: 0;
-    margin: 0;
-    margin-top: 2.7em;
+    margin-top: 2.7em 0 0;
   }
 }
 
@@ -1091,7 +1105,7 @@ footer .yellow-beam:after {
   top: 38%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   footer .yellow-beam:after {
     top: 50%;
     right: 49.5%;
@@ -1109,13 +1123,12 @@ footer div {
   display: inline-block;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   footer div {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     padding-bottom: 2.2em;
-    margin-right: 1.2em;
-    margin-top: -0.8em;
+    margin: -0.8em 1.2em 0 0;
   }
 }
 
@@ -1134,20 +1147,16 @@ footer div #counter-all {
 
 footer h1,
 footer p {
-  font-size: 1.5em;
-  line-height: 1.26em;
+  font: 400 1.5em/1.26em "Poppins", sans-serif;
   color: #3b5165;
-  font-weight: 400;
-  font-family: "Poppins";
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   footer h1 {
     font-size: 2.2em;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    margin-top: 1.8em;
-    margin-bottom: 0;
+    margin: 1.8em 0 0;
   }
 }
 
@@ -1164,13 +1173,11 @@ footer p {
 footer p {
   display: inline-block;
   margin: 0;
-  padding-top: 0.3em;
-  padding-left: 2.5em;
-  padding-right: 1.7em;
+  padding: 0.3em 1.7em 0 2.5em;
   font-size: 1.13em;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   footer p {
     font-size: 1.4em;
     padding: 0;
@@ -1180,42 +1187,42 @@ footer p {
 footer .gray-beam {
   display: block;
   background: #3b5165;
-  padding-top: 2.1em;
-  padding-bottom: 2em;
-  line-height: 0.63em;
-  font-style: italic;
-  font-family: "Muli";
+  padding: 2.1em 0 2em;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
   footer .gray-beam {
     height: 4.9em;
-    font-size: 1.4em;
-    padding-top: 1.9em;
-    letter-spacing: 0.1em;
-    line-height: 1.3em;
-    padding-bottom: 0em;
+    padding: 1.9em 0 0;
     text-align: center;
-  }
-}
-
-@media (max-width: 640px) {
-  footer .gray-beam {
-    font-size: 1.7em;
+    width: 100%;
   }
 }
 
 footer .gray-beam h2,
 footer .gray-beam p {
   margin: 0;
-  font-size: 1em;
+  font: italic 300 1em/0.63em "Muli", sans-serif;
   color: #ffffff;
-  font-weight: 300;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) and (orientation: portrait) {
+  footer .gray-beam h2,
   footer .gray-beam p {
-    padding: 0;
+    line-height: 1.3em;
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 640px) {
+  footer .gray-beam h2,
+  footer .gray-beam p {
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 980px) and (orientation: portrait) {
+  footer .gray-beam p {
     padding-top: 0.3em;
   }
 }
