@@ -1441,15 +1441,15 @@ footer {
 }
 
 .main-tech {
-    padding-bottom: 16.7em;
     padding-bottom: 108px;
     background: white;
 
     .container-tech-icons {
         display: flex;
         justify-content: center;
-        margin-top: 7.6em;
-        margin-bottom: 12.2em;
+        margin: 7.6em 0 12.2em;
+        // margin-top: 7.6em;
+        // margin-bottom: 12.2em;
         position: relative;
 
         .box-tech-icons {
