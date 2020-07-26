@@ -3,6 +3,7 @@ $(document).ready(function () {
     $("#lightgallery1, #lightgallery2, #lightgallery3, #lightgallery4, #lightgallery5").lightGallery();
 
     hamburgerMenu();
+    closeMenu();
 })
 
 function hamburgerMenu() {
@@ -13,5 +14,12 @@ function hamburgerMenu() {
         } else {
             $("#topBar").removeClass("ON")
         }
+    })
+}
+
+function closeMenu() {
+    $('#btn-contact').on('click', function () {
+        $("#topBar").removeClass("ON")
+        $("#hamburgermenu .bar").removeClass("active")
     })
 }
