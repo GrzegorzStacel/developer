@@ -962,7 +962,7 @@ header {
         height: 45em;
     }
 
-    &.tech-gradient{
+    &.tech-gradient {
         height: 22em;
     }
 }
@@ -1444,55 +1444,36 @@ footer {
             rgba(0, 0, 0, 0) 80%);
 }
 
-.tech-ico {
+.tech-container {
+    border-bottom: 2px solid #f8f8f9;
     position: relative;
-    
-    &:after {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 74%;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -61.1px;
-        border-bottom: 2px solid #f8f8f9;
-    }
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    padding-bottom: 3em;
+    margin: 7.2em auto 8.5em;
+    width: 80em;
+    max-width: 1400px;
 
-    .tech-container{
-        position: relative;
+    .tech-cell {
         display: flex;
-        justify-content: center;
-        width: 75%;
-        width: 89em;
-        margin: 7.2em auto 11.7em;
+        flex-direction: column;
+        justify-self: center;
 
-        @media(max-width: 1001px){
-            width: 80em;
+        span {
+            height: 90px;
+            display: flex;
+            justify-content: center;
         }
 
-        .tech-cell {
-            display: flex;
-            flex-direction: column;
-            justify-self: center;
-
-            span{
-                height: 90px;
-                display: flex;
-                justify-content: center;
-            }
-            p{
-                justify-self: flex-end;
-                margin: 0;
-                color: #00318a;
-                text-align: center;
-                padding: 42px 46px 0 46px;
-                letter-spacing: 0.6px;
-                font: 14px/22px "Poppins", sans-serif;
-
-                @media(max-width: 1001px){
-                    padding: 42px 20px 0 20px;
-                }
-            }
+        p {
+            justify-self: flex-end;
+            margin: 0;
+            color: #00318a;
+            text-align: center;
+            letter-spacing: 0.6px;
+            font: 14px/22px "Poppins", sans-serif;
+            padding: 42px 20px 0 20px;
         }
     }
 }
