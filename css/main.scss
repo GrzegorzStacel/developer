@@ -1459,11 +1459,24 @@ footer {
         display: flex;
         flex-direction: column;
         justify-self: center;
+        position: relative;
 
         span {
             height: 90px;
             display: flex;
             justify-content: center;
+
+            .shadow {
+                position: absolute;
+                top: 90px;
+            }
+        }
+
+        .shadow-container{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 90px;
         }
 
         p {

@@ -1839,6 +1839,7 @@ footer p {
       -ms-flex-direction: column;
           flex-direction: column;
   justify-self: center;
+  position: relative;
 }
 
 .tech-container .tech-cell span {
@@ -1849,6 +1850,18 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.tech-container .tech-cell span .shadow {
+  position: absolute;
+  top: 90px;
+}
+
+.tech-container .tech-cell .shadow-container {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 90px;
 }
 
 .tech-container .tech-cell p {
@@ -2139,8 +2152,10 @@ footer p {
   position: absolute;
   left: -1.7em;
   top: 1em;
-  -webkit-box-shadow: 0px 0px 3px 0.5px #c3c3c3, 0px 0px 5px 2.5px #c3c3c3;
-          box-shadow: 0px 0px 3px 0.5px #c3c3c3, 0px 0px 5px 2.5px #c3c3c3;
+  -webkit-box-shadow: 0px 0px 3px 0.5px #c3c3c3,
+ 0px 0px 5px 2.5px #c3c3c3;
+          box-shadow: 0px 0px 3px 0.5px #c3c3c3,
+ 0px 0px 5px 2.5px #c3c3c3;
 }
 
 .main-offer .house-section .offer-box .offer-box-wrapper .offer-info > p .size-medium {
