@@ -301,7 +301,7 @@ header {
                 font-size: 1.4em;
                 color: white;
                 font-weight: 300;
-                line-height: 44px;
+                line-height: 3em;
             }
 
             @media(max-width: 640px) and (orientation: portrait) {
@@ -340,7 +340,7 @@ header {
                     font-weight: 400;
                 }
             }
-
+            
             &.cd-address {
                 @media(max-width: 640px) and (orientation: portrait) {
                     display: flex;
@@ -432,16 +432,9 @@ header {
     height: calc(100vh - 96px);
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
     justify-content: center;
 
-    @media(max-width: 1100px) {
-        font-size: 1.29vh;
-    }
 
-    @media(max-width: 880px) {
-        font-size: 1.16vh;
-    }
 
     @media(max-width: 980px) and (orientation: portrait) {
         height: calc(100vh - 85px);
@@ -456,26 +449,14 @@ header {
         font-size: 0.95vh;
     }
 
-    @media(max-width: 700px) {
-        font-size: 0.85vh;
-    }
-
     @media(max-width: 640px) and (orientation: portrait) {
         margin: 0;
         background-size: 155vw 60%;
     }
 
-    @media(max-width: 580px) {
-        font-size: 0.75vh;
-    }
-
-    @media(max-width: 380px) {
-        font-size: 0.56vh;
-    }
-
-    @media(min-width: 1024px) and (min-height: 1366px){
-        font-size: 0.99vh;
-    }
+    // @media(min-width: 1024px) and (min-height: 1366px){
+    //     font-size: 0.99vh;
+    // }
 
     >div {
         z-index: 1;
@@ -490,42 +471,25 @@ header {
             margin-bottom: 0.3em;
             padding-right: 0.61em;
             line-height: 1.2em;
-            letter-spacing: -4px;
-            font-weight: normal;
+            letter-spacing: -0.03em;
+            font-weight: 700;
         }
 
         .box-blue {
             background: rgba(21, 35, 56, .6);
-            height: 6.9em;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-end;
-            flex-direction: column;
-
+            padding: 1em 3em 1em 3em;
+            white-space: nowrap;
+            font-weight: 300;
+            font-size: 1.4em;
             @media(max-width: 980px) and (orientation: portrait) {
-                height: 11.5em;
-                margin-right: 6.2em;
+                margin-right: 3em;
             }
 
-            span {
-                padding: .5em 2.2em .5em 0em;
-                font-size: 1.3em;
-                font-weight: 300;
-
                 @media(max-width: 980px) and (orientation: portrait) {
-                    font-size: 2.2em;
+                    font-size: 2em;
                     text-align: right;
                 }
 
-                &:nth-child(1) {
-                    padding-bottom: 0;
-                }
-
-                &:nth-child(2) {
-                    padding-top: 0;
-                }
-            }
         }
 
         .box-yellow {
@@ -533,17 +497,28 @@ header {
             color: #162132;
             font-weight: 600;
             display: inline-block;
-            padding: 0.62em 2.4em 0.62em 2.64em;
+            padding: 0.62em 3em 0.62em;
             font-size: 1.3em;
 
             @media(max-width: 980px) and (orientation: portrait) {
                 padding: 0.8em 2.8em 0.8em 2.8em;
-                font-size: 2.1em;
-                margin-right: 2.95em;
+                font-size: 2em;
+                margin-right: 3em;
             }
 
-            @media(max-width: 460px) {
-                font-size: 1.9em;
+            @media(max-width: 640px) and (orientation: portrait) {
+                background: none;
+                width: 90%;    
+                color: #ffc300;
+                margin: 0 auto;
+                padding: 1em 0;
+                text-align: center;
+                border-top: #ffc30040 1px solid;
+                border-bottom: #ffc30040 1px solid;
+                font-size: 3vw;
+                position: fixed;
+                bottom: 25vh;
+                left: 5%;
             }
         }
     }
@@ -553,16 +528,13 @@ header {
         margin-top: 9em;
         align-self: center;
 
-        @media(max-width: 1200px) {
-            flex-basis: 52%;
+        @media(max-width: 1366px) {
+            flex-basis: 54%;
+            font-size: 1vw;
         }
 
-        @media(max-width: 1100px) {
-            margin-top: 16em;
-        }
-
-        @media(max-width: 950px) {
-            flex-basis: 53%;
+        @media(orientation: portrait){
+            flex-basis: 55%;
         }
 
         @media(max-width: 980px) and (orientation: portrait) {
@@ -573,15 +545,9 @@ header {
 
         @media(max-width: 640px) and (orientation: portrait) {
             display: flex;
+            flex-basis: 40%;
             flex-direction: column;
-        }
-
-        @media(max-width: 580px) {
-            margin-top: 15em;
-        }
-
-        @media(max-width: 380px) {
-            margin-top: 22em;
+            margin-right: 0;
         }
 
         h1 {
@@ -598,55 +564,14 @@ header {
             @media(max-width: 640px) and (orientation: portrait) {
                 text-align: center;
                 margin: 0;
+                font-size: 10vw;
+                font-weight: 700;
             }
         }
 
         .box-blue {
             @media(max-width: 640px) and (orientation: portrait) {
                 display: none;
-            }
-        }
-
-        .box-yellow {
-            @media(max-width: 640px) and (orientation: portrait) {
-                background: transparent;
-                color: #ffc300;
-                position: fixed;
-                align-self: center;
-                margin: 0;
-                padding: 0;
-                bottom: 18em;
-            }
-
-            @media(max-width: 580px) {
-                bottom: 32vh;
-            }
-
-            @media(max-width: 380px) {
-                font-size: 2.5em;
-            }
-
-            &:after,
-            &:before {
-                @media(max-width: 640px) and (orientation: portrait) {
-                    content: '';
-                    width: 80vw;
-                    @include horizontally-center();
-                }
-            }
-
-            &::before {
-                @media(max-width: 640px) and (orientation: portrait) {
-                    border-top: 1px solid #3a3c26;
-                    top: 3em;
-                }
-            }
-
-            &::after {
-                @media(max-width: 640px) and (orientation: portrait) {
-                    border-bottom: 1px solid #3a3c26;
-                    bottom: 3em;
-                }
             }
         }
 
@@ -670,19 +595,13 @@ header {
     }
 
     .main-right {
-        font-size: 2.8em;
-        letter-spacing: -2px;
-        margin-top: 4.5em;
         align-self: flex-end;
+        margin-bottom: 1em;
 
-        @media(max-width: 1200px) {
-            flex-basis: 48%;
-        }
-
-        @media(max-width: 950px) {
-            align-self: center;
-            margin-top: 7em;
-            flex-basis: 47%;
+        @media(max-width: 1366px) {
+            margin-bottom: 40px;
+            flex-basis: 46%;
+            font-size: 1vw;
         }
 
         @media(max-width: 980px) and (orientation: portrait) {
@@ -695,19 +614,10 @@ header {
             width: 100%;
         }
 
-        @media(max-width: 700px) {
-            padding-top: 6em;
-        }
-
         @media(max-width: 640px) and (orientation: portrait) {
+            flex-basis: 60%;
             z-index: 0;
-            flex-basis: 75%;
             padding-top: 0;
-            align-self: stretch;
-        }
-
-        @media(max-height: 700px) and (max-width: 700px) {
-            padding-top: 0em;
         }
 
         @media(min-width: 1024px) and (min-height: 1366px){
@@ -717,79 +627,59 @@ header {
 
         .main-right-container {
             @media(max-width: 980px) and (orientation: portrait) {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                align-items: center;
-                width: 80%;
-                margin: 0 auto;
-                position: relative;
+                text-align: center;
+                width: 90%;
+                margin: 0 5%;
+                position: absolute;
+                bottom: 20em;
             }
 
             @media(max-width: 640px) and (orientation: portrait) {
-                position: fixed;
-                top: 17em;
-                top: 40%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                right: 0;
-                left: 0;
-                font-size: 3.8vw;
+                width: 90%;
+                margin: 0 5%;
+                bottom:auto;
+                top:25em
             }
 
             p {
-                padding-left: 3.46em;
+                font-size: 2.7em;
+                display: block;
+                padding-left: 3.2em;
                 line-height: 1.72em;
                 margin: 0;
-                bottom: 0.2em;
                 position: relative;
+                font-weight: 700;
+                text-shadow: 0 0 60px #000,
+                 0 0 100px #000;
 
-                @media(max-width: 880px) {
-                    padding-left: 2.46em;
-                }
 
                 @media(max-width: 980px) and (orientation: portrait) {
-                    font-size: 1.1em;
-                    font-weight: 600;
-                    padding-left: 1.7em;
+                    display: inline-block;
+                    padding-left: 0.5em;
+                    margin:0 1em 0 0.5em;
+                    letter-spacing: 0;
+                    font-size: 3.6em;
                 }
 
                 @media(max-width: 640px) and (orientation: portrait) {
                     letter-spacing: -0.01em;
-                    font-size: 1.2em;
+                    font-size: 3.6em;
+                    bottom: 30vh
                 }
 
                 &::before {
                     content: '';
                     left: 2.53em;
                     @include perpendicularly-center();
-                    width: 0.14em;
-                    height: 0.14em;
+                    width: 0.2em;
+                    height: 0.2em;
                     background: white;
-
-                    @media(max-width: 880px) {
-                        left: 1.53em;
-                    }
+                    border-radius: 100%;
 
                     @media(max-width: 980px) and (orientation: portrait) {
-                        left: 1em;
-                        border-radius: 40px;
+                        left: -0.4em;
                         width: 0.23em;
                         height: 0.23em;
-                    }
-                }
-
-                &:nth-child(1),
-                &:nth-child(4) {
-                    @media(max-width: 640px) and (orientation: portrait) {
-                        padding-left: 0em;
-                    }
-
-                    &::before {
-                        @media(max-width: 640px) and (orientation: portrait) {
-                            left: -0.8em;
-                        }
                     }
                 }
             }
@@ -798,7 +688,7 @@ header {
                 @media(max-width: 980px) and (orientation: portrait) {
                     content: '';
                     border-bottom: 1px solid #535f6e;
-                    bottom: -1.2em;
+                    bottom: -4em;
                     margin-top: 0.5em;
                     @include horizontally-center();
                     opacity: 0.4;
@@ -810,23 +700,6 @@ header {
                 }
             }
         }
-
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 1.34em;
-            background: rgba(black, 0.4);
-            box-shadow: 0 0 2.01em 1.8em rgba(black, 0.4);
-            border-radius: 40px;
-            width: 8.5em;
-            height: 6.2em;
-            z-index: -1;
-            left: 2.24em;
-
-            @media(max-width: 980px) and (orientation: portrait) {
-                display: none;
-            }
-        }
     }
 
     #topBar {
@@ -835,13 +708,7 @@ header {
         padding-bottom: 5.19em;
 
         @media(max-width: 1100px) {
-            padding-top: 4em;
-            padding-bottom: 9em;
-        }
-
-        @media(max-width: 880px) {
-            padding-top: 1em;
-            padding-bottom: 12em;
+            padding-bottom: 12vh;
         }
 
         @media(max-width: 980px) and (orientation: portrait) {
@@ -854,7 +721,7 @@ header {
             box-shadow: 0 6vw 7vw -2vw rgba(0, 0, 0, 0.8);
             font-size: 2.4vw;
             transition: .3s;
-            transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-105%, 0, 0);
 
             &.ON {
                 transform: translate3d(0, 0, 0);
