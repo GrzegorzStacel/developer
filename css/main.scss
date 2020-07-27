@@ -961,13 +961,17 @@ header {
     @media(max-width:640px) and (orientation:portrait) {
         height: 45em;
     }
+
+    &.tech-gradient{
+        height: 22em;
+    }
 }
 
 .title {
     color: #49515c;
     font: 400 4.9em "Muli", sans-serif;
     margin: 0 0 0.7em 3em;
-    padding: 1.97em 0 0 0.6em;
+    padding: 1.77em 0 0 0.6em;
     position: relative;
     z-index: 1;
 
@@ -1056,7 +1060,7 @@ header {
                 bottom: 5em;
             }
 
-            @media (max-width:640px) and (orientation:portrait){
+            @media (max-width:640px) and (orientation:portrait) {
                 background: #49515c;
                 border: none;
                 position: relative;
@@ -1440,90 +1444,63 @@ footer {
             rgba(0, 0, 0, 0) 80%);
 }
 
+.tech-ico {
+    position: relative;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 74%;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -61.1px;
+        border-bottom: 2px solid #f8f8f9;
+    }
+
+    .tech-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 75%;
+        width: 89em;
+        margin: 7.2em auto 11.7em;
+
+        @media(max-width: 1001px){
+            width: 80em;
+        }
+
+        .tech-cell {
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+
+            span{
+                height: 90px;
+                display: flex;
+                justify-content: center;
+            }
+            p{
+                justify-self: flex-end;
+                margin: 0;
+                color: #00318a;
+                text-align: center;
+                padding: 42px 46px 0 46px;
+                letter-spacing: 0.6px;
+                font: 14px/22px "Poppins", sans-serif;
+
+                @media(max-width: 1001px){
+                    padding: 42px 20px 0 20px;
+                }
+            }
+        }
+    }
+}
+
+
 .main-tech {
     padding-bottom: 108px;
     background: white;
-
-    .container-tech-icons {
-        display: flex;
-        justify-content: center;
-        margin: 7.6em 0 12.2em;
-        // margin-top: 7.6em;
-        // margin-bottom: 12.2em;
-        position: relative;
-
-        .box-tech-icons {
-            width: 28.9em;
-            width: 25%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .img-tech-icons {
-            width: 100%;
-            position: relative;
-            height: 76px;
-
-            &:after {
-                @include shadow-ellipse();
-                // content: '';
-                // box-shadow: 
-                //     0px 30px 6.7px 0.2px black,
-                //     0px 30px 18px 0.5px black;
-                // position: absolute;
-                // width: 30px;
-            }
-
-            &.fix-shadows:after {
-                @include shadow-ellipse();
-                left: 31%;
-            }
-
-            &.fix-shadows:before {
-                @include shadow-ellipse();
-                left: 61%;
-            }
-
-            img {
-                @include center-center();
-            }
-        }
-
-        .paragraph-tech-icons {
-            width: 100%;
-
-            p {
-                padding: 20px;
-                margin: 0;
-                font-size: 14px;
-                letter-spacing: 0.6px;
-                line-height: 22px;
-                //Problem z kolorem i grubością czcionki
-                //Kolor pobrany z projektu różni się u mnie sporo (to ten aktywny poniżej)
-                //Z palety wybrałem coś podobnego aleee...
-                color: #00318a;
-                // color: #345185;
-                //mam wrażenie, że czcionka 400 jest jakby za cienka a 500 jakby za gruba...
-                // font-weight: 500;
-                //Ewentualnie rozwiązać problem nadając mu trochę cienia...
-                // text-shadow: 0.2px 0.4px #345185; 
-                font-family: "Poppins";
-                text-align: center;
-                padding: 42px 46px 0 46px;
-            }
-        }
-
-        &:after {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 77%;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: -61.1px;
-            border-bottom: 2px solid #f8f8f9;
-        }
-    }
 
     .container-tech-describe {
         position: relative;
