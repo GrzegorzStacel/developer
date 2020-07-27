@@ -1466,12 +1466,6 @@ footer {
 
             &:after {
                 @include shadow-ellipse();
-                // content: '';
-                // box-shadow: 
-                //     0px 30px 6.7px 0.2px black,
-                //     0px 30px 18px 0.5px black;
-                // position: absolute;
-                // width: 30px;
             }
 
             &.fix-shadows:after {
