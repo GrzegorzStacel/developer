@@ -1472,7 +1472,7 @@ footer {
             }
         }
 
-        .shadow-container{
+        .shadow-container {
             position: absolute;
             width: 100%;
             text-align: center;
@@ -1491,83 +1491,81 @@ footer {
     }
 }
 
+.tech-ico {
+    padding-bottom: 3.7em;
+
+}
 
 .main-tech {
     padding-bottom: 108px;
-    background: white;
+    position: relative;
+    display: flex;
 
-    .container-tech-describe {
+    img {
+        width: 65%;
+    }
+
+    .tech-desc {
+        display: inline-block;
+        position: absolute;
+        left: 17.5em;
+        top: 1.2em;
+        width: 40%;
+
+        letter-spacing: 1.11px;
+        width: 55.2em;
+        font-size: 1.02em;
+        line-height: 1.85em;
+        color: #49515c;
+    }
+
+    .big-label {
+        width: 35%;
+        background: #49515c;
         position: relative;
-        display: flex;
 
-        img {
-            width: 65%;
-        }
-
-        .tech-desc {
-            display: inline-block;
+        p {
+            transform: rotate(-90deg);
             position: absolute;
-            left: 17.5em;
-            top: 1.2em;
-            width: 40%;
+            font-family: "Poppins";
+            color: white;
+            margin: 0;
 
-            letter-spacing: 1.11px;
-            width: 55.2em;
-            font-size: 1.02em;
-            line-height: 1.85em;
-            color: #49515c;
-        }
-
-        .big-label {
-            width: 35%;
-            background: #49515c;
-            position: relative;
-
-            p {
-                transform: rotate(-90deg);
-                position: absolute;
-                // top: 0;
-                // right: 0;
-                font-family: "Poppins";
-                color: white;
-                margin: 0;
-
-                &:nth-child(1) {
-                    font-size: 4em;
-                    opacity: 0.1;
-                    font-weight: bold;
-                    top: 4.55em;
-                    right: 4.5em;
-                }
-
-                &:nth-child(2) {
-                    font-size: 8.3em;
-                    letter-spacing: 0.04em;
-                    font-weight: bold;
-                    bottom: 0.62em;
-                    left: -0.2em;
-                    opacity: 0.15;
-                }
-
-                &:nth-child(3) {
-                    font-size: 3.06em;
-                    letter-spacing: -0.02em;
-                    line-height: 1.7em;
-                    top: 3.8em;
-                    left: -0.3em;
-                    opacity: 0.03;
-                }
-
-                &:nth-child(4) {
-                    font-size: 9.35em;
-                    opacity: 0.06;
-                    letter-spacing: -0.05em;
-                    top: 0.75em;
-                    left: 0.18em;
-                    font-weight: bold;
-                }
-
+            &:nth-child(1) {
+                font-size: 3.3vw;
+                opacity: 0.1;
+                font-weight: bold;
+                top: 4.55em;
+                right: 4.5em;
             }
+
+            &:nth-child(2) {
+                font-size: 6.9vw;
+                letter-spacing: 0.04em;
+                font-weight: bold;
+                bottom: 0.62em;
+                left: -0.2em;
+                opacity: 0.15;
+            }
+
+            &:nth-child(3) {
+                font-size: 2.5vw;
+                letter-spacing: -0.02em;
+                line-height: 1.7em;
+                top: 3.8em;
+                left: -0.3em;
+                opacity: 0.03;
+            }
+
+            &:nth-child(4) {
+                font-size: 7.8vw;
+                opacity: 0.06;
+                letter-spacing: -0.05em;
+                top: 0.75em;
+                left: 0.18em;
+                font-weight: bold;
+            }
+
         }
     }
 }

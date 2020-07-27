@@ -1874,23 +1874,23 @@ footer p {
   padding: 42px 20px 0 20px;
 }
 
-.main-tech {
-  padding-bottom: 108px;
-  background: white;
+.tech-ico {
+  padding-bottom: 3.7em;
 }
 
-.main-tech .container-tech-describe {
+.main-tech {
+  padding-bottom: 108px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-tech .container-tech-describe img {
+.main-tech img {
   width: 65%;
 }
 
-.main-tech .container-tech-describe .tech-desc {
+.main-tech .tech-desc {
   display: inline-block;
   position: absolute;
   left: 17.5em;
@@ -1903,13 +1903,13 @@ footer p {
   color: #49515c;
 }
 
-.main-tech .container-tech-describe .big-label {
+.main-tech .big-label {
   width: 35%;
   background: #49515c;
   position: relative;
 }
 
-.main-tech .container-tech-describe .big-label p {
+.main-tech .big-label p {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: absolute;
@@ -1918,16 +1918,16 @@ footer p {
   margin: 0;
 }
 
-.main-tech .container-tech-describe .big-label p:nth-child(1) {
-  font-size: 4em;
+.main-tech .big-label p:nth-child(1) {
+  font-size: 3.3vw;
   opacity: 0.1;
   font-weight: bold;
   top: 4.55em;
   right: 4.5em;
 }
 
-.main-tech .container-tech-describe .big-label p:nth-child(2) {
-  font-size: 8.3em;
+.main-tech .big-label p:nth-child(2) {
+  font-size: 6.9vw;
   letter-spacing: 0.04em;
   font-weight: bold;
   bottom: 0.62em;
@@ -1935,8 +1935,8 @@ footer p {
   opacity: 0.15;
 }
 
-.main-tech .container-tech-describe .big-label p:nth-child(3) {
-  font-size: 3.06em;
+.main-tech .big-label p:nth-child(3) {
+  font-size: 2.5vw;
   letter-spacing: -0.02em;
   line-height: 1.7em;
   top: 3.8em;
@@ -1944,8 +1944,8 @@ footer p {
   opacity: 0.03;
 }
 
-.main-tech .container-tech-describe .big-label p:nth-child(4) {
-  font-size: 9.35em;
+.main-tech .big-label p:nth-child(4) {
+  font-size: 7.8vw;
   opacity: 0.06;
   letter-spacing: -0.05em;
   top: 0.75em;
@@ -2152,10 +2152,8 @@ footer p {
   position: absolute;
   left: -1.7em;
   top: 1em;
-  -webkit-box-shadow: 0px 0px 3px 0.5px #c3c3c3,
- 0px 0px 5px 2.5px #c3c3c3;
-          box-shadow: 0px 0px 3px 0.5px #c3c3c3,
- 0px 0px 5px 2.5px #c3c3c3;
+  -webkit-box-shadow: 0px 0px 3px 0.5px #c3c3c3, 0px 0px 5px 2.5px #c3c3c3;
+          box-shadow: 0px 0px 3px 0.5px #c3c3c3, 0px 0px 5px 2.5px #c3c3c3;
 }
 
 .main-offer .house-section .offer-box .offer-box-wrapper .offer-info > p .size-medium {
