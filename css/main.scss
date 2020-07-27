@@ -1432,27 +1432,14 @@ footer {
     }
 }
 
-@mixin shadow-ellipse {
-    content: '';
-    position: absolute;
-    bottom: -28%;
-    left: 45%;
-    height: 10px;
-    width: 45px;
-    background: radial-gradient(ellipse at center,
-            rgba(0, 0, 0, 0.35) 0%,
-            rgba(0, 0, 0, 0) 80%);
-}
-
 .tech-container {
     border-bottom: 2px solid #f8f8f9;
     position: relative;
     display: flex;
     justify-content: center;
-    width: 75%;
     padding-bottom: 3em;
     margin: 7.2em auto 8.5em;
-    width: 80em;
+    width: 79.5em;
     max-width: 1400px;
 
     .tech-cell {
@@ -1467,7 +1454,7 @@ footer {
             justify-content: center;
 
             img {
-               height: 100%;
+                height: 100%;
             }
         }
 
@@ -1489,21 +1476,25 @@ footer {
     display: flex;
 
     img {
-        width: 65%;
+        width: 100%;
+        display: block;
     }
 
     .tech-desc {
         display: inline-block;
-        position: absolute;
-        left: 17.5em;
-        top: 1.2em;
-        width: 40%;
+        width: 65%;
+        text-align: right;
 
-        letter-spacing: 1.11px;
-        width: 55.2em;
-        font-size: 1.02em;
-        line-height: 1.85em;
-        color: #49515c;
+        p {
+            letter-spacing: 1.11px;
+            display: inline-block;
+            width: 55.2em;
+            font-size: 1.02em;
+            line-height: 1.85em;
+            color: #49515c;
+            margin-right: 3.3em;
+            text-align: left;
+        }
     }
 
     .big-label {
@@ -1517,40 +1508,39 @@ footer {
             font-family: "Poppins";
             color: white;
             margin: 0;
+            font-weight: bold;
 
             &:nth-child(1) {
                 font-size: 3.3vw;
                 opacity: 0.1;
-                font-weight: bold;
-                top: 4.55em;
-                right: 4.5em;
+                top: 36%;
+                left: -39%;
             }
 
             &:nth-child(2) {
                 font-size: 6.9vw;
                 letter-spacing: 0.04em;
-                font-weight: bold;
-                bottom: 0.62em;
-                left: -0.2em;
                 opacity: 0.15;
+                bottom: 12%;
+                left: -4%;
             }
 
             &:nth-child(3) {
                 font-size: 2.5vw;
                 letter-spacing: -0.02em;
                 line-height: 1.7em;
-                top: 3.8em;
-                left: -0.3em;
+                font-weight: normal;
                 opacity: 0.03;
+                top: 23%;
+                left: -2%;
             }
 
             &:nth-child(4) {
                 font-size: 7.8vw;
-                opacity: 0.06;
                 letter-spacing: -0.05em;
-                top: 0.75em;
-                left: 0.18em;
-                font-weight: bold;
+                opacity: 0.06;
+                top: 14%;
+                left: 4%;
             }
         }
     }
