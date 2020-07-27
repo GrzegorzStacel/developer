@@ -1466,17 +1466,9 @@ footer {
             display: flex;
             justify-content: center;
 
-            .shadow {
-                position: absolute;
-                top: 90px;
+            img {
+               height: 100%;
             }
-        }
-
-        .shadow-container {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-            top: 90px;
         }
 
         p {

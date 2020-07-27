@@ -1852,16 +1852,8 @@ footer p {
           justify-content: center;
 }
 
-.tech-container .tech-cell span .shadow {
-  position: absolute;
-  top: 90px;
-}
-
-.tech-container .tech-cell .shadow-container {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 90px;
+.tech-container .tech-cell span img {
+  height: 100%;
 }
 
 .tech-container .tech-cell p {
