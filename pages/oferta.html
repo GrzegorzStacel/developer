@@ -7,24 +7,23 @@
     <title>Budowy modułowe</title>
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700,800&display=swap">
 
+
     <!-- Main styles -->
     <link rel="stylesheet" href="../css/main.css">
+
 
     <!-- Librares -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous" defer></script>
 
-    <!-- Gallery -->
-    <link type="text/css" rel="stylesheet" href="../css/lightgallery.min.css" />
-
     <!-- Gallery scripts -->
     <script src="../js/lightgallery.min.js" defer></script>
-
+    
     <!-- Main scripts -->
     <script src="../js/main.js" defer></script>
 
@@ -32,54 +31,48 @@
 
 <body>
     <header>
-        <a href="../index.html"><img src="../img/logo.svg" alt="logo budowy modułowe"></a>
+        <div id="hamburgermenu">
+            <div class="bar"></div>
+        </div>
+        <a class="logo logo-cp" href="../index.html"><img src="../img/logo.svg" alt="logo"></a>
 
-        <nav>
-            <!-- <a href="#" class="hide-desktop">
-                <img src="../img/" alt="toggle menu" class="menu" id="menu">
-            </a> -->
-
-            <ul class="show-desktop hide-mobile" id="nav">
-                <!-- <li id="exit" class="exit-btn hide-desktop">
-                    <img src="img/hamburger/exit.svg" alt="exit menu">
-                </li> -->
-                <li>
-                    <a href="o-firmie.html">o firmie</a>
-                </li>
-                <li>
-                    <a href="technologia.html">technologia</a>
-                </li>
-                <li>
-                    <a href="oferta.html">oferta</a>
-                </li>
-                <li>
-                    <a href="#contact-label">kontakt</a>
-                </li>
-            </ul>
+        <nav id="topBar" class="nav-top">
+            <a href="o-firmie.html">o firmie</a>
+            <a href="technologia.html">technologia</a>
+            <a href="oferta.html">oferta</a>
+            <a href="#contact-label" id="btn-contact">kontakt</a>
         </nav>
 
         <div class="nav-belt">
-            <div itemscope itemtype="http://schema.org/LocalBusiness">
+            <div class="nav-belt-container" itemscope itemtype="http://schema.org/LocalBusiness">
 
-                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="postalCode">42-202</span>
-                    <span itemprop="addressLocality">Częstochowa</span>, ul <span itemprop="streetAddress">Żyzna
-                        11/o</span>
+                <p class="container-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span>
+                        <span itemprop="postalCode">42-202</span>
+                        <span itemprop="addressLocality">Częstochowa</span>
+                        <span class="edit-coma">,</span>
+                    </span>
+                    <span>
+                        ul <span itemprop="streetAddress">Żyzna
+                            11/o</span>
+                    </span>
                 </p>
 
-                <p>
-                    email:
-                    <a href="mailto:biuro@budowymodulowe.pl" itemprop="email">
-                        <span class="bold">biuro@budowymodulowe.pl</span>
-                    </a>
-                </p>
+                <div class="container-data">
+                    <p class="email-p">
+                        email:
+                        <a href="mailto:biuro@budowymodulowe.pl" itemprop="email">
+                            <span class="bold">biuro@budowymodulowe.pl</span>
+                        </a>
+                    </p>
 
-                <p>
-                    tel:
-                    <a href="tel:+48-504-424-836" itemprop="telephone">
-                        <span class="bold">504 424 836</span>
-                    </a>
-                </p>
+                    <p class="phone-p">
+                        tel:
+                        <a href="tel:+48-504-424-836" itemprop="telephone">
+                            <span class="bold">504 424 836</span>
+                        </a>
+                    </p>
+                </div>
 
             </div>
         </div>
