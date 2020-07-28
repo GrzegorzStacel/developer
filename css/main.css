@@ -2184,14 +2184,50 @@ footer p {
   padding-left: 1em;
 }
 
+.main-offer .offer-title.offer-title-left {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: auto;
+  padding-right: 7em;
+  padding-bottom: 0.6em;
+  width: 85.7%;
+}
+
+.main-offer .offer-title.offer-title-left::after {
+  right: auto;
+  top: 2.7em;
+  left: -5em;
+}
+
+.main-offer .offer-title.offer-title-left p {
+  margin-top: 3.4em;
+  text-align: right;
+}
+
+.main-offer .offer-title.offer-title-left h2 {
+  padding-left: 0.7em;
+  padding: 0;
+  margin: 0;
+}
+
+.main-offer .offer-title.offer-title-left .offer-yellow-dev-beam p {
+  margin-top: 0;
+  text-align: center;
+  line-height: 3.2em;
+}
+
 .main-offer .offer-yellow-dev-beam {
   background: #ffd200;
   margin: 0;
   padding: 0;
   position: absolute;
-  left: 10.5em;
-  bottom: -2em;
-  width: 24.5em;
+  bottom: -1.5em;
+  width: 24.4em;
   height: 3.2em;
 }
 
@@ -2202,7 +2238,7 @@ footer p {
   font-weight: 600;
   text-align: center;
   width: 100%;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   left: -0.8em;
   top: 0.7em;
 }
@@ -2221,11 +2257,6 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 35.5%;
-}
-
-.main-offer .offer-info .details {
-  -ms-flex-negative: 10;
-      flex-shrink: 10;
 }
 
 .main-offer .offer-info .details h3 {
@@ -2288,8 +2319,6 @@ footer p {
   letter-spacing: 0.1em;
   position: relative;
   z-index: 1;
-  -ms-flex-negative: 10;
-      flex-shrink: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2368,6 +2397,7 @@ footer p {
 
 .main-offer .offer-info .offer-price .price-to-m2 {
   font: italic 400 1.4em/1.2em "Poppins", sans-serif;
+  color: #ffd200;
   letter-spacing: 0.05em;
   padding: 0.3em 0px 0 1.8em;
   margin: 0;
@@ -2409,7 +2439,6 @@ footer p {
   width: 20em;
   height: 3em;
   background: rgba(0, 0, 0, 0.15);
-  text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -2432,19 +2461,14 @@ footer p {
 }
 
 .main-offer .offer-photo .gallery-btn p {
-  padding-top: 0.5em;
+  font: 500 1.1em/3em "Poppins", sans-serif;
+  letter-spacing: 1px;
+  color: #ffffff;
   padding-left: 1.5em;
   margin: 0;
-  font-size: 1.1em;
-  letter-spacing: 1px;
-  line-height: 1.7em;
-  color: #ffffff;
-  font-weight: 500;
-  font-family: "Poppins";
 }
 
 .main-offer .offer-photo .gallery-btn span {
-  display: block;
   position: absolute;
   width: 1.7em;
   height: 1.5em;
@@ -2475,16 +2499,10 @@ footer p {
   position: relative;
   z-index: 0;
   padding-bottom: 9.2em;
+  margin-bottom: 7.6em;
 }
 
-.house .offer-background {
-  position: absolute;
-  top: 10em;
-  width: 100%;
-  height: 70%;
-}
-
-.house .offer-box {
+.offer-section .offer-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2492,5 +2510,71 @@ footer p {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   position: relative;
+}
+
+#HOUSE {
+  padding-bottom: 10.7em;
+  margin-bottom: 6.1em;
+}
+
+#HOUSE .offer-background {
+  position: absolute;
+  top: 10em;
+  width: 100%;
+  height: 70%;
+}
+
+#ROW {
+  padding-bottom: 13.6em;
+}
+
+#ROW .row-background-top {
+  position: absolute;
+  top: 8.8em;
+  right: -0.3em;
+  width: 73.8%;
+  height: 49%;
+  -webkit-transform: rotateX(-28deg);
+          transform: rotateX(-28deg);
+  z-index: 0;
+}
+
+#ROW .row-background-bottom {
+  position: absolute;
+  z-index: -1;
+  bottom: 0em;
+  left: -2.6em;
+  height: 69%;
+  width: 84.1%;
+}
+
+#ROW .offer-box {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding-top: 3.7em;
+}
+
+#ROW .offer-info {
+  padding-left: 1em;
+}
+
+#ROW .price {
+  padding-bottom: 2.5em;
+  padding-right: 3.6em;
+}
+
+#ROW .price-medium {
+  margin: 0;
+  padding: 1.6em 0 0.4em 0;
+}
+
+#ROW .price-to-m2 {
+  padding: 0;
+}
+
+#ROW .shadow-mirror {
+  bottom: -8.1em;
 }
 /*# sourceMappingURL=main.css.map */
