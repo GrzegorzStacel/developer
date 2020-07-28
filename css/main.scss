@@ -1702,7 +1702,7 @@ footer {
         }
 
         .main-yellow-box {
-            margin-top: 4.2em;
+            margin: 4.2em 0 14em 0;
             height: 10em;
             background: #ffc300;
             text-align: center;
@@ -1726,55 +1726,47 @@ footer {
 
     .offer-title {
         position: relative;
-        margin-top: 10em;
         z-index: 1;
+        border-bottom: 1px solid #d6dbdf;
+        width: 90%;
+        height: 16.5em;
+        color: #3b5165;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: space-between;
+
+        &.offer-title-left {
+            // flex-direction: row-reverse;
+        }
 
         &::after {
             content: '';
             border-right: 2.9em solid #555555;
             height: 11em;
             position: absolute;
-            right: 4.7em;
-            top: 6.3em;
+            right: -6em;
+            top: 2.1em;
             opacity: 0.34;
-        }
-
-        &:before {
-            content: '';
-            border-bottom: 1px solid #d6dbdf;
-            width: 91%;
-            position: absolute;
-            bottom: -5.3em;
-            left: 0;
-        }
-
-        h2 {
-            font-family: "Poppins", sans-serif;
-            font-size: 7em;
-            color: #3b5165;
-            display: inline-block;
-            font-weight: 300;
-            margin-right: 0;
-            position: absolute;
-            top: -0.2em;
-            right: 1.5em;
         }
 
         p {
             display: inline-block;
             width: 52.1em;
-            margin-left: 5em;
-            font-size: 1.32em;
             letter-spacing: 0.08em;
-            color: #3b5165;
-            font-family: "Poppins", sans-serif;
-            margin-top: 6.4em;
-            margin-left: 3.9em;
+            align-self: center;
+            padding-left: 3.7em;
+            font-size: 1.32em;
+        }
+
+        h2 {
+            font-weight: 300;
+            font-size: 7em;
+            margin: 0;
+            padding-left: 1em;
         }
     }
 
-    .developer-beam {
-        //TODO
+    .offer-yellow-dev-beam {
         background: #ffd200;
         margin: 0;
         padding: 0;
