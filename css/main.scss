@@ -1,3 +1,4 @@
+
 @mixin perpendicularly-center {
     position: absolute;
     top: 50%;
@@ -1676,12 +1677,19 @@ footer {
 }
 
 
+// @import "oferta";
+
+
+
 .main-offer {
+    font-size: 0.834vw;
 
     .main-offer-header {
         position: relative;
         display: flex;
         flex-direction: column;
+
+        flex-basis: 100%;
 
         p {
             font-size: 1.2em;
@@ -1702,7 +1710,7 @@ footer {
         }
 
         .main-yellow-box {
-            margin-top: 4.2em;
+            margin: 4.2em 0 14em 0;
             height: 10em;
             background: #ffc300;
             text-align: center;
@@ -1726,55 +1734,49 @@ footer {
 
     .offer-title {
         position: relative;
-        margin-top: 10em;
         z-index: 1;
+        border-bottom: 1px solid #d6dbdf;
+        width: 90%;
+        height: 16.5em;
+        color: #3b5165;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 6.8em;
+
+        // &.offer-title-left {
+        // flex-direction: row-reverse;
+        // }
 
         &::after {
             content: '';
             border-right: 2.9em solid #555555;
             height: 11em;
             position: absolute;
-            right: 4.7em;
-            top: 6.3em;
+            right: -6em;
+            top: 2.1em;
             opacity: 0.34;
-        }
-
-        &:before {
-            content: '';
-            border-bottom: 1px solid #d6dbdf;
-            width: 91%;
-            position: absolute;
-            bottom: -5.3em;
-            left: 0;
-        }
-
-        h2 {
-            font-family: "Poppins", sans-serif;
-            font-size: 7em;
-            color: #3b5165;
-            display: inline-block;
-            font-weight: 300;
-            margin-right: 0;
-            position: absolute;
-            top: -0.2em;
-            right: 1.5em;
         }
 
         p {
             display: inline-block;
             width: 52.1em;
-            margin-left: 5em;
-            font-size: 1.32em;
             letter-spacing: 0.08em;
-            color: #3b5165;
-            font-family: "Poppins", sans-serif;
-            margin-top: 6.4em;
-            margin-left: 3.9em;
+            align-self: center;
+            padding-left: 3.7em;
+            font-size: 1.32em;
+        }
+
+        h2 {
+            font-weight: 300;
+            font-size: 7em;
+            margin: 0;
+            padding-left: 1em;
         }
     }
 
-    .developer-beam {
-        //TODO
+    .offer-yellow-dev-beam {
         background: #ffd200;
         margin: 0;
         padding: 0;
@@ -1797,757 +1799,1030 @@ footer {
         }
     }
 
-    .house-section {
-        .offer-box {
-            background-image: url(../img/offer/house_background.jpg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            position: relative;
-            top: -2.5em;
-            z-index: 0;
+    .offer-info {
+        color: #3b5165;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35.5%;
 
-            .offer-box-wrapper {
-                display: flex;
-                justify-content: space-between;
-                padding-top: 14.7em;
-                padding-bottom: 9.2em;
-                border-bottom: 1px solid #e7e8e5;
-
-                .offer-info {
-                    color: #3b5165;
-                    margin-left: 5.2em;
-
-                    h3 {
-                        font-size: 1.3em;
-                        letter-spacing: 0.11em;
-                        line-height: 1.1em;
-                        font-weight: 500;
-                        font-family: "Poppins";
-                        margin-top: 0.4em;
-                        margin-bottom: 1.6em;
-                        margin-left: 1.5em;
-                    }
-
-                    >p {
-                        letter-spacing: 0.1em;
-                        line-height: 1.49em;
-                        font-family: "Poppins";
-                        position: relative;
-                        margin-left: 2.1em;
-                        margin-bottom: 1.2em;
-
-                        &.p-edit::after {
-                            top: 0.7em;
-                        }
-
-                        &.p-edit::before {
-                            top: 1.3em;
-                        }
-
-                        &::after {
-                            content: '';
-                            width: 0.8em;
-                            height: 0.8em;
-                            display: block;
-                            background: #000;
-                            position: absolute;
-                            left: -2.1em;
-                            top: 0.4em;
-                        }
-
-                        &::before {
-                            content: '';
-                            width: 0.7em;
-                            height: 0.7em;
-                            background: #c3c3c3;
-                            position: absolute;
-                            left: -1.7em;
-                            top: 1em;
-                            box-shadow:
-                                0px 0px 3px 0.5px #c3c3c3,
-                                0px 0px 5px 2.5px #c3c3c3;
-
-                        }
-
-                        .size-medium {
-                            font-size: 1.7em;
-                            position: relative;
-                            top: -0.2em;
-                            vertical-align: middle;
-
-                            .number-square {
-                                font-size: 0.6em;
-                            }
-                        }
-                    }
-
-                    .offer-box-price {
-                        background: #3b5165;
-                        margin-top: 8.8em;
-                        width: 39.8em;
-                        color: #c5cbd1;
-                        color: rgba(white, .7);
-                        letter-spacing: 0.1em;
-                        line-height: 1.2em;
-                        font-family: "Poppins", sans-serif;
-                        padding-top: 1.2em;
-                        padding-left: 3em;
-                        position: relative;
-                        z-index: 1;
-
-                        .price,
-                        .time {
-                            display: inline-block;
-                            letter-spacing: 0em;
-                        }
-
-                        .time {
-                            border: 1px solid #7f7e42;
-                            vertical-align: top;
-                            margin-top: 2.7em;
-                            margin-left: 1.9em;
-                            width: 17.6em;
-                            padding-bottom: 3.4em;
-
-                            .time-all {
-                                letter-spacing: 0;
-                                padding-top: 0.2em;
-                                font-style: italic;
-                            }
-
-                            p {
-                                font-size: 1.1em;
-                                line-height: 1.5em;
-                                color: #ffffff;
-                                font-weight: 400;
-                                font-family: "Poppins";
-                                text-align: center;
-                                margin-bottom: -1.5em;
-
-                            }
-
-                            .time-important {
-                                color: #ffd200;
-                                font-size: 1.5em;
-                                letter-spacing: 0.01em;
-                                font-style: italic;
-
-                            }
-                        }
-
-                        .instalation {
-                            margin-top: 3.4em;
-                        }
-
-                        p {
-                            margin-bottom: 0.8em;
-                        }
-
-                        .price-medium {
-                            font-size: 1.5em;
-                            line-height: 1.1em;
-                            color: #ffd200;
-                            font-family: "Poppins";
-                            margin-top: 0.9em;
-                            font-weight: normal;
-                            letter-spacing: 0.11em;
-                            padding-left: 0.5em;
-                            font-style: italic;
-
-                            .price-big {
-                                font-weight: 700;
-                                font-size: 2.5em;
-                            }
-
-                            .price-separate {
-                                padding-left: 4.1em;
-                                font-weight: 300;
-                            }
-                        }
-
-                        .price-to-m2 {
-                            font-size: 1.4em;
-                            line-height: 1.2em;
-                            color: #ffd200;
-                            font-weight: 400;
-                            font-family: "Poppins", sans-serif;
-                            font-style: italic;
-                            letter-spacing: 0.05em;
-                            padding: 0.3em 0px 0.8em 1.8em;
-
-                            sup {
-                                font-size: 0.7em;
-                            }
-                        }
-                    }
-                }
-
-                .offer-photo {
-                    position: relative;
-                    left: -4.8em;
-                    width: 51.5%;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        display: block;
-                    }
-
-                    .shadow-mirror {
-                        width: 105%;
-                        height: 30%;
-                        z-index: -1;
-                        position: absolute;
-                        bottom: -9.5em;
-                        left: -1.2em;
-                    }
-
-
-                    .gallery-btn {
-                        border: 1px solid white;
-                        border: 1px solid rgba(white, .6);
-                        padding: 1em;
-                        display: inline-block;
-                        position: absolute;
-                        right: 1.3em;
-                        bottom: 1.5em;
-                        width: 20em;
-                        height: 3em;
-                        background: rgba(black, .15);
-                        text-decoration: none;
-                        transition: 0.3s;
-
-                        &:hover {
-                            background: rgba(black, 0.6);
-                            transition: 0.2s;
-                            border: 1px solid #ffd200;
-
-                            p {
-                                color: #ffd200;
-                            }
-
-                            span {
-                                border: 1px solid #ffd200;
-                                border: 1px solid rgba(#ffd200, 0.7);
-                                background: rgba(black, 1);
-                            }
-                        }
-
-                        p {
-                            padding-top: 0.5em;
-                            padding-left: 1.5em;
-                            margin: 0;
-                            font-size: 1.1em;
-                            letter-spacing: 1px;
-                            line-height: 1.7em;
-                            color: #ffffff;
-                            font-weight: 500;
-                            font-family: "Poppins";
-                        }
-
-                        span {
-                            display: block;
-                            position: absolute;
-                            width: 1.7em;
-                            height: 1.5em;
-                            background: #6d6c6e;
-                            border: 1px solid white;
-                            border: 1px solid rgba(white, 0.7);
-                            box-shadow: 5px 5px 5px -3px rgba(black, 0.6);
-                            // box-shadow: 3px 5.196px 3px rgba(0,0,0,0.67);
-                        }
-
-                        span:nth-child(1) {
-                            right: 2.6em;
-                            bottom: 2.5em;
-                        }
-
-                        span:nth-child(2) {
-                            right: 1.3em;
-                            bottom: 1.9em;
-                        }
-
-                        span:nth-child(3) {
-                            right: 2.2em;
-                            bottom: 1.3em;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .row-section {
-        overflow: hidden;
-
-        .offer-title {
-            margin-top: 3em;
-
-            .developer-beam p {
-                margin-top: 0em;
-                margin-left: 0em;
-                text-align: center;
-                width: 100%;
-                left: 0;
-            }
-
-            h2 {
-                position: relative;
-                top: auto;
-                right: auto;
-                margin-left: 1.4em;
-                margin-top: 0.4em;
+        .details {
+            flex-shrink: 10;
+            h3 {
+                font: 500 1.3em/1.1em "Poppins", sans-serif;
+                letter-spacing: 0.11em;
+                margin: 0.4em 0 1.6em 1.5em;
             }
 
             p {
-                position: absolute;
-                margin-top: 5.7em;
-                margin-left: 5.4em;
-                text-align: right;
-                width: 44.1em;
-            }
+                letter-spacing: 0.1em;
+                line-height: 1.49em;
+                position: relative;
+                margin: 0 0 1.2em 2.1em;
 
+                &.p-edit {
+                    &::after {
+                        top: 0.7em;
+                    }
 
-
-            &::after {
-                left: 5.1em;
-                top: 5.2em;
-                right: auto;
-            }
-
-            &:before {
-                bottom: -0.6em;
-                right: 0;
-                left: auto;
-            }
-
-        }
-
-        .offer-box {
-            background-image: none;
-            padding-bottom: 4.2em;
-
-            .img-background-top,
-            .img-background-bottom {
-                position: absolute;
-                top: -4.6em;
-                right: -1.3em;
-                width: 73.8%;
-                height: 53%;
-                transform: rotateX(24deg);
-                z-index: 0;
-            }
-
-            .img-background-bottom {
-                top: auto;
-                right: auto;
-                bottom: 1.1em;
-                height: 93%;
-                width: 81.4%;
-                z-index: -1;
-            }
-
-            .offer-box-wrapper {
-                padding-bottom: 12.9em;
-
-                .offer-photo {
-                    left: 5.1em;
-                    top: -1em;
-
-                    .shadow-mirror {
-                        // opacity: 0.9;
-                        bottom: -8.3em;
+                    &::before {
+                        top: 1.3em;
                     }
                 }
 
-                .offer-info {
+                &::after {
+                    content: '';
+                    width: 0.8em;
+                    height: 0.8em;
+                    background: #000;
+                    position: absolute;
+                    left: -2.1em;
+                    top: 0.4em;
+                }
+
+                &::before {
+                    content: '';
+                    width: 0.7em;
+                    height: 0.7em;
+                    background: #c3c3c3;
+                    position: absolute;
+                    left: -1.7em;
+                    top: 1em;
+                    box-shadow:
+                        0px 0px 3px 0.5px #c3c3c3,
+                        0px 0px 5px 2.5px #c3c3c3;
+                }
+
+                .size-medium {
+                    font-size: 1.7em;
                     position: relative;
-                    left: -15.2em;
+                    top: -0.2em;
+                    vertical-align: middle;
 
-                    >p {
-                        margin-left: -1.3em;
-                        top: -2em;
-                    }
-
-                    .size-medium .number-square {
-                        font-size: 0.5em;
-                    }
-
-                    .offer-box-price {
-                        position: absolute;
-                        left: -3.4em;
-                        margin-top: 10.7em;
-                        width: 39em;
-                        height: 14.4em;
-                        padding-top: 0;
-                        padding-left: 2.5em;
-
-                        .price {
-                            padding-top: 1.1em;
-                            letter-spacing: 0.1em;
-                        }
-
-                        .price-medium {
-                            padding-left: 0em;
-                            padding-top: 1.6em;
-                            margin-bottom: 0.4em;
-                        }
-
-                        .price-to-m2 {
-                            padding-left: 0em;
-                            padding-top: 0em;
-                            margin-top: 0em;
-                        }
-
-                        .time {
-                            margin-top: 1.6em;
-                            margin-left: 2.6em;
-                        }
+                    .number-square {
+                        font-size: 0.6em;
                     }
                 }
             }
         }
-    }
 
-    .multi-section {
-        border-bottom: 1px solid #e7e8e5;
+        .offer-price {
+            background: #3b5165;
+            color: #c5cbd1;
+            letter-spacing: 0.1em;
+            position: relative;
+            z-index: 1;
+            flex-shrink: 10;
+            display: flex;
+            align-items: center;
 
-        .offer-title {
+            .price {
+                justify-self: flex-start;
+                padding: 2em;
 
-            &::after {
-                height: 16.9em;
-                top: 6.5em;
+                p{
+                    margin-top: 0;
+                }
             }
 
-            &:before {
-                bottom: -3.3em;
-            }
-
-            h2 {
-                margin-right: -0.2em;
-                top: -0.16em;
-            }
-
-            .developer-beam {
-                left: auto;
-                width: 30.3em;
-                right: 10.6em;
-                bottom: -4.8em;
+            .time {
+                border: 1px solid #7f7e42;
+            padding: 1.3em 3em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
 
                 p {
-                    margin-top: 0.7em;
-                    width: 100%;
-                    margin-left: 3.3em;
+                    font: 400 1.1em/1.5em "Poppins", sans-serif;
+                    color: #ffffff;
+                    text-align: center;
+                    margin: 0;
+                    letter-spacing: 0;
+                }
+
+                .time-important {
+                    color: #ffd200;
+                    font-size: 1.5em;
+                    letter-spacing: 0.01em;
+                    font-style: italic;
                 }
             }
 
-            p {
-                margin-top: 11em;
-                width: 50.7em;
+            .instalation {
+                margin-top: 1.3em;
+
+                p{
+                    line-height: 1.3em;
+                }
             }
 
-        }
+            .price-medium {
+                font: italic normal 1.5em/1.1em "Poppins", sans-serif;
+                color: #ffd200;
+                margin-top: 0.9em;
+                letter-spacing: 0.11em;
+                padding-left: 0.5em;
 
-        .offer-box {
-            background-image: none;
-            top: 12.5em;
-            z-index: 0;
-
-            .img-background {
-                position: absolute;
-                width: 65.3%;
-                z-index: -1;
-            }
-
-            .offer-box-wrapper {
-                padding-top: 1.7em;
-                padding-bottom: 28.1em;
-                margin-bottom: 0em;
-                border-bottom: none;
-
-                .offer-info {
-                    .offer-box-price {
-                        margin-top: 14.9em;
-                        width: 39.5em;
-                        height: 13.1em;
-                        padding-left: 1.8em;
-
-                        .price-medium {
-                            margin-top: 0.8em;
-                            padding-left: 0.2em;
-                            line-height: 1.5em;
-
-                            .price-big {
-                                font-weight: 700;
-                            }
-                        }
-
-                        p {
-                            padding-left: 3.9em;
-                            padding-top: 0.6em;
-                            letter-spacing: 0.1em;
-                        }
-
-                        .time {
-                            margin-top: 0em;
-
-                            p {
-                                padding-left: 0em;
-                                padding-top: 1.2em;
-                                letter-spacing: 0em;
-                                line-height: 0em;
-                            }
-
-                            .instalation {
-                                margin-top: 4.2em;
-                                padding-bottom: 1em;
-                            }
-                        }
-                    }
+                .price-big {
+                    font-weight: 700;
+                    font-size: 2.5em;
                 }
 
-                .offer-photo {
-                    top: 0.8em;
-                    height: 100%;
+                .price-separate {
+                    padding-left: 4.1em;
+                    font-weight: 300;
+                }
+            }
 
-                    img {
-                        height: 98%;
-                    }
+            .price-to-m2 {
+                font: italic 400 1.4em/1.2em "Poppins", sans-serif;
+                letter-spacing: 0.05em;
+                padding: 0.3em 0px 0 1.8em;
+                margin: 0;
 
-                    .shadow-mirror {
-                        z-index: -1;
-                        bottom: -11em;
-                    }
+                sup {
+                    font-size: 0.7em;
                 }
             }
         }
     }
 
-    .garage-section {
+    .offer-photo {
         position: relative;
+        width: 51%;
 
-        .offer-title {
-            height: 25.3em;
-            margin-top: 3.9em;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-            h2 {
-                padding-top: 1.1em;
-                line-height: 0.8;
+        .shadow-mirror {
+            width: 105%;
+            height: 30%;
+            z-index: -1;
+            position: absolute;
+            bottom: -10.8em;
+            left: -1.2em;
+        }
+
+
+        .gallery-btn {
+            border: 1px solid white;
+            border: 1px solid rgba(white, .6);
+            padding: 1em;
+            display: inline-block;
+            position: absolute;
+            right: 1.3em;
+            bottom: 1.5em;
+            width: 20em;
+            height: 3em;
+            background: rgba(black, .15);
+            text-decoration: none;
+            transition: 0.3s;
+
+            &:hover {
+                background: rgba(black, 0.6);
+                transition: 0.2s;
+                border: 1px solid #ffd200;
+
+                p {
+                    color: #ffd200;
+                }
 
                 span {
-                    font-size: 0.6em;
-                    letter-spacing: 0.04em;
+                    border: 1px solid #ffd200;
+                    border: 1px solid rgba(#ffd200, 0.7);
+                    background: rgba(black, 1);
                 }
             }
 
             p {
-                width: 31.8em;
+                padding-top: 0.5em;
+                padding-left: 1.5em;
                 margin: 0;
-                right: 4.3em;
-                bottom: 3.2em;
+                font-size: 1.1em;
+                letter-spacing: 1px;
+                line-height: 1.7em;
+                color: #ffffff;
+                font-weight: 500;
+                font-family: "Poppins";
             }
 
-            &::after {
-                top: 10.9em;
-            }
-
-            &::before {
-                bottom: 0em;
-                width: 91.5%;
-            }
-
-        }
-
-        .offer-box {
-            background: none;
-            padding-bottom: 6.2em;
-
-            .img-background {
+            span {
+                display: block;
                 position: absolute;
-                left: 21.1em;
-                top: 0.5em;
-                z-index: -1;
-                width: 81.2%;
+                width: 1.7em;
+                height: 1.5em;
+                background: #6d6c6e;
+                border: 1px solid white;
+                border: 1px solid rgba(white, 0.7);
+                box-shadow: 5px 5px 5px -3px rgba(black, 0.6);
             }
 
-            .offer-box-wrapper {
-                padding-bottom: 12.4em;
-
-                .offer-photo {
-                    top: -1.5em;
-
-                    .shadow-mirror {
-                        z-index: -1;
-                        bottom: -14em;
-                        height: 36.4%;
-                    }
-                }
-
-                .offer-info {
-                    top: -0.5em;
-                    left: -6.2em;
-
-                    >p {
-                        .size-medium {
-                            font-weight: 500;
-                        }
-                    }
-
-                    .offer-box-price {
-                        margin-top: 0em;
-
-                        .price {
-                            padding-top: 0.1em;
-                            padding-left: 0.9em;
-                        }
-
-                        .price-medium {
-                            margin-bottom: 0em;
-                            padding-top: 0.5em;
-                            line-height: 1.8em;
-
-                            .price-separate {
-                                padding-left: 0.3em;
-                            }
-
-                            sup {
-                                font-size: 0.6em;
-                            }
-                        }
-
-                        &.box-price-second {
-                            bottom: 0.8em;
-                        }
-                    }
-                }
+            span:nth-child(1) {
+                right: 2.6em;
+                bottom: 2.5em;
             }
-        }
-    }
 
-    .office-section {
-        padding-bottom: 6.5em;
-        border-bottom: 1px solid #e7e8e5;
-
-
-        .offer-title {
-            margin-top: 7.9em;
-
-            h2 {
+            span:nth-child(2) {
                 right: 1.3em;
+                bottom: 1.9em;
             }
 
-            p {
-                margin-top: 8em;
-                width: 53.1em;
-                line-height: 1.7;
-            }
-
-            &::after {
-                top: 6.6em;
-            }
-
-            &::before {
-                bottom: -3.2em;
-                width: 91.5%;
-            }
-        }
-
-        .offer-box {
-            background: none;
-            top: -2.9em;
-
-            .img-background {
-                position: absolute;
-                width: 86.4%;
-                bottom: -9.4em;
-                transform: skewX(-2deg);
-                z-index: -1;
-            }
-
-            .offer-box-wrapper {
-                padding-top: 10.7em;
-                border-bottom: none;
-
-                .offer-info {
-                    position: relative;
-                    top: 1.3em;
-
-                    .offer-box-price {
-                        margin-top: 3.7em;
-                        width: 38.4em;
-                        padding-top: 0em;
-                        padding-bottom: 1.8em;
-
-                        p {
-                            line-height: 2.7em;
-                            padding-left: 0.8em;
-                            letter-spacing: 0.1em;
-                        }
-
-                        .price-medium {
-                            padding-left: 0.1em;
-                            line-height: 1.6em;
-                            margin-top: 0em;
-                            margin-bottom: 0.2em;
-
-                            .price-separate {
-                                letter-spacing: 0.05em;
-                                padding-left: 0.1em;
-                            }
-                        }
-
-                        .price-info {
-                            margin: 0;
-                            line-height: 0.5em;
-                            letter-spacing: 0.06em;
-                            color: #ffffff;
-                            font-weight: 600;
-                        }
-
-                        .price-second {
-                            margin-top: 2.3em;
-
-                            p {
-                                padding-left: 0em;
-                                letter-spacing: 0em;
-                            }
-                        }
-
-                        .time {
-                            position: absolute;
-                            right: 1.5em;
-                            top: 2.5em;
-
-                            p {
-                                padding-left: 0;
-                            }
-                        }
-                    }
-                }
-
-                .offer-photo {
-                    top: 2.3em;
-                    display: table;
-
-                    img {
-                        height: auto;
-                    }
-
-                    .shadow-mirror {
-                        bottom: -12.2em;
-                    }
-                }
-
+            span:nth-child(3) {
+                right: 2.2em;
+                bottom: 1.3em;
             }
         }
     }
 }
 
-section .container-offer {
-    padding-top: 16em;
-    padding-bottom: 6em;
-
-    &:before {
-        display: none;
-    }
+.offer-section {
+    border-bottom: 1px solid #e7e8e5;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 9.2em;
 }
+
+.house {
+    // position: relative;
+    // z-index: 0;
+    // padding-bottom: 9.2em;
+
+    .offer-background {
+        position: absolute;
+        top: 10em;
+        width: 100%;
+        height: 70%;
+    }
+
+    .offer-box {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+}
+
+
+// }
+
+// }
+
+// .house-section {
+//     .offer-box {
+//         background-image: url(../img/offer/house_background.jpg);
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//         position: relative;
+//         top: -2.5em;
+//         z-index: 0;
+
+//         .offer-box-wrapper {
+//             display: flex;
+//             justify-content: space-between;
+//             padding-top: 9.3em;
+//             padding-bottom: 9.2em;
+//             border-bottom: 1px solid #e7e8e5;
+
+//             .offer-info {
+//                 color: #3b5165;
+//                 margin-left: 5.2em;
+
+//                 h3 {
+//                     font-size: 1.3em;
+//                     letter-spacing: 0.11em;
+//                     line-height: 1.1em;
+//                     font-weight: 500;
+//                     font-family: "Poppins";
+//                     margin-top: 0.4em;
+//                     margin-bottom: 1.6em;
+//                     margin-left: 1.5em;
+//                 }
+
+//                 >p {
+//                     letter-spacing: 0.1em;
+//                     line-height: 1.49em;
+//                     font-family: "Poppins";
+//                     position: relative;
+//                     margin-left: 2.1em;
+//                     margin-bottom: 1.2em;
+
+//                     &.p-edit::after {
+//                         top: 0.7em;
+//                     }
+
+//                     &.p-edit::before {
+//                         top: 1.3em;
+//                     }
+
+//                     &::after {
+//                         content: '';
+//                         width: 0.8em;
+//                         height: 0.8em;
+//                         display: block;
+//                         background: #000;
+//                         position: absolute;
+//                         left: -2.1em;
+//                         top: 0.4em;
+//                     }
+
+//                     &::before {
+//                         content: '';
+//                         width: 0.7em;
+//                         height: 0.7em;
+//                         background: #c3c3c3;
+//                         position: absolute;
+//                         left: -1.7em;
+//                         top: 1em;
+//                         box-shadow:
+//                             0px 0px 3px 0.5px #c3c3c3,
+//                             0px 0px 5px 2.5px #c3c3c3;
+
+//                     }
+
+//                     .size-medium {
+//                         font-size: 1.7em;
+//                         position: relative;
+//                         top: -0.2em;
+//                         vertical-align: middle;
+
+//                         .number-square {
+//                             font-size: 0.6em;
+//                         }
+//                     }
+//                 }
+
+//                 .offer-box-price {
+//                     background: #3b5165;
+//                     margin-top: 8.8em;
+//                     width: 39.8em;
+//                     color: #c5cbd1;
+//                     color: rgba(white, .7);
+//                     letter-spacing: 0.1em;
+//                     line-height: 1.2em;
+//                     font-family: "Poppins", sans-serif;
+//                     padding-top: 1.2em;
+//                     padding-left: 3em;
+//                     position: relative;
+//                     z-index: 1;
+
+//                     .price,
+//                     .time {
+//                         display: inline-block;
+//                         letter-spacing: 0em;
+//                     }
+
+//                     .time {
+//                         border: 1px solid #7f7e42;
+//                         vertical-align: top;
+//                         margin-top: 2.7em;
+//                         margin-left: 1.9em;
+//                         width: 17.6em;
+//                         padding-bottom: 3.4em;
+
+//                         .time-all {
+//                             letter-spacing: 0;
+//                             padding-top: 0.2em;
+//                             font-style: italic;
+//                         }
+
+//                         p {
+//                             font-size: 1.1em;
+//                             line-height: 1.5em;
+//                             color: #ffffff;
+//                             font-weight: 400;
+//                             font-family: "Poppins";
+//                             text-align: center;
+//                             margin-bottom: -1.5em;
+
+//                         }
+
+//                         .time-important {
+//                             color: #ffd200;
+//                             font-size: 1.5em;
+//                             letter-spacing: 0.01em;
+//                             font-style: italic;
+
+//                         }
+//                     }
+
+//                     .instalation {
+//                         margin-top: 3.4em;
+//                     }
+
+//                     p {
+//                         margin-bottom: 0.8em;
+//                     }
+
+//                     .price-medium {
+//                         font-size: 1.5em;
+//                         line-height: 1.1em;
+//                         color: #ffd200;
+//                         font-family: "Poppins";
+//                         margin-top: 0.9em;
+//                         font-weight: normal;
+//                         letter-spacing: 0.11em;
+//                         padding-left: 0.5em;
+//                         font-style: italic;
+
+//                         .price-big {
+//                             font-weight: 700;
+//                             font-size: 2.5em;
+//                         }
+
+//                         .price-separate {
+//                             padding-left: 4.1em;
+//                             font-weight: 300;
+//                         }
+//                     }
+
+//                     .price-to-m2 {
+//                         font-size: 1.4em;
+//                         line-height: 1.2em;
+//                         color: #ffd200;
+//                         font-weight: 400;
+//                         font-family: "Poppins", sans-serif;
+//                         font-style: italic;
+//                         letter-spacing: 0.05em;
+//                         padding: 0.3em 0px 0.8em 1.8em;
+
+//                         sup {
+//                             font-size: 0.7em;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .offer-photo {
+//                 position: relative;
+//                 left: -4.8em;
+//                 width: 51.5%;
+
+//                 img {
+//                     width: 100%;
+//                     height: 100%;
+//                     display: block;
+//                 }
+
+//                 .shadow-mirror {
+//                     width: 105%;
+//                     height: 30%;
+//                     z-index: -1;
+//                     position: absolute;
+//                     bottom: -9.5em;
+//                     left: -1.2em;
+//                 }
+
+
+//                 .gallery-btn {
+//                     border: 1px solid white;
+//                     border: 1px solid rgba(white, .6);
+//                     padding: 1em;
+//                     display: inline-block;
+//                     position: absolute;
+//                     right: 1.3em;
+//                     bottom: 1.5em;
+//                     width: 20em;
+//                     height: 3em;
+//                     background: rgba(black, .15);
+//                     text-decoration: none;
+//                     transition: 0.3s;
+
+//                     &:hover {
+//                         background: rgba(black, 0.6);
+//                         transition: 0.2s;
+//                         border: 1px solid #ffd200;
+
+//                         p {
+//                             color: #ffd200;
+//                         }
+
+//                         span {
+//                             border: 1px solid #ffd200;
+//                             border: 1px solid rgba(#ffd200, 0.7);
+//                             background: rgba(black, 1);
+//                         }
+//                     }
+
+//                     p {
+//                         padding-top: 0.5em;
+//                         padding-left: 1.5em;
+//                         margin: 0;
+//                         font-size: 1.1em;
+//                         letter-spacing: 1px;
+//                         line-height: 1.7em;
+//                         color: #ffffff;
+//                         font-weight: 500;
+//                         font-family: "Poppins";
+//                     }
+
+//                     span {
+//                         display: block;
+//                         position: absolute;
+//                         width: 1.7em;
+//                         height: 1.5em;
+//                         background: #6d6c6e;
+//                         border: 1px solid white;
+//                         border: 1px solid rgba(white, 0.7);
+//                         box-shadow: 5px 5px 5px -3px rgba(black, 0.6);
+//                         // box-shadow: 3px 5.196px 3px rgba(0,0,0,0.67);
+//                     }
+
+//                     span:nth-child(1) {
+//                         right: 2.6em;
+//                         bottom: 2.5em;
+//                     }
+
+//                     span:nth-child(2) {
+//                         right: 1.3em;
+//                         bottom: 1.9em;
+//                     }
+
+//                     span:nth-child(3) {
+//                         right: 2.2em;
+//                         bottom: 1.3em;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .row-section {
+//     overflow: hidden;
+
+//     .offer-title {
+//         // margin-top: 3em;
+
+//         // .offer-yellow-dev-beam{ p {
+//         //     margin-top: 0em;
+//         //     margin-left: 0em;
+//         //     text-align: center;
+//         //     width: 100%;
+//         //     left: 0;
+//         // }
+
+//         // h2 {
+//         //     position: relative;
+//         //     top: auto;
+//         //     right: auto;
+//         //     margin-left: 1.4em;
+//         //     margin-top: 0.4em;
+//         // }
+
+//         // p {
+//         //     position: absolute;
+//         //     margin-top: 5.7em;
+//         //     margin-left: 5.4em;
+//         //     text-align: right;
+//         //     width: 44.1em;
+//         // }
+
+
+
+//         &::after {
+//             left: 5.1em;
+//             top: 5.2em;
+//             right: auto;
+//         }
+
+//         // &:before {
+//         //     bottom: -0.6em;
+//         //     right: 0;
+//         //     left: auto;
+//         // }
+
+//     }
+
+//     .offer-box {
+//         background-image: none;
+//         padding-bottom: 4.2em;
+
+//         .img-background-top,
+//         .img-background-bottom {
+//             position: absolute;
+//             top: -4.6em;
+//             right: -1.3em;
+//             width: 73.8%;
+//             height: 53%;
+//             transform: rotateX(24deg);
+//             z-index: 0;
+//         }
+
+//         .img-background-bottom {
+//             top: auto;
+//             right: auto;
+//             bottom: 1.1em;
+//             height: 93%;
+//             width: 81.4%;
+//             z-index: -1;
+//         }
+
+//         .offer-box-wrapper {
+//             padding-bottom: 12.9em;
+
+//             .offer-photo {
+//                 left: 5.1em;
+//                 top: -1em;
+
+//                 .shadow-mirror {
+//                     // opacity: 0.9;
+//                     bottom: -8.3em;
+//                 }
+//             }
+
+//             .offer-info {
+//                 position: relative;
+//                 left: -15.2em;
+
+//                 >p {
+//                     margin-left: -1.3em;
+//                     top: -2em;
+//                 }
+
+//                 .size-medium .number-square {
+//                     font-size: 0.5em;
+//                 }
+
+//                 .offer-box-price {
+//                     position: absolute;
+//                     left: -3.4em;
+//                     margin-top: 10.7em;
+//                     width: 39em;
+//                     height: 14.4em;
+//                     padding-top: 0;
+//                     padding-left: 2.5em;
+
+//                     .price {
+//                         padding-top: 1.1em;
+//                         letter-spacing: 0.1em;
+//                     }
+
+//                     .price-medium {
+//                         padding-left: 0em;
+//                         padding-top: 1.6em;
+//                         margin-bottom: 0.4em;
+//                     }
+
+//                     .price-to-m2 {
+//                         padding-left: 0em;
+//                         padding-top: 0em;
+//                         margin-top: 0em;
+//                     }
+
+//                     .time {
+//                         margin-top: 1.6em;
+//                         margin-left: 2.6em;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .multi-section {
+//     border-bottom: 1px solid #e7e8e5;
+
+//     .offer-title {
+
+//         &::after {
+//             height: 16.9em;
+//             top: 6.5em;
+//         }
+
+//         &:before {
+//             bottom: -3.3em;
+//         }
+
+//         h2 {
+//             margin-right: -0.2em;
+//             top: -0.16em;
+//         }
+
+//         .offer-yellow-dev-beam {
+//             left: auto;
+//             width: 30.3em;
+//             right: 10.6em;
+//             bottom: -4.8em;
+
+//             p {
+//                 margin-top: 0.7em;
+//                 width: 100%;
+//                 margin-left: 3.3em;
+//             }
+//         }
+
+//         p {
+//             margin-top: 11em;
+//             width: 50.7em;
+//         }
+
+//     }
+
+//     .offer-box {
+//         background-image: none;
+//         top: 12.5em;
+//         z-index: 0;
+
+//         .img-background {
+//             position: absolute;
+//             width: 65.3%;
+//             z-index: -1;
+//         }
+
+//         .offer-box-wrapper {
+//             padding-top: 1.7em;
+//             padding-bottom: 28.1em;
+//             margin-bottom: 0em;
+//             border-bottom: none;
+
+//             .offer-info {
+//                 .offer-box-price {
+//                     margin-top: 14.9em;
+//                     width: 39.5em;
+//                     height: 13.1em;
+//                     padding-left: 1.8em;
+
+//                     .price-medium {
+//                         margin-top: 0.8em;
+//                         padding-left: 0.2em;
+//                         line-height: 1.5em;
+
+//                         .price-big {
+//                             font-weight: 700;
+//                         }
+//                     }
+
+//                     p {
+//                         padding-left: 3.9em;
+//                         padding-top: 0.6em;
+//                         letter-spacing: 0.1em;
+//                     }
+
+//                     .time {
+//                         margin-top: 0em;
+
+//                         p {
+//                             padding-left: 0em;
+//                             padding-top: 1.2em;
+//                             letter-spacing: 0em;
+//                             line-height: 0em;
+//                         }
+
+//                         .instalation {
+//                             margin-top: 4.2em;
+//                             padding-bottom: 1em;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .offer-photo {
+//                 top: 0.8em;
+//                 height: 100%;
+
+//                 img {
+//                     height: 98%;
+//                 }
+
+//                 .shadow-mirror {
+//                     z-index: -1;
+//                     bottom: -11em;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .garage-section {
+//     position: relative;
+
+//     .offer-title {
+//         height: 25.3em;
+//         margin-top: 3.9em;
+
+//         h2 {
+//             padding-top: 1.1em;
+//             line-height: 0.8;
+
+//             span {
+//                 font-size: 0.6em;
+//                 letter-spacing: 0.04em;
+//             }
+//         }
+
+//         p {
+//             width: 31.8em;
+//             margin: 0;
+//             right: 4.3em;
+//             bottom: 3.2em;
+//         }
+
+//         &::after {
+//             top: 10.9em;
+//         }
+
+//         &::before {
+//             bottom: 0em;
+//             width: 91.5%;
+//         }
+
+//     }
+
+//     .offer-box {
+//         background: none;
+//         padding-bottom: 6.2em;
+
+//         .img-background {
+//             position: absolute;
+//             left: 21.1em;
+//             top: 0.5em;
+//             z-index: -1;
+//             width: 81.2%;
+//         }
+
+//         .offer-box-wrapper {
+//             padding-bottom: 12.4em;
+
+//             .offer-photo {
+//                 top: -1.5em;
+
+//                 .shadow-mirror {
+//                     z-index: -1;
+//                     bottom: -14em;
+//                     height: 36.4%;
+//                 }
+//             }
+
+//             .offer-info {
+//                 top: -0.5em;
+//                 left: -6.2em;
+
+//                 >p {
+//                     .size-medium {
+//                         font-weight: 500;
+//                     }
+//                 }
+
+//                 .offer-box-price {
+//                     margin-top: 0em;
+
+//                     .price {
+//                         padding-top: 0.1em;
+//                         padding-left: 0.9em;
+//                     }
+
+//                     .price-medium {
+//                         margin-bottom: 0em;
+//                         padding-top: 0.5em;
+//                         line-height: 1.8em;
+
+//                         .price-separate {
+//                             padding-left: 0.3em;
+//                         }
+
+//                         sup {
+//                             font-size: 0.6em;
+//                         }
+//                     }
+
+//                     &.box-price-second {
+//                         bottom: 0.8em;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .office-section {
+//     padding-bottom: 6.5em;
+//     border-bottom: 1px solid #e7e8e5;
+
+
+//     .offer-title {
+//         margin-top: 7.9em;
+
+//         h2 {
+//             right: 1.3em;
+//         }
+
+//         p {
+//             margin-top: 8em;
+//             width: 53.1em;
+//             line-height: 1.7;
+//         }
+
+//         &::after {
+//             top: 6.6em;
+//         }
+
+//         &::before {
+//             bottom: -3.2em;
+//             width: 91.5%;
+//         }
+//     }
+
+//     .offer-box {
+//         background: none;
+//         top: -2.9em;
+
+//         .img-background {
+//             position: absolute;
+//             width: 86.4%;
+//             bottom: -9.4em;
+//             transform: skewX(-2deg);
+//             z-index: -1;
+//         }
+
+//         .offer-box-wrapper {
+//             padding-top: 10.7em;
+//             border-bottom: none;
+
+//             .offer-info {
+//                 position: relative;
+//                 top: 1.3em;
+
+//                 .offer-box-price {
+//                     margin-top: 3.7em;
+//                     width: 38.4em;
+//                     padding-top: 0em;
+//                     padding-bottom: 1.8em;
+
+//                     p {
+//                         line-height: 2.7em;
+//                         padding-left: 0.8em;
+//                         letter-spacing: 0.1em;
+//                     }
+
+//                     .price-medium {
+//                         padding-left: 0.1em;
+//                         line-height: 1.6em;
+//                         margin-top: 0em;
+//                         margin-bottom: 0.2em;
+
+//                         .price-separate {
+//                             letter-spacing: 0.05em;
+//                             padding-left: 0.1em;
+//                         }
+//                     }
+
+//                     .price-info {
+//                         margin: 0;
+//                         line-height: 0.5em;
+//                         letter-spacing: 0.06em;
+//                         color: #ffffff;
+//                         font-weight: 600;
+//                     }
+
+//                     .price-second {
+//                         margin-top: 2.3em;
+
+//                         p {
+//                             padding-left: 0em;
+//                             letter-spacing: 0em;
+//                         }
+//                     }
+
+//                     .time {
+//                         position: absolute;
+//                         right: 1.5em;
+//                         top: 2.5em;
+
+//                         p {
+//                             padding-left: 0;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .offer-photo {
+//                 top: 2.3em;
+//                 display: table;
+
+//                 img {
+//                     height: auto;
+//                 }
+
+//                 .shadow-mirror {
+//                     bottom: -12.2em;
+//                 }
+//             }
+
+//         }
+//     }
+// }
+// // }
+
+// section .container-offer {
+//     padding-top: 16em;
+//     padding-bottom: 6em;
+
+//     &:before {
+//         display: none;
+//     }
+// }
