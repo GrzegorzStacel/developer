@@ -2069,6 +2069,10 @@ footer p {
   font-weight: bold;
 }
 
+.main-offer {
+  font-size: 0.834vw;
+}
+
 .main-offer .main-offer-header {
   position: relative;
   display: -webkit-box;
@@ -2078,6 +2082,8 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .main-offer .main-offer-header p {
@@ -2147,6 +2153,7 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 6.8em;
 }
 
 .main-offer .offer-title::after {
@@ -2200,430 +2207,290 @@ footer p {
   top: 0.7em;
 }
 
-.main-offer .row-section {
-  overflow: hidden;
+.main-offer .offer-info {
+  color: #3b5165;
+  font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35.5%;
 }
 
-.main-offer .row-section .offer-title::after {
-  left: 5.1em;
-  top: 5.2em;
-  right: auto;
+.main-offer .offer-info .details {
+  -ms-flex-negative: 10;
+      flex-shrink: 10;
 }
 
-.main-offer .row-section .offer-box {
-  background-image: none;
-  padding-bottom: 4.2em;
+.main-offer .offer-info .details h3 {
+  font: 500 1.3em/1.1em "Poppins", sans-serif;
+  letter-spacing: 0.11em;
+  margin: 0.4em 0 1.6em 1.5em;
 }
 
-.main-offer .row-section .offer-box .img-background-top,
-.main-offer .row-section .offer-box .img-background-bottom {
-  position: absolute;
-  top: -4.6em;
-  right: -1.3em;
-  width: 73.8%;
-  height: 53%;
-  -webkit-transform: rotateX(24deg);
-          transform: rotateX(24deg);
-  z-index: 0;
-}
-
-.main-offer .row-section .offer-box .img-background-bottom {
-  top: auto;
-  right: auto;
-  bottom: 1.1em;
-  height: 93%;
-  width: 81.4%;
-  z-index: -1;
-}
-
-.main-offer .row-section .offer-box .offer-box-wrapper {
-  padding-bottom: 12.9em;
-}
-
-.main-offer .row-section .offer-box .offer-box-wrapper .offer-photo {
-  left: 5.1em;
-  top: -1em;
-}
-
-.main-offer .row-section .offer-box .offer-box-wrapper .offer-photo .shadow-mirror {
-  bottom: -8.3em;
-}
-
-.main-offer .row-section .offer-box .offer-box-wrapper .offer-info {
-  position: relative;
-  left: -15.2em;
-}
-
-.main-offer .row-section .offer-box .offer-box-wrapper .offer-info > p {
-  margin-left: -1.3em;
-  top: -2em;
-}
-
-.main-offer .row-section .offer-box .offer-box-wrapper .offer-info .size-medium .number-square {
-  font-size: 0.5em;
-}
-
-.main-offer .row-section .offer-box .offer-box-wrapper .offer-info .offer-box-price {
-  position: absolute;
-  left: -3.4em;
-  margin-top: 10.7em;
-  width: 39em;
-  height: 14.4em;
-  padding-top: 0;
-  padding-left: 2.5em;
-}
-
-.main-offer .row-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price {
-  padding-top: 1.1em;
+.main-offer .offer-info .details p {
   letter-spacing: 0.1em;
-}
-
-.main-offer .row-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-medium {
-  padding-left: 0em;
-  padding-top: 1.6em;
-  margin-bottom: 0.4em;
-}
-
-.main-offer .row-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-to-m2 {
-  padding-left: 0em;
-  padding-top: 0em;
-  margin-top: 0em;
-}
-
-.main-offer .row-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .time {
-  margin-top: 1.6em;
-  margin-left: 2.6em;
-}
-
-.main-offer .multi-section {
-  border-bottom: 1px solid #e7e8e5;
-}
-
-.main-offer .multi-section .offer-title::after {
-  height: 16.9em;
-  top: 6.5em;
-}
-
-.main-offer .multi-section .offer-title:before {
-  bottom: -3.3em;
-}
-
-.main-offer .multi-section .offer-title h2 {
-  margin-right: -0.2em;
-  top: -0.16em;
-}
-
-.main-offer .multi-section .offer-title .offer-yellow-dev-beam {
-  left: auto;
-  width: 30.3em;
-  right: 10.6em;
-  bottom: -4.8em;
-}
-
-.main-offer .multi-section .offer-title .offer-yellow-dev-beam p {
-  margin-top: 0.7em;
-  width: 100%;
-  margin-left: 3.3em;
-}
-
-.main-offer .multi-section .offer-title p {
-  margin-top: 11em;
-  width: 50.7em;
-}
-
-.main-offer .multi-section .offer-box {
-  background-image: none;
-  top: 12.5em;
-  z-index: 0;
-}
-
-.main-offer .multi-section .offer-box .img-background {
-  position: absolute;
-  width: 65.3%;
-  z-index: -1;
-}
-
-.main-offer .multi-section .offer-box .offer-box-wrapper {
-  padding-top: 1.7em;
-  padding-bottom: 28.1em;
-  margin-bottom: 0em;
-  border-bottom: none;
-}
-
-.main-offer .multi-section .offer-box .offer-box-wrapper .offer-info .offer-box-price {
-  margin-top: 14.9em;
-  width: 39.5em;
-  height: 13.1em;
-  padding-left: 1.8em;
-}
-
-.main-offer .multi-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-medium {
-  margin-top: 0.8em;
-  padding-left: 0.2em;
-  line-height: 1.5em;
-}
-
-.main-offer .multi-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-medium .price-big {
-  font-weight: 700;
-}
-
-.main-offer .multi-section .offer-box .offer-box-wrapper .offer-info .offer-box-price p {
-  padding-left: 3.9em;
-  padding-top: 0.6em;
-  letter-spacing: 0.1em;
-}
-
-.main-offer .multi-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .time {
-  margin-top: 0em;
-}
-
-.main-offer .multi-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .time p {
-  padding-left: 0em;
-  padding-top: 1.2em;
-  letter-spacing: 0em;
-  line-height: 0em;
-}
-
-.main-offer .multi-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .time .instalation {
-  margin-top: 4.2em;
-  padding-bottom: 1em;
-}
-
-.main-offer .multi-section .offer-box .offer-box-wrapper .offer-photo {
-  top: 0.8em;
-  height: 100%;
-}
-
-.main-offer .multi-section .offer-box .offer-box-wrapper .offer-photo img {
-  height: 98%;
-}
-
-.main-offer .multi-section .offer-box .offer-box-wrapper .offer-photo .shadow-mirror {
-  z-index: -1;
-  bottom: -11em;
-}
-
-.main-offer .garage-section {
+  line-height: 1.49em;
   position: relative;
+  margin: 0 0 1.2em 2.1em;
 }
 
-.main-offer .garage-section .offer-title {
-  height: 25.3em;
-  margin-top: 3.9em;
+.main-offer .offer-info .details p.p-edit::after {
+  top: 0.7em;
 }
 
-.main-offer .garage-section .offer-title h2 {
-  padding-top: 1.1em;
-  line-height: 0.8;
-}
-
-.main-offer .garage-section .offer-title h2 span {
-  font-size: 0.6em;
-  letter-spacing: 0.04em;
-}
-
-.main-offer .garage-section .offer-title p {
-  width: 31.8em;
-  margin: 0;
-  right: 4.3em;
-  bottom: 3.2em;
-}
-
-.main-offer .garage-section .offer-title::after {
-  top: 10.9em;
-}
-
-.main-offer .garage-section .offer-title::before {
-  bottom: 0em;
-  width: 91.5%;
-}
-
-.main-offer .garage-section .offer-box {
-  background: none;
-  padding-bottom: 6.2em;
-}
-
-.main-offer .garage-section .offer-box .img-background {
-  position: absolute;
-  left: 21.1em;
-  top: 0.5em;
-  z-index: -1;
-  width: 81.2%;
-}
-
-.main-offer .garage-section .offer-box .offer-box-wrapper {
-  padding-bottom: 12.4em;
-}
-
-.main-offer .garage-section .offer-box .offer-box-wrapper .offer-photo {
-  top: -1.5em;
-}
-
-.main-offer .garage-section .offer-box .offer-box-wrapper .offer-photo .shadow-mirror {
-  z-index: -1;
-  bottom: -14em;
-  height: 36.4%;
-}
-
-.main-offer .garage-section .offer-box .offer-box-wrapper .offer-info {
-  top: -0.5em;
-  left: -6.2em;
-}
-
-.main-offer .garage-section .offer-box .offer-box-wrapper .offer-info > p .size-medium {
-  font-weight: 500;
-}
-
-.main-offer .garage-section .offer-box .offer-box-wrapper .offer-info .offer-box-price {
-  margin-top: 0em;
-}
-
-.main-offer .garage-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price {
-  padding-top: 0.1em;
-  padding-left: 0.9em;
-}
-
-.main-offer .garage-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-medium {
-  margin-bottom: 0em;
-  padding-top: 0.5em;
-  line-height: 1.8em;
-}
-
-.main-offer .garage-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-medium .price-separate {
-  padding-left: 0.3em;
-}
-
-.main-offer .garage-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-medium sup {
-  font-size: 0.6em;
-}
-
-.main-offer .garage-section .offer-box .offer-box-wrapper .offer-info .offer-box-price.box-price-second {
-  bottom: 0.8em;
-}
-
-.main-offer .office-section {
-  padding-bottom: 6.5em;
-  border-bottom: 1px solid #e7e8e5;
-}
-
-.main-offer .office-section .offer-title {
-  margin-top: 7.9em;
-}
-
-.main-offer .office-section .offer-title h2 {
-  right: 1.3em;
-}
-
-.main-offer .office-section .offer-title p {
-  margin-top: 8em;
-  width: 53.1em;
-  line-height: 1.7;
-}
-
-.main-offer .office-section .offer-title::after {
-  top: 6.6em;
-}
-
-.main-offer .office-section .offer-title::before {
-  bottom: -3.2em;
-  width: 91.5%;
-}
-
-.main-offer .office-section .offer-box {
-  background: none;
-  top: -2.9em;
-}
-
-.main-offer .office-section .offer-box .img-background {
-  position: absolute;
-  width: 86.4%;
-  bottom: -9.4em;
-  -webkit-transform: skewX(-2deg);
-          transform: skewX(-2deg);
-  z-index: -1;
-}
-
-.main-offer .office-section .offer-box .offer-box-wrapper {
-  padding-top: 10.7em;
-  border-bottom: none;
-}
-
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-info {
-  position: relative;
+.main-offer .offer-info .details p.p-edit::before {
   top: 1.3em;
 }
 
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-info .offer-box-price {
-  margin-top: 3.7em;
-  width: 38.4em;
-  padding-top: 0em;
-  padding-bottom: 1.8em;
-}
-
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-info .offer-box-price p {
-  line-height: 2.7em;
-  padding-left: 0.8em;
-  letter-spacing: 0.1em;
-}
-
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-medium {
-  padding-left: 0.1em;
-  line-height: 1.6em;
-  margin-top: 0em;
-  margin-bottom: 0.2em;
-}
-
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-medium .price-separate {
-  letter-spacing: 0.05em;
-  padding-left: 0.1em;
-}
-
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-info {
-  margin: 0;
-  line-height: 0.5em;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  font-weight: 600;
-}
-
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-second {
-  margin-top: 2.3em;
-}
-
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .price-second p {
-  padding-left: 0em;
-  letter-spacing: 0em;
-}
-
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .time {
+.main-offer .offer-info .details p::after {
+  content: '';
+  width: 0.8em;
+  height: 0.8em;
+  background: #000;
   position: absolute;
-  right: 1.5em;
-  top: 2.5em;
+  left: -2.1em;
+  top: 0.4em;
 }
 
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-info .offer-box-price .time p {
-  padding-left: 0;
+.main-offer .offer-info .details p::before {
+  content: '';
+  width: 0.7em;
+  height: 0.7em;
+  background: #c3c3c3;
+  position: absolute;
+  left: -1.7em;
+  top: 1em;
+  -webkit-box-shadow: 0px 0px 3px 0.5px #c3c3c3, 0px 0px 5px 2.5px #c3c3c3;
+          box-shadow: 0px 0px 3px 0.5px #c3c3c3, 0px 0px 5px 2.5px #c3c3c3;
 }
 
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-photo {
-  top: 2.3em;
-  display: table;
+.main-offer .offer-info .details p .size-medium {
+  font-size: 1.7em;
+  position: relative;
+  top: -0.2em;
+  vertical-align: middle;
 }
 
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-photo img {
-  height: auto;
+.main-offer .offer-info .details p .size-medium .number-square {
+  font-size: 0.6em;
 }
 
-.main-offer .office-section .offer-box .offer-box-wrapper .offer-photo .shadow-mirror {
-  bottom: -12.2em;
+.main-offer .offer-info .offer-price {
+  background: #3b5165;
+  color: #c5cbd1;
+  letter-spacing: 0.1em;
+  position: relative;
+  z-index: 1;
+  -ms-flex-negative: 10;
+      flex-shrink: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section .container-offer {
-  padding-top: 16em;
-  padding-bottom: 6em;
+.main-offer .offer-info .offer-price .price {
+  justify-self: flex-start;
+  padding: 2em;
 }
 
-section .container-offer:before {
-  display: none;
+.main-offer .offer-info .offer-price .price p {
+  margin-top: 0;
+}
+
+.main-offer .offer-info .offer-price .time {
+  border: 1px solid #7f7e42;
+  padding: 1.3em 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-offer .offer-info .offer-price .time p {
+  font: 400 1.1em/1.5em "Poppins", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.main-offer .offer-info .offer-price .time .time-important {
+  color: #ffd200;
+  font-size: 1.5em;
+  letter-spacing: 0.01em;
+  font-style: italic;
+}
+
+.main-offer .offer-info .offer-price .instalation {
+  margin-top: 1.3em;
+}
+
+.main-offer .offer-info .offer-price .instalation p {
+  line-height: 1.3em;
+}
+
+.main-offer .offer-info .offer-price .price-medium {
+  font: italic normal 1.5em/1.1em "Poppins", sans-serif;
+  color: #ffd200;
+  margin-top: 0.9em;
+  letter-spacing: 0.11em;
+  padding-left: 0.5em;
+}
+
+.main-offer .offer-info .offer-price .price-medium .price-big {
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+.main-offer .offer-info .offer-price .price-medium .price-separate {
+  padding-left: 4.1em;
+  font-weight: 300;
+}
+
+.main-offer .offer-info .offer-price .price-to-m2 {
+  font: italic 400 1.4em/1.2em "Poppins", sans-serif;
+  letter-spacing: 0.05em;
+  padding: 0.3em 0px 0 1.8em;
+  margin: 0;
+}
+
+.main-offer .offer-info .offer-price .price-to-m2 sup {
+  font-size: 0.7em;
+}
+
+.main-offer .offer-photo {
+  position: relative;
+  width: 51%;
+}
+
+.main-offer .offer-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-offer .offer-photo .shadow-mirror {
+  width: 105%;
+  height: 30%;
+  z-index: -1;
+  position: absolute;
+  bottom: -10.8em;
+  left: -1.2em;
+}
+
+.main-offer .offer-photo .gallery-btn {
+  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 1em;
+  display: inline-block;
+  position: absolute;
+  right: 1.3em;
+  bottom: 1.5em;
+  width: 20em;
+  height: 3em;
+  background: rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-offer .offer-photo .gallery-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid #ffd200;
+}
+
+.main-offer .offer-photo .gallery-btn:hover p {
+  color: #ffd200;
+}
+
+.main-offer .offer-photo .gallery-btn:hover span {
+  border: 1px solid #ffd200;
+  border: 1px solid rgba(255, 210, 0, 0.7);
+  background: black;
+}
+
+.main-offer .offer-photo .gallery-btn p {
+  padding-top: 0.5em;
+  padding-left: 1.5em;
+  margin: 0;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  line-height: 1.7em;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.main-offer .offer-photo .gallery-btn span {
+  display: block;
+  position: absolute;
+  width: 1.7em;
+  height: 1.5em;
+  background: #6d6c6e;
+  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.6);
+}
+
+.main-offer .offer-photo .gallery-btn span:nth-child(1) {
+  right: 2.6em;
+  bottom: 2.5em;
+}
+
+.main-offer .offer-photo .gallery-btn span:nth-child(2) {
+  right: 1.3em;
+  bottom: 1.9em;
+}
+
+.main-offer .offer-photo .gallery-btn span:nth-child(3) {
+  right: 2.2em;
+  bottom: 1.3em;
+}
+
+.offer-section {
+  border-bottom: 1px solid #e7e8e5;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 9.2em;
+}
+
+.house .offer-background {
+  position: absolute;
+  top: 10em;
+  width: 100%;
+  height: 70%;
+}
+
+.house .offer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
