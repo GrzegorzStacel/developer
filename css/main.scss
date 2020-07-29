@@ -1688,7 +1688,7 @@ footer {
         display: flex;
         flex-direction: column;
         flex-basis: 100%;
-        
+
         p {
             font-size: 1.2em;
             letter-spacing: 0.12em;
@@ -1697,16 +1697,16 @@ footer {
             width: 84.5vw;
             margin: 0;
             align-self: flex-end;
-            
+
             @media(max-width: 1200px) {
                 align-self: center;
             }
-            
+
             @media (max-width: 980px) and (orientation:portrait) {
                 font-size: 1.6em;
             }
         }
-        
+
         .main-yellow-box {
             margin: 4.2em 0 14em 0;
             height: 10em;
@@ -1715,7 +1715,7 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
             a {
                 text-decoration: none;
                 padding: 0.6em 2.2em 0.6em 2.5em;
@@ -1827,11 +1827,11 @@ footer {
             line-height: 3.2em;
         }
 
-        &.OT-yellow-beam-right{
+        &.OT-yellow-beam-right {
             left: auto;
             right: 0em;
         }
-    }  
+    }
 
     .offer-background {
         position: absolute;
@@ -1853,7 +1853,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 35.5%;   
+        width: 35.5%;
     }
 
     .details {
@@ -1933,6 +1933,36 @@ footer {
             }
         }
 
+        .price-medium {
+            font: italic normal 1.5em/1.1em "Poppins", sans-serif;
+            color: #ffd200;
+            margin-top: 0.9em;
+            letter-spacing: 0.11em;
+            padding-left: 0.5em;
+
+            .price-big {
+                font-weight: 700;
+                font-size: 2.5em;
+            }
+
+            .price-separate {
+                padding-left: 4.1em;
+                font-weight: 300;
+            }
+        }
+
+        .price-to-m2 {
+            font: italic 400 1.4em/1.2em "Poppins", sans-serif;
+            color: #ffd200;
+            letter-spacing: 0.05em;
+            padding: 0.3em 0px 0 1.8em;
+            margin: 0;
+
+            sup {
+                font-size: 0.7em;
+            }
+        }
+
         .time {
             border: 1px solid #7f7e42;
             padding: 1.3em 3em;
@@ -1962,36 +1992,6 @@ footer {
 
             p {
                 line-height: 1.3em;
-            }
-        }
-
-        .price-medium {
-            font: italic normal 1.5em/1.1em "Poppins", sans-serif;
-            color: #ffd200;
-            margin-top: 0.9em;
-            letter-spacing: 0.11em;
-            padding-left: 0.5em;
-
-            .price-big {
-                font-weight: 700;
-                font-size: 2.5em;
-            }
-
-            .price-separate {
-                padding-left: 4.1em;
-                font-weight: 300;
-            }
-        }
-
-        .price-to-m2 {
-            font: italic 400 1.4em/1.2em "Poppins", sans-serif;
-            color: #ffd200;
-            letter-spacing: 0.05em;
-            padding: 0.3em 0px 0 1.8em;
-            margin: 0;
-
-            sup {
-                font-size: 0.7em;
             }
         }
     }
@@ -2087,6 +2087,7 @@ footer {
 
 #ROW {
     padding-bottom: 13.6em;
+    margin-bottom: 20.8em;
 
     .off-bg-top {
         top: 8.8em;
@@ -2133,124 +2134,76 @@ footer {
     }
 }
 
+#MULTI {
+    padding-bottom: 15.2em;
+
+    .offer-title {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 1.8em;
+
+        &::after {
+            height: 16.7em;
+        }
+
+        h2 {
+            text-align: right;
+        }
+
+        >p {
+            align-self: auto;
+            line-height: 1.6em;
+            margin-top: 0.3em;
+        }
+    }
+
+    .offer-background {
+        width: 65.3%;
+        height: 60%;
+        top: 31.3em;
+    }
+
+    .offer-box {
+        padding-top: 4.9em;
+    }
+
+    .offer-info {
+        width: 35%;
+    }
+
+    .price {
+        padding: 2em 1.8em 3em 2em;
+
+        p:first-child {
+            padding-left: 3.3em;
+        }
+    }
+
+    .price-medium {
+        margin: 0;
+        padding: 0.6em 0 0;
+    }
+
+    .price-to-m2 {
+        padding: 0.7em 0 0 4.2em;
+    }
+
+    .time {
+        padding: 0.8em 3em;
+    }
+
+    .instalation {
+        padding-bottom: 1em;
+    }
+
+    .shadow-mirror {
+        width: 100%;
+        left: 0;
+    }
+}
 
 
 
-
-
-// .multi-section {
-//     border-bottom: 1px solid #e7e8e5;
-
-//     .offer-title {
-
-//         &::after {
-//             height: 16.9em;
-//             top: 6.5em;
-//         }
-
-//         &:before {
-//             bottom: -3.3em;
-//         }
-
-//         h2 {
-//             margin-right: -0.2em;
-//             top: -0.16em;
-//         }
-
-//         .offer-yellow-dev-beam {
-//             left: auto;
-//             width: 30.3em;
-//             right: 10.6em;
-//             bottom: -4.8em;
-
-//             p {
-//                 margin-top: 0.7em;
-//                 width: 100%;
-//                 margin-left: 3.3em;
-//             }
-//         }
-
-//         p {
-//             margin-top: 11em;
-//             width: 50.7em;
-//         }
-
-//     }
-
-//     .offer-box {
-//         background-image: none;
-//         top: 12.5em;
-//         z-index: 0;
-
-//         .img-background {
-//             position: absolute;
-//             width: 65.3%;
-//             z-index: -1;
-//         }
-
-//         .offer-box-wrapper {
-//             padding-top: 1.7em;
-//             padding-bottom: 28.1em;
-//             margin-bottom: 0em;
-//             border-bottom: none;
-
-//             .offer-info {
-//                 .offer-box-price {
-//                     margin-top: 14.9em;
-//                     width: 39.5em;
-//                     height: 13.1em;
-//                     padding-left: 1.8em;
-
-//                     .price-medium {
-//                         margin-top: 0.8em;
-//                         padding-left: 0.2em;
-//                         line-height: 1.5em;
-
-//                         .price-big {
-//                             font-weight: 700;
-//                         }
-//                     }
-
-//                     p {
-//                         padding-left: 3.9em;
-//                         padding-top: 0.6em;
-//                         letter-spacing: 0.1em;
-//                     }
-
-//                     .time {
-//                         margin-top: 0em;
-
-//                         p {
-//                             padding-left: 0em;
-//                             padding-top: 1.2em;
-//                             letter-spacing: 0em;
-//                             line-height: 0em;
-//                         }
-
-//                         .instalation {
-//                             margin-top: 4.2em;
-//                             padding-bottom: 1em;
-//                         }
-//                     }
-//                 }
-//             }
-
-//             .offer-photo {
-//                 top: 0.8em;
-//                 height: 100%;
-
-//                 img {
-//                     height: 98%;
-//                 }
-
-//                 .shadow-mirror {
-//                     z-index: -1;
-//                     bottom: -11em;
-//                 }
-//             }
-//         }
-//     }
-// }
 
 // .garage-section {
 //     position: relative;
