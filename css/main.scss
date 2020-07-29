@@ -1845,6 +1845,11 @@ footer {
         display: flex;
         justify-content: space-evenly;
         position: relative;
+
+        &.OB-reverse{
+            flex-direction: row-reverse;
+            padding-top: 3.7em;
+        }
     }
 
     .offer-info {
@@ -2099,11 +2104,6 @@ footer {
         left: -2.6em;
         height: 69%;
         width: 84.1%;
-    }
-
-    .offer-box {
-        flex-direction: row-reverse;
-        padding-top: 3.7em;
     }
 
     .offer-info {
