@@ -1687,9 +1687,8 @@ footer {
         position: relative;
         display: flex;
         flex-direction: column;
-
         flex-basis: 100%;
-
+        
         p {
             font-size: 1.2em;
             letter-spacing: 0.12em;
@@ -1698,16 +1697,16 @@ footer {
             width: 84.5vw;
             margin: 0;
             align-self: flex-end;
-
+            
             @media(max-width: 1200px) {
                 align-self: center;
             }
-
+            
             @media (max-width: 980px) and (orientation:portrait) {
                 font-size: 1.6em;
             }
         }
-
+        
         .main-yellow-box {
             margin: 4.2em 0 14em 0;
             height: 10em;
@@ -1716,7 +1715,7 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
-
+            
             a {
                 text-decoration: none;
                 padding: 0.6em 2.2em 0.6em 2.5em;
@@ -1729,6 +1728,14 @@ footer {
                 color: #ffc300;
             }
         }
+    }
+
+    .offer-section {
+        border-bottom: 1px solid #e7e8e5;
+        position: relative;
+        z-index: 0;
+        padding-bottom: 9.2em;
+        margin-bottom: 7.6em;
     }
 
     .offer-title {
@@ -1824,6 +1831,20 @@ footer {
             left: -0.8em;
             top: 0.7em;
         }
+    }  
+
+    .offer-background {
+        position: absolute;
+        top: 10em;
+        width: 100%;
+        height: 70%;
+        z-index: -1;
+    }
+
+    .offer-box {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
     }
 
     .offer-info {
@@ -1832,146 +1853,145 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 35.5%;
+        width: 35.5%;   
+    }
 
-        .details {
-            h3 {
-                font: 500 1.3em/1.1em "Poppins", sans-serif;
-                letter-spacing: 0.11em;
-                margin: 0.4em 0 1.6em 1.5em;
-            }
+    .details {
+        h3 {
+            font: 500 1.3em/1.1em "Poppins", sans-serif;
+            letter-spacing: 0.11em;
+            margin: 0.4em 0 1.6em 1.5em;
+        }
 
-            p {
-                letter-spacing: 0.1em;
-                line-height: 1.49em;
-                position: relative;
-                margin: 0 0 1.2em 2.1em;
+        p {
+            letter-spacing: 0.1em;
+            line-height: 1.49em;
+            position: relative;
+            margin: 0 0 1.2em 2.1em;
 
-                &.p-edit {
-                    &::after {
-                        top: 0.7em;
-                    }
-
-                    &::before {
-                        top: 1.3em;
-                    }
-                }
-
+            &.p-edit {
                 &::after {
-                    content: '';
-                    width: 0.8em;
-                    height: 0.8em;
-                    background: #000;
-                    position: absolute;
-                    left: -2.1em;
-                    top: 0.4em;
+                    top: 0.7em;
                 }
 
                 &::before {
-                    content: '';
-                    width: 0.7em;
-                    height: 0.7em;
-                    background: #c3c3c3;
-                    position: absolute;
-                    left: -1.7em;
-                    top: 1em;
-                    box-shadow:
-                        0px 0px 3px 0.5px #c3c3c3,
-                        0px 0px 5px 2.5px #c3c3c3;
+                    top: 1.3em;
                 }
+            }
 
-                .size-medium {
-                    font-size: 1.7em;
-                    position: relative;
-                    top: -0.2em;
-                    vertical-align: middle;
+            &::after {
+                content: '';
+                width: 0.8em;
+                height: 0.8em;
+                background: #000;
+                position: absolute;
+                left: -2.1em;
+                top: 0.4em;
+            }
 
-                    .number-square {
-                        font-size: 0.6em;
-                    }
+            &::before {
+                content: '';
+                width: 0.7em;
+                height: 0.7em;
+                background: #c3c3c3;
+                position: absolute;
+                left: -1.7em;
+                top: 1em;
+                box-shadow:
+                    0px 0px 3px 0.5px #c3c3c3,
+                    0px 0px 5px 2.5px #c3c3c3;
+            }
+
+            .size-medium {
+                font-size: 1.7em;
+                position: relative;
+                top: -0.2em;
+                vertical-align: middle;
+
+                .number-square {
+                    font-size: 0.6em;
                 }
             }
         }
+    }
 
-        .offer-price {
-            background: #3b5165;
-            color: #c5cbd1;
-            letter-spacing: 0.1em;
-            position: relative;
-            z-index: 1;
-            // flex-shrink: 10;
+    .offer-price {
+        background: #3b5165;
+        color: #c5cbd1;
+        letter-spacing: 0.1em;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+
+        .price {
+            justify-self: flex-start;
+            padding: 2em;
+
+            p {
+                margin-top: 0;
+            }
+        }
+
+        .time {
+            border: 1px solid #7f7e42;
+            padding: 1.3em 3em;
             display: flex;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
 
-            .price {
-                justify-self: flex-start;
-                padding: 2em;
-
-                p {
-                    margin-top: 0;
-                }
-            }
-
-            .time {
-                border: 1px solid #7f7e42;
-                padding: 1.3em 3em;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
-                p {
-                    font: 400 1.1em/1.5em "Poppins", sans-serif;
-                    color: #ffffff;
-                    text-align: center;
-                    margin: 0;
-                    letter-spacing: 0;
-                }
-
-                .time-important {
-                    color: #ffd200;
-                    font-size: 1.5em;
-                    letter-spacing: 0.01em;
-                    font-style: italic;
-                }
-            }
-
-            .instalation {
-                margin-top: 1.3em;
-
-                p {
-                    line-height: 1.3em;
-                }
-            }
-
-            .price-medium {
-                font: italic normal 1.5em/1.1em "Poppins", sans-serif;
-                color: #ffd200;
-                margin-top: 0.9em;
-                letter-spacing: 0.11em;
-                padding-left: 0.5em;
-
-                .price-big {
-                    font-weight: 700;
-                    font-size: 2.5em;
-                }
-
-                .price-separate {
-                    padding-left: 4.1em;
-                    font-weight: 300;
-                }
-            }
-
-            .price-to-m2 {
-                font: italic 400 1.4em/1.2em "Poppins", sans-serif;
-                color: #ffd200;
-                letter-spacing: 0.05em;
-                padding: 0.3em 0px 0 1.8em;
+            p {
+                font: 400 1.1em/1.5em "Poppins", sans-serif;
+                color: #ffffff;
+                text-align: center;
                 margin: 0;
+                letter-spacing: 0;
+            }
 
-                sup {
-                    font-size: 0.7em;
-                }
+            .time-important {
+                color: #ffd200;
+                font-size: 1.5em;
+                letter-spacing: 0.01em;
+                font-style: italic;
+            }
+        }
+
+        .instalation {
+            margin-top: 1.3em;
+
+            p {
+                line-height: 1.3em;
+            }
+        }
+
+        .price-medium {
+            font: italic normal 1.5em/1.1em "Poppins", sans-serif;
+            color: #ffd200;
+            margin-top: 0.9em;
+            letter-spacing: 0.11em;
+            padding-left: 0.5em;
+
+            .price-big {
+                font-weight: 700;
+                font-size: 2.5em;
+            }
+
+            .price-separate {
+                padding-left: 4.1em;
+                font-weight: 300;
+            }
+        }
+
+        .price-to-m2 {
+            font: italic 400 1.4em/1.2em "Poppins", sans-serif;
+            color: #ffd200;
+            letter-spacing: 0.05em;
+            padding: 0.3em 0px 0 1.8em;
+            margin: 0;
+
+            sup {
+                font-size: 0.7em;
             }
         }
     }
@@ -1994,7 +2014,6 @@ footer {
             bottom: -10.8em;
             left: -1.2em;
         }
-
 
         .gallery-btn {
             border: 1px solid white;
@@ -2061,37 +2080,15 @@ footer {
     }
 }
 
-.offer-section {
-    border-bottom: 1px solid #e7e8e5;
-    position: relative;
-    z-index: 0;
-    padding-bottom: 9.2em;
-    margin-bottom: 7.6em;
-
-    .offer-box {
-        display: flex;
-        justify-content: space-evenly;
-        position: relative;
-    }
-}
-
 #HOUSE {
     padding-bottom: 10.7em;
     margin-bottom: 6.1em;
-
-    .offer-background {
-        position: absolute;
-        top: 10em;
-        width: 100%;
-        height: 70%;
-    }
 }
 
 #ROW {
     padding-bottom: 13.6em;
 
-    .row-background-top {
-        position: absolute;
+    .off-bg-top {
         top: 8.8em;
         right: 0;
         width: 73.8%;
@@ -2100,39 +2097,38 @@ footer {
         z-index: 0;
     }
 
-    .row-background-bottom {
-        position: absolute;
-        z-index: -1;
+    .off-bg-bottom {
+        top: auto;
         bottom: 0em;
         left: -2.6em;
         height: 69%;
         width: 84.1%;
     }
 
-    .offer-box{
+    .offer-box {
         flex-direction: row-reverse;
         padding-top: 3.7em;
     }
 
-    .offer-info{
+    .offer-info {
         padding-left: 1em;
     }
 
-    .price{
+    .price {
         padding-bottom: 2.5em;
         padding-right: 3.6em;
     }
 
-    .price-medium{
+    .price-medium {
         margin: 0;
         padding: 1.6em 0 0.4em 0;
     }
 
-    .price-to-m2{
+    .price-to-m2 {
         padding: 0;
     }
 
-    .shadow-mirror{
+    .shadow-mirror {
         bottom: -8.1em;
     }
 }

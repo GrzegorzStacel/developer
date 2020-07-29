@@ -2139,6 +2139,14 @@ footer p {
   color: #ffc300;
 }
 
+.main-offer .offer-section {
+  border-bottom: 1px solid #e7e8e5;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 9.2em;
+  margin-bottom: 7.6em;
+}
+
 .main-offer .offer-title {
   position: relative;
   z-index: 1;
@@ -2248,6 +2256,24 @@ footer p {
   top: 0.7em;
 }
 
+.main-offer .offer-background {
+  position: absolute;
+  top: 10em;
+  width: 100%;
+  height: 70%;
+  z-index: -1;
+}
+
+.main-offer .offer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+}
+
 .main-offer .offer-info {
   color: #3b5165;
   font-family: "Poppins", sans-serif;
@@ -2264,28 +2290,28 @@ footer p {
   width: 35.5%;
 }
 
-.main-offer .offer-info .details h3 {
+.main-offer .details h3 {
   font: 500 1.3em/1.1em "Poppins", sans-serif;
   letter-spacing: 0.11em;
   margin: 0.4em 0 1.6em 1.5em;
 }
 
-.main-offer .offer-info .details p {
+.main-offer .details p {
   letter-spacing: 0.1em;
   line-height: 1.49em;
   position: relative;
   margin: 0 0 1.2em 2.1em;
 }
 
-.main-offer .offer-info .details p.p-edit::after {
+.main-offer .details p.p-edit::after {
   top: 0.7em;
 }
 
-.main-offer .offer-info .details p.p-edit::before {
+.main-offer .details p.p-edit::before {
   top: 1.3em;
 }
 
-.main-offer .offer-info .details p::after {
+.main-offer .details p::after {
   content: '';
   width: 0.8em;
   height: 0.8em;
@@ -2295,7 +2321,7 @@ footer p {
   top: 0.4em;
 }
 
-.main-offer .offer-info .details p::before {
+.main-offer .details p::before {
   content: '';
   width: 0.7em;
   height: 0.7em;
@@ -2307,18 +2333,18 @@ footer p {
           box-shadow: 0px 0px 3px 0.5px #c3c3c3, 0px 0px 5px 2.5px #c3c3c3;
 }
 
-.main-offer .offer-info .details p .size-medium {
+.main-offer .details p .size-medium {
   font-size: 1.7em;
   position: relative;
   top: -0.2em;
   vertical-align: middle;
 }
 
-.main-offer .offer-info .details p .size-medium .number-square {
+.main-offer .details p .size-medium .number-square {
   font-size: 0.6em;
 }
 
-.main-offer .offer-info .offer-price {
+.main-offer .offer-price {
   background: #3b5165;
   color: #c5cbd1;
   letter-spacing: 0.1em;
@@ -2332,16 +2358,16 @@ footer p {
           align-items: center;
 }
 
-.main-offer .offer-info .offer-price .price {
+.main-offer .offer-price .price {
   justify-self: flex-start;
   padding: 2em;
 }
 
-.main-offer .offer-info .offer-price .price p {
+.main-offer .offer-price .price p {
   margin-top: 0;
 }
 
-.main-offer .offer-info .offer-price .time {
+.main-offer .offer-price .time {
   border: 1px solid #7f7e42;
   padding: 1.3em 3em;
   display: -webkit-box;
@@ -2359,7 +2385,7 @@ footer p {
           justify-content: center;
 }
 
-.main-offer .offer-info .offer-price .time p {
+.main-offer .offer-price .time p {
   font: 400 1.1em/1.5em "Poppins", sans-serif;
   color: #ffffff;
   text-align: center;
@@ -2367,22 +2393,22 @@ footer p {
   letter-spacing: 0;
 }
 
-.main-offer .offer-info .offer-price .time .time-important {
+.main-offer .offer-price .time .time-important {
   color: #ffd200;
   font-size: 1.5em;
   letter-spacing: 0.01em;
   font-style: italic;
 }
 
-.main-offer .offer-info .offer-price .instalation {
+.main-offer .offer-price .instalation {
   margin-top: 1.3em;
 }
 
-.main-offer .offer-info .offer-price .instalation p {
+.main-offer .offer-price .instalation p {
   line-height: 1.3em;
 }
 
-.main-offer .offer-info .offer-price .price-medium {
+.main-offer .offer-price .price-medium {
   font: italic normal 1.5em/1.1em "Poppins", sans-serif;
   color: #ffd200;
   margin-top: 0.9em;
@@ -2390,17 +2416,17 @@ footer p {
   padding-left: 0.5em;
 }
 
-.main-offer .offer-info .offer-price .price-medium .price-big {
+.main-offer .offer-price .price-medium .price-big {
   font-weight: 700;
   font-size: 2.5em;
 }
 
-.main-offer .offer-info .offer-price .price-medium .price-separate {
+.main-offer .offer-price .price-medium .price-separate {
   padding-left: 4.1em;
   font-weight: 300;
 }
 
-.main-offer .offer-info .offer-price .price-to-m2 {
+.main-offer .offer-price .price-to-m2 {
   font: italic 400 1.4em/1.2em "Poppins", sans-serif;
   color: #ffd200;
   letter-spacing: 0.05em;
@@ -2408,7 +2434,7 @@ footer p {
   margin: 0;
 }
 
-.main-offer .offer-info .offer-price .price-to-m2 sup {
+.main-offer .offer-price .price-to-m2 sup {
   font-size: 0.7em;
 }
 
@@ -2499,42 +2525,16 @@ footer p {
   bottom: 1.3em;
 }
 
-.offer-section {
-  border-bottom: 1px solid #e7e8e5;
-  position: relative;
-  z-index: 0;
-  padding-bottom: 9.2em;
-  margin-bottom: 7.6em;
-}
-
-.offer-section .offer-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  position: relative;
-}
-
 #HOUSE {
   padding-bottom: 10.7em;
   margin-bottom: 6.1em;
-}
-
-#HOUSE .offer-background {
-  position: absolute;
-  top: 10em;
-  width: 100%;
-  height: 70%;
 }
 
 #ROW {
   padding-bottom: 13.6em;
 }
 
-#ROW .row-background-top {
-  position: absolute;
+#ROW .off-bg-top {
   top: 8.8em;
   right: 0;
   width: 73.8%;
@@ -2544,9 +2544,8 @@ footer p {
   z-index: 0;
 }
 
-#ROW .row-background-bottom {
-  position: absolute;
-  z-index: -1;
+#ROW .off-bg-bottom {
+  top: auto;
   bottom: 0em;
   left: -2.6em;
   height: 69%;
