@@ -1687,7 +1687,6 @@ footer {
         position: relative;
         display: flex;
         flex-direction: column;
-
         flex-basis: 100%;
 
         p {
@@ -1731,6 +1730,14 @@ footer {
         }
     }
 
+    .offer-section {
+        border-bottom: 1px solid #e7e8e5;
+        position: relative;
+        z-index: 0;
+        padding-bottom: 9.2em;
+        margin-bottom: 7.6em;
+    }
+
     .offer-title {
         position: relative;
         z-index: 1;
@@ -1739,9 +1746,10 @@ footer {
         height: 16.5em;
         color: #3b5165;
         font-family: "Poppins", sans-serif;
-        display: flex;
-        justify-content: space-between;
         margin-bottom: 6.8em;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
 
         &::after {
             content: '';
@@ -1770,7 +1778,7 @@ footer {
         }
 
         &.offer-title-left {
-            flex-direction: row-reverse;
+            flex-direction: row;
             justify-content: flex-end;
             margin-left: auto;
             padding-right: 7em;
@@ -1783,7 +1791,7 @@ footer {
                 left: -5em;
             }
 
-            p {
+            >p {
                 margin-top: 3.4em;
                 text-align: right;
             }
@@ -1793,21 +1801,16 @@ footer {
                 padding: 0;
                 margin: 0;
             }
-
-            .offer-yellow-dev-beam p {
-                margin-top: 0;
-                text-align: center;
-                line-height: 3.2em;
-            }
         }
     }
 
-    .offer-yellow-dev-beam {
+    .OT-yellow-beam {
         background: #ffd200;
         margin: 0;
         padding: 0;
         position: absolute;
         bottom: -1.5em;
+        left: 0;
         width: 24.4em;
         height: 3.2em;
 
@@ -1821,7 +1824,27 @@ footer {
             letter-spacing: 0.03em;
             left: -0.8em;
             top: 0.7em;
+            line-height: 3.2em;
         }
+
+        &.OT-yellow-beam-right {
+            left: auto;
+            right: 0em;
+        }
+    }
+
+    .offer-background {
+        position: absolute;
+        top: 10em;
+        width: 100%;
+        height: 70%;
+        z-index: -1;
+    }
+
+    .offer-box {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
     }
 
     .offer-info {
@@ -1831,145 +1854,144 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         width: 35.5%;
+    }
 
-        .details {
-            h3 {
-                font: 500 1.3em/1.1em "Poppins", sans-serif;
-                letter-spacing: 0.11em;
-                margin: 0.4em 0 1.6em 1.5em;
-            }
+    .details {
+        h3 {
+            font: 500 1.3em/1.1em "Poppins", sans-serif;
+            letter-spacing: 0.11em;
+            margin: 0.4em 0 1.6em 1.5em;
+        }
 
-            p {
-                letter-spacing: 0.1em;
-                line-height: 1.49em;
-                position: relative;
-                margin: 0 0 1.2em 2.1em;
+        p {
+            letter-spacing: 0.1em;
+            line-height: 1.49em;
+            position: relative;
+            margin: 0 0 1.2em 2.1em;
 
-                &.p-edit {
-                    &::after {
-                        top: 0.7em;
-                    }
-
-                    &::before {
-                        top: 1.3em;
-                    }
-                }
-
+            &.p-edit {
                 &::after {
-                    content: '';
-                    width: 0.8em;
-                    height: 0.8em;
-                    background: #000;
-                    position: absolute;
-                    left: -2.1em;
-                    top: 0.4em;
+                    top: 0.7em;
                 }
 
                 &::before {
-                    content: '';
-                    width: 0.7em;
-                    height: 0.7em;
-                    background: #c3c3c3;
-                    position: absolute;
-                    left: -1.7em;
-                    top: 1em;
-                    box-shadow:
-                        0px 0px 3px 0.5px #c3c3c3,
-                        0px 0px 5px 2.5px #c3c3c3;
+                    top: 1.3em;
                 }
+            }
 
-                .size-medium {
-                    font-size: 1.7em;
-                    position: relative;
-                    top: -0.2em;
-                    vertical-align: middle;
+            &::after {
+                content: '';
+                width: 0.8em;
+                height: 0.8em;
+                background: #000;
+                position: absolute;
+                left: -2.1em;
+                top: 0.4em;
+            }
 
-                    .number-square {
-                        font-size: 0.6em;
-                    }
+            &::before {
+                content: '';
+                width: 0.7em;
+                height: 0.7em;
+                background: #c3c3c3;
+                position: absolute;
+                left: -1.7em;
+                top: 1em;
+                box-shadow:
+                    0px 0px 3px 0.5px #c3c3c3,
+                    0px 0px 5px 2.5px #c3c3c3;
+            }
+
+            .size-medium {
+                font-size: 1.7em;
+                position: relative;
+                top: -0.2em;
+                vertical-align: middle;
+
+                .number-square {
+                    font-size: 0.6em;
                 }
             }
         }
+    }
 
-        .offer-price {
-            background: #3b5165;
-            color: #c5cbd1;
-            letter-spacing: 0.1em;
-            position: relative;
-            z-index: 1;
-            // flex-shrink: 10;
+    .offer-price {
+        background: #3b5165;
+        color: #c5cbd1;
+        letter-spacing: 0.1em;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+
+        .price {
+            justify-self: flex-start;
+            padding: 2em;
+
+            p {
+                margin-top: 0;
+            }
+        }
+
+        .price-medium {
+            font: italic normal 1.5em/1.1em "Poppins", sans-serif;
+            color: #ffd200;
+            margin-top: 0.9em;
+            letter-spacing: 0.11em;
+            padding-left: 0.5em;
+
+            .price-big {
+                font-weight: 700;
+                font-size: 2.5em;
+            }
+
+            .price-separate {
+                padding-left: 4.1em;
+                font-weight: 300;
+            }
+        }
+
+        .price-to-m2 {
+            font: italic 400 1.4em/1.2em "Poppins", sans-serif;
+            color: #ffd200;
+            letter-spacing: 0.05em;
+            padding: 0.3em 0px 0 1.8em;
+            margin: 0;
+
+            sup {
+                font-size: 0.7em;
+            }
+        }
+
+        .time {
+            border: 1px solid #7f7e42;
+            padding: 1.3em 3em;
             display: flex;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
 
-            .price {
-                justify-self: flex-start;
-                padding: 2em;
-
-                p {
-                    margin-top: 0;
-                }
-            }
-
-            .time {
-                border: 1px solid #7f7e42;
-                padding: 1.3em 3em;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
-                p {
-                    font: 400 1.1em/1.5em "Poppins", sans-serif;
-                    color: #ffffff;
-                    text-align: center;
-                    margin: 0;
-                    letter-spacing: 0;
-                }
-
-                .time-important {
-                    color: #ffd200;
-                    font-size: 1.5em;
-                    letter-spacing: 0.01em;
-                    font-style: italic;
-                }
-            }
-
-            .instalation {
-                margin-top: 1.3em;
-
-                p {
-                    line-height: 1.3em;
-                }
-            }
-
-            .price-medium {
-                font: italic normal 1.5em/1.1em "Poppins", sans-serif;
-                color: #ffd200;
-                margin-top: 0.9em;
-                letter-spacing: 0.11em;
-                padding-left: 0.5em;
-
-                .price-big {
-                    font-weight: 700;
-                    font-size: 2.5em;
-                }
-
-                .price-separate {
-                    padding-left: 4.1em;
-                    font-weight: 300;
-                }
-            }
-
-            .price-to-m2 {
-                font: italic 400 1.4em/1.2em "Poppins", sans-serif;
-                color: #ffd200;
-                letter-spacing: 0.05em;
-                padding: 0.3em 0px 0 1.8em;
+            p {
+                font: 400 1.1em/1.5em "Poppins", sans-serif;
+                color: #ffffff;
+                text-align: center;
                 margin: 0;
+                letter-spacing: 0;
+            }
 
-                sup {
-                    font-size: 0.7em;
-                }
+            .time-important {
+                color: #ffd200;
+                font-size: 1.5em;
+                letter-spacing: 0.01em;
+                font-style: italic;
+            }
+        }
+
+        .instalation {
+            margin-top: 1.3em;
+
+            p {
+                line-height: 1.3em;
             }
         }
     }
@@ -1992,7 +2014,6 @@ footer {
             bottom: -10.8em;
             left: -1.2em;
         }
-
 
         .gallery-btn {
             border: 1px solid white;
@@ -2059,200 +2080,130 @@ footer {
     }
 }
 
-.offer-section {
-    border-bottom: 1px solid #e7e8e5;
-    position: relative;
-    z-index: 0;
-    padding-bottom: 9.2em;
-    margin-bottom: 7.6em;
-
-    .offer-box {
-        display: flex;
-        justify-content: space-evenly;
-        position: relative;
-    }
-}
-
 #HOUSE {
     padding-bottom: 10.7em;
     margin-bottom: 6.1em;
-
-    .offer-background {
-        position: absolute;
-        top: 10em;
-        width: 100%;
-        height: 70%;
-    }
 }
 
 #ROW {
     padding-bottom: 13.6em;
+    margin-bottom: 20.8em;
 
-    .row-background-top {
-        position: absolute;
+    .off-bg-top {
         top: 8.8em;
-        right: -0.3em;
+        right: 0;
         width: 73.8%;
         height: 49%;
         transform: rotateX(-28deg);
         z-index: 0;
     }
 
-    .row-background-bottom {
-        position: absolute;
-        z-index: -1;
+    .off-bg-bottom {
+        top: auto;
         bottom: 0em;
         left: -2.6em;
         height: 69%;
         width: 84.1%;
     }
 
-    .offer-box{
+    .offer-box {
         flex-direction: row-reverse;
         padding-top: 3.7em;
     }
 
-    .offer-info{
+    .offer-info {
         padding-left: 1em;
     }
 
-    .price{
+    .price {
         padding-bottom: 2.5em;
         padding-right: 3.6em;
     }
 
-    .price-medium{
+    .price-medium {
         margin: 0;
         padding: 1.6em 0 0.4em 0;
     }
 
-    .price-to-m2{
+    .price-to-m2 {
         padding: 0;
     }
 
-    .shadow-mirror{
+    .shadow-mirror {
         bottom: -8.1em;
+    }
+}
+
+#MULTI {
+    padding-bottom: 15.2em;
+
+    .offer-title {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 1.8em;
+
+        &::after {
+            height: 16.7em;
+        }
+
+        h2 {
+            text-align: right;
+        }
+
+        >p {
+            align-self: auto;
+            line-height: 1.6em;
+            margin-top: 0.3em;
+        }
+    }
+
+    .offer-background {
+        width: 65.3%;
+        height: 60%;
+        top: 31.3em;
+    }
+
+    .offer-box {
+        padding-top: 4.9em;
+    }
+
+    .offer-info {
+        width: 35%;
+    }
+
+    .price {
+        padding: 2em 1.8em 3em 2em;
+
+        p:first-child {
+            padding-left: 3.3em;
+        }
+    }
+
+    .price-medium {
+        margin: 0;
+        padding: 0.6em 0 0;
+    }
+
+    .price-to-m2 {
+        padding: 0.7em 0 0 4.2em;
+    }
+
+    .time {
+        padding: 0.8em 3em;
+    }
+
+    .instalation {
+        padding-bottom: 1em;
+    }
+
+    .shadow-mirror {
+        width: 100%;
+        left: 0;
     }
 }
 
 
 
-
-
-
-// .multi-section {
-//     border-bottom: 1px solid #e7e8e5;
-
-//     .offer-title {
-
-//         &::after {
-//             height: 16.9em;
-//             top: 6.5em;
-//         }
-
-//         &:before {
-//             bottom: -3.3em;
-//         }
-
-//         h2 {
-//             margin-right: -0.2em;
-//             top: -0.16em;
-//         }
-
-//         .offer-yellow-dev-beam {
-//             left: auto;
-//             width: 30.3em;
-//             right: 10.6em;
-//             bottom: -4.8em;
-
-//             p {
-//                 margin-top: 0.7em;
-//                 width: 100%;
-//                 margin-left: 3.3em;
-//             }
-//         }
-
-//         p {
-//             margin-top: 11em;
-//             width: 50.7em;
-//         }
-
-//     }
-
-//     .offer-box {
-//         background-image: none;
-//         top: 12.5em;
-//         z-index: 0;
-
-//         .img-background {
-//             position: absolute;
-//             width: 65.3%;
-//             z-index: -1;
-//         }
-
-//         .offer-box-wrapper {
-//             padding-top: 1.7em;
-//             padding-bottom: 28.1em;
-//             margin-bottom: 0em;
-//             border-bottom: none;
-
-//             .offer-info {
-//                 .offer-box-price {
-//                     margin-top: 14.9em;
-//                     width: 39.5em;
-//                     height: 13.1em;
-//                     padding-left: 1.8em;
-
-//                     .price-medium {
-//                         margin-top: 0.8em;
-//                         padding-left: 0.2em;
-//                         line-height: 1.5em;
-
-//                         .price-big {
-//                             font-weight: 700;
-//                         }
-//                     }
-
-//                     p {
-//                         padding-left: 3.9em;
-//                         padding-top: 0.6em;
-//                         letter-spacing: 0.1em;
-//                     }
-
-//                     .time {
-//                         margin-top: 0em;
-
-//                         p {
-//                             padding-left: 0em;
-//                             padding-top: 1.2em;
-//                             letter-spacing: 0em;
-//                             line-height: 0em;
-//                         }
-
-//                         .instalation {
-//                             margin-top: 4.2em;
-//                             padding-bottom: 1em;
-//                         }
-//                     }
-//                 }
-//             }
-
-//             .offer-photo {
-//                 top: 0.8em;
-//                 height: 100%;
-
-//                 img {
-//                     height: 98%;
-//                 }
-
-//                 .shadow-mirror {
-//                     z-index: -1;
-//                     bottom: -11em;
-//                 }
-//             }
-//         }
-//     }
-// }
 
 // .garage-section {
 //     position: relative;
