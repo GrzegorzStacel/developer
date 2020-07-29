@@ -1739,9 +1739,10 @@ footer {
         height: 16.5em;
         color: #3b5165;
         font-family: "Poppins", sans-serif;
-        display: flex;
-        justify-content: space-between;
         margin-bottom: 6.8em;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
 
         &::after {
             content: '';
@@ -1770,7 +1771,7 @@ footer {
         }
 
         &.offer-title-left {
-            flex-direction: row-reverse;
+            flex-direction: row;
             justify-content: flex-end;
             margin-left: auto;
             padding-right: 7em;
@@ -1808,6 +1809,7 @@ footer {
         padding: 0;
         position: absolute;
         bottom: -1.5em;
+        left: 0.3em;
         width: 24.4em;
         height: 3.2em;
 

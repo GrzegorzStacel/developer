@@ -2147,13 +2147,17 @@ footer p {
   height: 16.5em;
   color: #3b5165;
   font-family: "Poppins", sans-serif;
+  margin-bottom: 6.8em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 6.8em;
 }
 
 .main-offer .offer-title::after {
@@ -2186,9 +2190,9 @@ footer p {
 
 .main-offer .offer-title.offer-title-left {
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -2227,6 +2231,7 @@ footer p {
   padding: 0;
   position: absolute;
   bottom: -1.5em;
+  left: 0.3em;
   width: 24.4em;
   height: 3.2em;
 }
@@ -2531,7 +2536,7 @@ footer p {
 #ROW .row-background-top {
   position: absolute;
   top: 8.8em;
-  right: -0.3em;
+  right: 0;
   width: 73.8%;
   height: 49%;
   -webkit-transform: rotateX(-28deg);
