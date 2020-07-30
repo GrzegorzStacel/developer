@@ -609,7 +609,7 @@ a {
 
 .nav-belt .nav-belt-container p {
   margin-left: 4.7em;
-  color: #555555;
+  color: white;
   font: 300 italic 12px "Muli", sans-serif;
   letter-spacing: -0.5px;
 }
@@ -666,7 +666,7 @@ a {
 
 .nav-belt .nav-belt-container p a {
   text-decoration: none;
-  color: #555555;
+  color: white;
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
@@ -694,7 +694,7 @@ a {
 }
 
 .nav-belt .nav-belt-container p a .bold {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 @media (max-width: 640px) and (orientation: portrait) {

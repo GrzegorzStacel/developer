@@ -492,7 +492,7 @@ a {
 
         p {
             margin-left: 4.7em;
-            color: #555555;
+            color: white;
             font: 300 italic 12px "Muli", sans-serif;
             letter-spacing: -0.5px;
 
@@ -534,7 +534,7 @@ a {
 
             a {
                 text-decoration: none;
-                color: #555555;
+                color: white;
 
                 &.cd-address {
                     @media(max-width: 640px) and (orientation: portrait) {
@@ -554,7 +554,7 @@ a {
                 }
 
                 .bold {
-                    font-weight: bold;
+                    font-weight: 600;
                 }
             }
         }
