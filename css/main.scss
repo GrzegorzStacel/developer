@@ -307,7 +307,7 @@ a {
             text-align: center;
             z-index: 10;
             transition: .3s;
-            transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-110%, 0, 0);
 
             &.ON {
                 transform: translate3d(0, 0, 0);
@@ -435,7 +435,7 @@ a {
 }
 
 .nav-belt {
-    width: 58.5em;
+    width: 64em;
     border-right: 19px solid transparent;
     border-top: 37px solid #6a6e73;
     position: absolute;
@@ -449,7 +449,7 @@ a {
         width: 100%;
     }
 
-    &::after {
+    &::after  {
         @media (max-width: 640px) and (orientation:portrait) {
             content: '';
             width: 90%;
@@ -462,12 +462,6 @@ a {
 
     span {
         white-space: nowrap;
-
-        p {
-            @media (max-width: 640px) and (orientation:portrait) {
-                margin: 0;
-            }
-        }
     }
 
     .nav-belt-container {
@@ -475,26 +469,24 @@ a {
         align-items: center;
         justify-content: flex-end;
         height: 37px;
-        width: 100%;
         position: absolute;
         top: -37px;
-
+        right: 1em;
         @media (max-width: 640px) and (orientation:portrait) {
             justify-content: space-around;
             display: flex;
             top: 0;
+            right: 10%;
             height: 100%;
+            width: 80%;
         }
 
-        @media (max-width: 400px) and (orientation:portrait) {
-            justify-content: center;
-        }
+
 
         p {
             margin-left: 4.7em;
             color: white;
-            font: 300 italic 12px "Muli", sans-serif;
-            letter-spacing: -0.5px;
+            font: 300 italic 12px "Poppins", sans-serif;
 
             @media(max-width: 980px) and (orientation: portrait) {
                 font-size: 1.1em;
@@ -507,35 +499,20 @@ a {
                 margin-left: 2.8em;
             }
 
-            @media(max-width: 700px) {
-                margin-left: 1.8em;
-            }
-
             @media (max-width: 640px) and (orientation:portrait) {
-                margin: 0 0 0 2.8em;
-            }
-
-            @media (max-width: 400px) and (orientation:portrait) {
-                margin: 0 0 0 1.5em;
-                font-size: 11px;
-            }
-
-            @media(min-height: 320px) and (max-width: 910px) {
-                font-size: 10px;
-            }
-
-            &:last-child {
-                margin-right: 22px;
-
-                @media(max-width: 700px) {
-                    margin-right: 0;
-                }
+                margin: 0 0 0 3.8em;
+                color:#333;
+                font-size: 1.4em;
+                line-height: 2em;
+                font-weight: 400;
+                a{
+                    color:#333 !important;
+                }   
             }
 
             a {
+                color:white;
                 text-decoration: none;
-                color: white;
-
                 &.cd-address {
                     @media(max-width: 640px) and (orientation: portrait) {
                         display: flex;
@@ -545,16 +522,17 @@ a {
                     @media(max-width: 640px) and (orientation: portrait) {
                         padding-top: 0.5em;
                     }
-
+                    
                     >span {
                         @media(max-width: 640px) and (orientation: portrait) {
                             line-height: 1.6em;
                         }
                     }
                 }
-
-                .bold {
-                    font-weight: 600;
+            }
+            @media (max-width:480px){
+                span.label{
+                    display: none;
                 }
             }
         }
