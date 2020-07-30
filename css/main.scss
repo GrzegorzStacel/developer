@@ -1039,13 +1039,17 @@ header {
     @media(max-width:640px) and (orientation:portrait) {
         height: 45em;
     }
+
+    &.tech-gradient {
+        height: 22em;
+    }
 }
 
 .title {
     color: #49515c;
     font: 400 4.9em "Muli", sans-serif;
     margin: 0 0 0.7em 3em;
-    padding: 1.97em 0 0 0.6em;
+    padding: 1.77em 0 0 0.6em;
     position: relative;
     z-index: 1;
 
@@ -1134,7 +1138,7 @@ header {
                 bottom: 5em;
             }
 
-            @media (max-width:640px) and (orientation:portrait){
+            @media (max-width:640px) and (orientation:portrait) {
                 background: #49515c;
                 border: none;
                 position: relative;
@@ -1506,168 +1510,115 @@ footer {
     }
 }
 
-@mixin shadow-ellipse {
-    content: '';
-    position: absolute;
-    bottom: -28%;
-    left: 45%;
-    height: 10px;
-    width: 45px;
-    background: radial-gradient(ellipse at center,
-            rgba(0, 0, 0, 0.35) 0%,
-            rgba(0, 0, 0, 0) 80%);
+.tech-container {
+    border-bottom: 2px solid #f8f8f9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3em;
+    margin: 7.2em auto 8.5em;
+    width: 79.5em;
+    max-width: 1400px;
+
+    .tech-cell {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        position: relative;
+
+        span {
+            height: 90px;
+            display: flex;
+            justify-content: center;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        p {
+            justify-self: flex-end;
+            margin: 0;
+            color: #00318a;
+            text-align: center;
+            letter-spacing: 0.6px;
+            font: 14px/22px "Poppins", sans-serif;
+            padding: 42px 20px 0 20px;
+        }
+    }
 }
 
 .main-tech {
-    padding-bottom: 16.7em;
     padding-bottom: 108px;
-    background: white;
+    position: relative;
+    display: flex;
 
-    .container-tech-icons {
-        display: flex;
-        justify-content: center;
-        margin-top: 7.6em;
-        margin-bottom: 12.2em;
-        position: relative;
-
-        .box-tech-icons {
-            width: 28.9em;
-            width: 25%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .img-tech-icons {
-            width: 100%;
-            position: relative;
-            height: 76px;
-
-            &:after {
-                @include shadow-ellipse();
-            }
-
-            &.fix-shadows:after {
-                @include shadow-ellipse();
-                left: 31%;
-            }
-
-            &.fix-shadows:before {
-                @include shadow-ellipse();
-                left: 61%;
-            }
-
-            img {
-                @include center-center();
-            }
-        }
-
-        .paragraph-tech-icons {
-            width: 100%;
-
-            p {
-                padding: 20px;
-                margin: 0;
-                font-size: 14px;
-                letter-spacing: 0.6px;
-                line-height: 22px;
-                //Problem z kolorem i grubością czcionki
-                //Kolor pobrany z projektu różni się u mnie sporo (to ten aktywny poniżej)
-                //Z palety wybrałem coś podobnego aleee...
-                color: #00318a;
-                // color: #345185;
-                //mam wrażenie, że czcionka 400 jest jakby za cienka a 500 jakby za gruba...
-                // font-weight: 500;
-                //Ewentualnie rozwiązać problem nadając mu trochę cienia...
-                // text-shadow: 0.2px 0.4px #345185; 
-                font-family: "Poppins";
-                text-align: center;
-                padding: 42px 46px 0 46px;
-            }
-        }
-
-        &:after {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 77%;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: -61.1px;
-            border-bottom: 2px solid #f8f8f9;
-        }
+    img {
+        width: 100%;
+        display: block;
     }
 
-    .container-tech-describe {
-        position: relative;
-        display: flex;
+    .tech-desc {
+        display: inline-block;
+        width: 65%;
+        text-align: right;
 
-        img {
-            width: 65%;
-        }
-
-        .tech-desc {
-            display: inline-block;
-            position: absolute;
-            left: 17.5em;
-            top: 1.2em;
-            width: 40%;
-
+        p {
             letter-spacing: 1.11px;
+            display: inline-block;
             width: 55.2em;
             font-size: 1.02em;
             line-height: 1.85em;
             color: #49515c;
+            margin-right: 3.3em;
+            text-align: left;
         }
+    }
 
-        .big-label {
-            width: 35%;
-            background: #49515c;
-            position: relative;
+    .big-label {
+        width: 35%;
+        background: #49515c;
+        position: relative;
 
-            p {
-                transform: rotate(-90deg);
-                position: absolute;
-                // top: 0;
-                // right: 0;
-                font-family: "Poppins";
-                color: white;
-                margin: 0;
+        p {
+            transform: rotate(-90deg);
+            position: absolute;
+            font-family: "Poppins";
+            color: white;
+            margin: 0;
+            font-weight: bold;
 
-                &:nth-child(1) {
-                    font-size: 4em;
-                    opacity: 0.1;
-                    font-weight: bold;
-                    top: 4.55em;
-                    right: 4.5em;
-                }
+            &:nth-child(1) {
+                font-size: 3.3vw;
+                opacity: 0.1;
+                top: 36%;
+                left: -39%;
+            }
 
-                &:nth-child(2) {
-                    font-size: 8.3em;
-                    letter-spacing: 0.04em;
-                    font-weight: bold;
-                    bottom: 0.62em;
-                    left: -0.2em;
-                    opacity: 0.15;
-                }
+            &:nth-child(2) {
+                font-size: 6.9vw;
+                letter-spacing: 0.04em;
+                opacity: 0.15;
+                bottom: 12%;
+                left: -4%;
+            }
 
-                &:nth-child(3) {
-                    font-size: 3.06em;
-                    letter-spacing: -0.02em;
-                    line-height: 1.7em;
-                    top: 3.8em;
-                    left: -0.3em;
-                    opacity: 0.03;
-                }
+            &:nth-child(3) {
+                font-size: 2.5vw;
+                letter-spacing: -0.02em;
+                line-height: 1.7em;
+                font-weight: normal;
+                opacity: 0.03;
+                top: 23%;
+                left: -2%;
+            }
 
-                &:nth-child(4) {
-                    font-size: 9.35em;
-                    opacity: 0.06;
-                    letter-spacing: -0.05em;
-                    top: 0.75em;
-                    left: 0.18em;
-                    font-weight: bold;
-                }
-
+            &:nth-child(4) {
+                font-size: 7.8vw;
+                letter-spacing: -0.05em;
+                opacity: 0.06;
+                top: 14%;
+                left: 4%;
             }
         }
     }
