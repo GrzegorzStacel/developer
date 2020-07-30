@@ -7,20 +7,19 @@
     <title>Budowy modułowe</title>
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700,800&display=swap">
 
+
     <!-- Main styles -->
     <link rel="stylesheet" href="../css/main.css">
+
 
     <!-- Librares -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous" defer></script>
-
-    <!-- Gallery -->
-    <link type="text/css" rel="stylesheet" href="../css/lightgallery.min.css" />
 
     <!-- Gallery scripts -->
     <script src="../js/lightgallery.min.js" defer></script>
@@ -31,55 +30,49 @@
 </head>
 
 <body>
-    <header>
-        <a href="../index.html"><img src="../img/logo.svg" alt="logo budowy modułowe"></a>
+    <header class="header-top">
+        <div id="hamburgermenu">
+            <div class="bar"></div>
+        </div>
+        <a class="logo logo-cp" href="../index.html"><img src="../img/logo.svg" alt="logo"></a>
 
-        <nav>
-            <!-- <a href="#" class="hide-desktop">
-                <img src="../img/" alt="toggle menu" class="menu" id="menu">
-            </a> -->
-
-            <ul class="show-desktop hide-mobile" id="nav">
-                <!-- <li id="exit" class="exit-btn hide-desktop">
-                    <img src="img/hamburger/exit.svg" alt="exit menu">
-                </li> -->
-                <li>
-                    <a href="o-firmie.html">o firmie</a>
-                </li>
-                <li>
-                    <a href="technologia.html">technologia</a>
-                </li>
-                <li>
-                    <a href="oferta.html">oferta</a>
-                </li>
-                <li>
-                    <a href="#contact-label">kontakt</a>
-                </li>
-            </ul>
+        <nav id="topBar" class="nav-top">
+            <a href="o-firmie.html">o firmie</a>
+            <a href="technologia.html">technologia</a>
+            <a href="oferta.html">oferta</a>
+            <a href="#contact-label" id="btn-contact">kontakt</a>
         </nav>
 
         <div class="nav-belt">
-            <div itemscope itemtype="http://schema.org/LocalBusiness">
+            <div class="nav-belt-container" itemscope itemtype="http://schema.org/LocalBusiness">
 
-                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="postalCode">42-202</span>
-                    <span itemprop="addressLocality">Częstochowa</span>, ul <span itemprop="streetAddress">Żyzna
-                        11/o</span>
+                <p class="container-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span>
+                        <span itemprop="postalCode">42-202</span>
+                        <span itemprop="addressLocality">Częstochowa</span>
+                        <span class="edit-coma">,</span>
+                    </span>
+                    <span>
+                        ul <span itemprop="streetAddress">Żyzna
+                            11/o</span>
+                    </span>
                 </p>
 
-                <p>
-                    email:
-                    <a href="mailto:biuro@budowymodulowe.pl" itemprop="email">
-                        <span class="bold">biuro@budowymodulowe.pl</span>
-                    </a>
-                </p>
+                <div class="container-data">
+                    <p class="email-p">
+                        email:
+                        <a href="mailto:biuro@budowymodulowe.pl" itemprop="email">
+                            <span class="bold">biuro@budowymodulowe.pl</span>
+                        </a>
+                    </p>
 
-                <p>
-                    tel:
-                    <a href="tel:+48-504-424-836" itemprop="telephone">
-                        <span class="bold">504 424 836</span>
-                    </a>
-                </p>
+                    <p class="phone-p">
+                        tel:
+                        <a href="tel:+48-504-424-836" itemprop="telephone">
+                            <span class="bold">504 424 836</span>
+                        </a>
+                    </p>
+                </div>
 
             </div>
         </div>
@@ -87,9 +80,9 @@
 
     <main class="main-offer">
         <div class="gradient"></div>
-        <h1 class="title">Oferta</h1>
+        <h2 class="title">Oferta</h2>
 
-        <header>
+        <header class="main-offer-header">
             <p>W ofercie aktualnie posiadamy kilka obiektów gotowych do natychmiastowego wykonania w technologii
                 modułowej.<br>
                 W standardzie dostarczamy propozycję układu pomieszczeń, która może być dowolnie zmieniona przez
@@ -99,334 +92,317 @@
                 Poniżej krótka prezentacja naszej obecnej oferty, w której aktualnie posiadamy :</p>
 
             <nav class="main-yellow-box">
-                <a href="#house">domek</a>
-                <a href="#row">szeregówka</a>
-                <a href="#multi-housing">zabudowa wielorodzinna</a>
-                <a href="#garage">garaż</a>
-                <a href="#office">biuro</a>
+                <a href="#HOUSE">domek</a>
+                <a href="#ROW">szeregówka</a>
+                <a href="#MULTI">zabudowa wielorodzinna</a>
+                <a href="#GARAGE">garaż</a>
+                <a href="#OFFICE">biuro</a>
             </nav>
         </header>
 
-        <section id="house" class="house-section">
+        <section id="HOUSE" class="offer-section">
             <header class="offer-title">
+                <h2>domek</h2>
                 <p>Nowoczesny, niskoenergetyczny dom, który łatwo wpasować na niewielką działkę. Proces budowy domu to
                     minimum zanieczyszczenia działki i znikome zaangażowanie właściciela w typowe procesy tradycyjnej
                     budowy domu.</p>
-                <h2>domek</h2>
             </header>
 
+            <img class="offer-background" src="../img/offer/house_background.jpg" alt="">
+
             <div class="offer-box">
-                <div class="offer-box-wrapper">
-                    <div class="offer-info">
+                <div class="offer-info">
+                    <div class="details">
                         <h3>Dom w technologii domu pasywnego</h3>
                         <p>stan deweloperski</p>
-                        <p class="p-edit">powierzchnia użytkowa <span class="size-medium">51,2 m<sup
-                                    class="number-square">2</sup></span></p>
+                        <p class="p-edit">
+                            powierzchnia użytkowa
+                            <span class="size-medium">51,2 m
+                                <sup class="number-square">2</sup>
+                            </span>
+                        </p>
                         <p>instalacja fotowoltaiczna 5kW</p>
                         <p>system rekuperacji powietrza<br>
                             z odzyskiem ciepła</p>
-                        <div class="offer-box-price">
-                            <div class="price">
-                                <div>
-                                    <p>prezentowany dom</p>
-                                    <p class="price-medium"><span class="price-big">149</span>&nbsp;tys. brutto</p>
-                                </div>
-                                <div>
-                                    <p>bez zadaszenia tarasowego</p>
-                                    <p class="price-medium"><span class="price-big">138</span>&nbsp;tys. brutto</p>
-                                </div>
-                                <p class="price-to-m2">(2700 zł za 1 m<sup>2</sup>)</p>
+                    </div>
+                    <div class="offer-price">
+                        <div class="price">
+                            <div>
+                                <p>prezentowany dom</p>
+                                <p class="price-medium"><span class="price-big">149</span>&nbsp;tys. brutto</p>
                             </div>
-                            <div class="time">
-                                <div class="time-all">
-                                    <p>czas przygotowania:</p>
-                                    <p class="time-important">11 tygodni</p>
-                                </div>
-                                <div class="instalation">
-                                    <p>montaż na budowie:</p>
-                                    <p class="time-important">do 7 dni</p>
-                                </div>
+                            <div>
+                                <p>bez zadaszenia tarasowego</p>
+                                <p class="price-medium"><span class="price-big">138</span>&nbsp;tys. brutto</p>
+                            </div>
+                            <p class="price-to-m2">(2700 zł za 1 m<sup>2</sup>)</p>
+                        </div>
+                        <div class="time">
+                            <div>
+                                <p>czas przygotowania:</p>
+                                <p class="time-important">11 tygodni</p>
+                            </div>
+                            <div class="instalation">
+                                <p>montaż na budowie:</p>
+                                <p class="time-important">do 7 dni</p>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="offer-photo img-shadow">
-                        <img src="../img/offer/house_general.jpg"
-                            alt="Wizualizacja domu jednorodzinnego zbudowanego technologią domu pasywnego">
-                        <div>
-                            <img class="shadow-mirror" src="../img/offer/house_mirror_ref.png"
-                                alt="lustrzane odbicie zdjęcia w tle">
-                        </div>
-                        <div id="lightgallery1">
-                            <a href="../img/offer/house_zoom1.jpg" class="gallery-btn">
-                                <p>WIĘCEJ ZDJĘĆ</p>
-                                <div class="square-decoration">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </a>
-                            <a href="../img/offer/house_zoom2.jpg"></a>
-                        </div>
+                <div class="offer-photo">
+                    <img src="../img/offer/house_general.jpg"
+                        alt="Wizualizacja domu jednorodzinnego zbudowanego technologią domu pasywnego">
+                    <div class="shadow">
+                        <img class="shadow-mirror" src="../img/offer/house_mirror_ref.png"
+                            alt="lustrzane odbicie zdjęcia w tle">
+                    </div>
+                    <div id="lightgallery1">
+                        <a href="../img/offer/house_zoom1.jpg" class="gallery-btn">
+                            <p>WIĘCEJ ZDJĘĆ</p>
+                            <div class="square-decoration">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <a href="../img/offer/house_zoom2.jpg"></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="row" class="house-section row-section">
-            <header class="offer-title">
+        <section id="ROW" class="offer-section">
+            <header class="offer-title offer-title-left">
                 <h2>szeregówki</h2>
                 <p>Zabudowa szeregowa to niższy koszt działki dla pojedynczego odbiorcy,
                     wspólne ściany boczne to niższe koszty budowy oraz zyski w eksploatacji
                     (mniejszy obszar wymiany ciepła z otoczeniem), tańsza eksploatacja
                     wynikająca z koncentracji usług (śmietniki, koszty podłączy)</p>
-                <div class="developer-beam">
+                <div class="OT-yellow-beam">
                     <p>OFERTA RÓWNIEŻ DLA DEWELOPERA</p>
                 </div>
             </header>
-
-            <div class="offer-box">
-                <img class="img-background-top" src="../img/offer/row_background_top.png"
-                    alt="Obraz domu szeregowego w tle">
-                <img class="img-background-bottom" src="../img/offer/row_background_bottom.jpg"
-                    alt="Obraz domu szeregowego w tle z meblami ogrodowymi">
-
-                <div class="offer-box-wrapper">
-
-
-                    <div class="offer-photo img-shadow">
-                        <img src="../img/offer/row_general.jpg" alt="Wizualizacja domu szeregowego">
-                        <div>
-                            <img class="shadow-mirror" src="../img/offer/row_mirror_ref.png"
-                                alt="lustrzane odbicie zdjęcia w tle">
-                        </div>
-                        <div id="lightgallery2">
-                            <a href="../img/offer/row_zoom1.jpg" class="gallery-btn">
-                                <p>WIĘCEJ ZDJĘĆ</p>
-                                <div class="square-decoration">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </a>
-                            <a href="../img/offer/row_zoom2.jpg"></a>
-                            <a href="../img/offer/row_zoom3.jpg"></a>
-                        </div>
-                    </div>
-
-                    <div class="offer-info">
+            <img class="offer-background off-bg-top" src="../img/offer/row_background_top.png"
+                alt="Obraz domu szeregowego w tle">
+            <img class="offer-background off-bg-bottom" src="../img/offer/row_background_bottom.jpg"
+                alt="Obraz domu szeregowego w tle z meblami ogrodowymi">
+            <div class="offer-box OB-reverse">
+                <div class="offer-info">
+                    <div class="details">
                         <p class="p-edit">prezentowany budynek <span class="size-medium">&nbsp;100,4 m<sup
                                     class="number-square">2</sup></span></p>
                         <p>dowolny układ pomieszczeń</p>
                         <p>budynki w technologi pasywnej</p>
                         <p>ogrzewanie podłogowe</p>
                         <p>instalacja fotowoltaiczna 7kW</p>
-                        <p>system rekuperacji powietrza z odzyskiem ciepła</p>
-                        <div class="offer-box-price">
-                            <div class="price">
-                                <div>
-                                    <p>prezentowana szeregówka</p>
-                                    <p class="price-medium"><span class="price-big">272</span>&nbsp;tys. brutto</p>
-                                </div>
-                                <p class="price-to-m2">(2700 zł za 1 m<sup>2</sup>)</p>
+                        <p>system rekuperacji powietrza<br> z odzyskiem ciepła</p>
+                    </div>
+                    <div class="offer-price">
+                        <div class="price">
+                            <div>
+                                <p>prezentowana szeregówka</p>
                             </div>
-                            <div class="time">
-                                <div class="time-all">
-                                    <p>czas przygotowania:</p>
-                                    <p class="time-important">do 12 tygodni</p>
-                                </div>
-                                <div class="instalation">
-                                    <p>montaż na budowie:</p>
-                                    <p class="time-important">do 7 dni</p>
-                                </div>
+                            <p class="price-medium"><span class="price-big">272</span>&nbsp;tys. brutto</p>
+                            <p class="price-to-m2">(2700 zł za 1 m<sup>2</sup>)</p>
+                        </div>
+                        <div class="time">
+                            <div class="time-all">
+                                <p>czas przygotowania:</p>
+                                <p class="time-important">do 12 tygodni</p>
+                            </div>
+                            <div class="instalation">
+                                <p>montaż na budowie:</p>
+                                <p class="time-important">do 7 dni</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="offer-photo">
+                    <img src="../img/offer/row_general.jpg" alt="Wizualizacja domu szeregowego">
+                    <div class="shadow">
+                        <img class="shadow-mirror" src="../img/offer/row_mirror_ref.png"
+                            alt="lustrzane odbicie zdjęcia w tle">
+                    </div>
+                    <div id="lightgallery2">
+                        <a href="../img/offer/row_zoom1.jpg" class="gallery-btn">
+                            <p>WIĘCEJ ZDJĘĆ</p>
+                            <div class="square-decoration">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <a href="../img/offer/row_zoom2.jpg"></a>
+                        <a href="../img/offer/row_zoom3.jpg"></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="multi-housing" class="house-section multi-section">
+        <section id="MULTI" class="offer-section">
             <header class="offer-title">
                 <h2>zabudowa wielorodzinna</h2>
                 <p>idealne rozwiązanie dla inwestorów, którzy chcą<br>
                     wykorzystać nadarzającą sie koniunkturę nie czekając kilku lat.<br>
                     Niemal dowolnie duże struktury - od małych po rozmiary średnich bloków mieszkalnych. nowoczesny
                     wygląd z zachowaniem ergonomii znakomitych właściwości użytkowych</p>
-                <div class="developer-beam">
+                <div class="OT-yellow-beam OT-yellow-beam-right">
                     <p>OFERTA RÓWNIEŻ DLA DEWELOPERA</p>
                 </div>
             </header>
-
+            <img class="offer-background" src="../img/offer/multi_background.jpg"
+                alt="Obraz projektu zabudowy wielorodzinnej w tle">
             <div class="offer-box">
-                <img class="img-background" src="../img/offer/multi_background.jpg"
-                    alt="Obraz projektu zabudowy wielorodzinnej w tle">
-                <div class="offer-box-wrapper">
-
-                    <div class="offer-info">
+                <div class="offer-info">
+                    <div class="details">
                         <p>budynek w technologi obiektu pasywnego</p>
                         <p class="p-edit">do wyboru dwie wielkości mieszkań(51,2m<sup class="number-square">2</sup> oraz
                             75.3m<sup class="number-square">2</sup></p>
                         <p>ogrzewanie podłogowe</p>
                         <p>instalacja fotowoltaiczna 5kW</p>
                         <p>system rekuperacji powietrza<br> z odzyskiem ciepła</p>
-                        <div class="offer-box-price">
-                            <div class="price">
-                                <div>
-                                    <p>stan developerski</p>
-                                    <p class="price-medium"><span class="price-big">2700</span>&nbsp;zł brutto<br><span
-                                            class="price-separate">za 1m</span><sup class="number-square">2</sup></p>
-                                </div>
-                            </div>
-                            <div class="time">
-                                <div class="time-all">
-                                    <p>czas przygotowania:</p>
-                                    <p class="time-important">do 16 tygodni</p>
-                                </div>
-                                <div class="instalation">
-                                    <p>montaż na budowie:</p>
-                                    <p class="time-important">do 2 tygodni</p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-
-                    <div class="offer-photo img-shadow">
-                        <img src="../img/offer/multi_general.jpg"
-                            alt="Wizualizacja budynku wielorodzinnego zbudowanego technologią domu pasywnego">
-                        <div>
-                            <img class="shadow-mirror" src="../img/offer/multi_mirror_ref.png"
-                                alt="lustrzane odbicie zdjęcia w tle">
+                    <div class="offer-price">
+                        <div class="price">
+                            <p>stan developerski</p>
+                            <p class="price-medium"><span class="price-big">2700</span>&nbsp;zł brutto</p>
+                            <p class="price-to-m2">za 1 m<sup>2</sup></p>
                         </div>
-                        <div id="lightgallery3">
-                            <a href="../img/offer/multi_zoom1.jpg" class="gallery-btn">
-                                <p>WIĘCEJ ZDJĘĆ</p>
-                                <div class="square-decoration">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </a>
-                            <a href="../img/offer/multi_zoom2.jpg"></a>
-                            <a href="../img/offer/multi_zoom3.jpg"></a>
-                            <a href="../img/offer/multi_zoom4.jpg"></a>
-                            <a href="../img/offer/multi_zoom5.jpg"></a>
-                            <a href="../img/offer/multi_zoom6.png"></a>
+                        <div class="time">
+                            <div>
+                                <p>czas przygotowania:</p>
+                                <p class="time-important">do 16 tygodni</p>
+                            </div>
+                            <div class="instalation">
+                                <p>montaż na budowie:</p>
+                                <p class="time-important">do 2 tygodni</p>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div class="offer-photo">
+                    <img src="../img/offer/multi_general.jpg"
+                        alt="Wizualizacja budynku wielorodzinnego zbudowanego technologią domu pasywnego">
+                    <div>
+                        <img class="shadow-mirror" src="../img/offer/multi_mirror_ref.png"
+                            alt="lustrzane odbicie zdjęcia w tle">
+                    </div>
+                    <div id="lightgallery3">
+                        <a href="../img/offer/multi_zoom1.jpg" class="gallery-btn">
+                            <p>WIĘCEJ ZDJĘĆ</p>
+                            <div class="square-decoration">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <a href="../img/offer/multi_zoom2.jpg"></a>
+                        <a href="../img/offer/multi_zoom3.jpg"></a>
+                        <a href="../img/offer/multi_zoom4.jpg"></a>
+                        <a href="../img/offer/multi_zoom5.jpg"></a>
+                        <a href="../img/offer/multi_zoom6.png"></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="garage" class="house-section row-section garage-section">
-            <header class="offer-title">
-                <h2>garaż<br> <span>z płaskim dachem</span></h2>
-
-                <p>Dostosowując się do obecnie panujących trendów tworzymy ciekawe optycznie garaże w dwóch opcjach - z
+        <section id="GARAGE" class="offer-section">
+            <header class="offer-title offer-title-left">
+                <div class="OF-h2">
+                    <h2>garaż</h2>
+                    <p>z płaskim dachem</p>
+                </div>
+                <p class="OT-p-desc">Dostosowując się do obecnie panujących trendów tworzymy ciekawe optycznie garaże w
+                    dwóch opcjach - z
                     wiatą boczną lub jako samodzielna bryła.</p>
             </header>
+            <img class="offer-background" src="../img/offer/garage_background.jpg" alt="Obraz garażu w tle">
 
-            <div class="offer-box">
-                <img class="img-background" src="../img/offer/garage_background.jpg" alt="Obraz garażu w tle">
-
-                <div class="offer-box-wrapper">
-
-                    <div class="offer-photo img-shadow">
-                        <img src="../img/offer/garage_general.jpg" alt="Wizualizacja garażu z wiatą">
-                        <div>
-                            <img class="shadow-mirror" src="../img/offer/garage_mirror_ref.png"
-                                alt="lustrzane odbicie zdjęcia w tle">
-                        </div>
-                        <div id="lightgallery4">
-                            <a href="../img/offer/garage_zoom1.jpg" class="gallery-btn">
-                                <p>WIĘCEJ ZDJĘĆ</p>
-                                <div class="square-decoration">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </a>
-                            <a href="../img/offer/garage_zoom2.jpg"></a>
-                            <a href="../img/offer/garage_zoom3.jpg"></a>
-                            <a href="../img/offer/garage_zoom4.jpg"></a>
-                            <a href="../img/offer/garage_zoom5.jpg"></a>
-
-                        </div>
-                    </div>
-
-                    <div class="offer-info">
+            <div class="offer-box OB-reverse">
+                <div class="offer-info">
+                    <div class="details">
                         <p class="p-edit">powierzchnia użytkowa<span class="size-medium">&nbsp;51,2 m<sup
                                     class="number-square">2</sup></span> z możliwością powiększenia.</p>
                         <p>brama wjazdowa o szerokości <span class="size-medium">8m</span>.</p>
                         <p>do wyboru w 2 opcjach - z wiatą lub bez.</p>
                         <p>elewacja wykonana na bazie tynku</p>
-                        <div class="offer-box-price">
-                            <div class="price">
-                                <div>
-                                    <p>wersja z wiatą</p>
-                                    <p class="price-medium"><span class="price-big">82</span>&nbsp;tys. brutto<br><span
-                                            class="price-separate">(1350 zł za 1m<sup
-                                                class="number-square">2</sup>)</span></p>
-                                </div>
+                    </div>
+
+                    <div class="offer-price">
+                        <div class="price">
+                            <p>wersja z wiatą</p>
+                            <p class="price-medium"><span class="price-big">82</span>&nbsp;tys. brutto</p>
+                            <p class="price-to-m2">(1350 zł za 1m<sup class="number-square">2</sup>)</p>
+                        </div>
+                        <div class="time">
+                            <div>
+                                <p>czas przygotowania:</p>
+                                <p class="time-important">5 tygodni</p>
                             </div>
-                            <div class="time">
-                                <div class="time-all">
-                                    <p>czas przygotowania:</p>
-                                    <p class="time-important">5 tygodni</p>
-                                </div>
-                                <div class="instalation">
-                                    <p>montaż na budowie:</p>
-                                    <p class="time-important">do 7 dni</p>
-                                </div>
+                            <div class="instalation">
+                                <p>montaż na budowie:</p>
+                                <p class="time-important">do 7 dni</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="offer-box-price box-price-second">
-                            <div class="price">
-                                <div>
-                                    <p>wersja bez wiaty</p>
-                                    <p class="price-medium"><span class="price-big">69</span>&nbsp; tys. brutto<br><span
-                                            class="price-separate">(1350 zł za 1m<sup
-                                                class="number-square">2</sup>)</span></p>
-                                </div>
+                    <div class="offer-price OP-second">
+                        <div class="price">
+                            <p>wersja bez wiaty</p>
+                            <p class="price-medium"><span class="price-big">69</span>&nbsp;tys. brutto</p>
+                            <p class="price-to-m2">(1350 zł za 1m<sup class="number-square">2</sup>)</p>
+                        </div>
+                        <div class="time">
+                            <div>
+                                <p>czas przygotowania:</p>
+                                <p class="time-important">4 tygodne</p>
                             </div>
-                            <div class="time">
-                                <div class="time-all">
-                                    <p>czas przygotowania:</p>
-                                    <p class="time-important">4 tygodne</p>
-                                </div>
-                                <div class="instalation">
-                                    <p>montaż na budowie:</p>
-                                    <p class="time-important">do 7 dni</p>
-                                </div>
+                            <div class="instalation">
+                                <p>montaż na budowie:</p>
+                                <p class="time-important">do 7 dni</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="offer-photo">
+                    <img src="../img/offer/garage_general.jpg" alt="Wizualizacja garażu z wiatą">
+                    <div>
+                        <img class="shadow-mirror" src="../img/offer/garage_mirror_ref.png"
+                            alt="lustrzane odbicie zdjęcia w tle">
+                    </div>
+                    <div id="lightgallery4">
+                        <a href="../img/offer/garage_zoom1.jpg" class="gallery-btn">
+                            <p>WIĘCEJ ZDJĘĆ</p>
+                            <div class="square-decoration">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <a href="../img/offer/garage_zoom2.jpg"></a>
+                        <a href="../img/offer/garage_zoom3.jpg"></a>
+                        <a href="../img/offer/garage_zoom4.jpg"></a>
+                        <a href="../img/offer/garage_zoom5.jpg"></a>
+                    </div>
+                </div>
             </div>
-
-
         </section>
 
-        <section id="office" class="house-section office-section">
+        <section id="OFFICE" class="offer-section">
             <header class="offer-title">
                 <h2>biura</h2>
-
                 <p>Dzięki modularnej budowie łatwo można dopasować się do działki o nietypowych kształtach i dowolnie
                     ustalać potrzebną powierzchnię użytkową. Co ważne w przypadku dynamicznie rozwijających się
                     przedsiębiorstw - tego typu budynku łatwo rozbudowywać</p>
             </header>
+            <img class="offer-background" src="../img/offer/office_background.jpg"
+                alt="Obraz w tle z projektem rozmieszczenia biur w budynku">
 
             <div class="offer-box">
-                <img class="img-background" src="../img/offer/office_background.jpg"
-                    alt="Obraz w tle z projektem rozmieszczenia biur w budynku">
-
-                <div class="offer-box-wrapper">
-
-
-
-                    <div class="offer-info">
+                <div class="offer-info">
+                    <div class="details">
                         <p class="p-edit">powierzchnia użytkowa<span class="size-medium">&nbsp;230,4 m<sup
                                     class="number-square">2</sup></span></p>
                         <p>ściana frontowa w elewacji szklanej (uwzględniono dwoje drzwi)</p>
@@ -436,62 +412,58 @@
                         <p class="p-edit">opcja rozbudowy co<span class="size-medium">&nbsp;25,6 m<sup
                                     class="number-square">2</sup></span></p>
                         <p>dostępny wariant wielokondygnacyjny</p>
-                        <div class="offer-box-price">
-                            <div class="price">
-                                <div>
-                                    <p>cena prezentowanego biura</p>
-                                    <p class="price-medium"><span class="price-big">245</span>&nbsp;tys. brutto<br><span
-                                            class="price-separate">(1500 zł za 1m<sup
-                                                class="number-square">2</sup>)</span></p>
-                                    <p class="price-info">wersja niskoenergetyczna</p>
-                                </div>
-                                <div class="price-second">
-                                    <p class="price-medium"><span class="price-big">345</span>&nbsp;tys. brutto<br><span
-                                            class="price-separate">(1500 zł za 1m<sup
-                                                class="number-square">2</sup>)</span></p>
-                                    <p class="price-info price-info-second">wersja w technologii obiektu pasywnego</p>
-                                </div>
-                            </div>
-                            <div class="time">
-                                <div class="time-all">
-                                    <p>czas przygotowania:</p>
-                                    <p class="time-important">12 tygodni</p>
-                                </div>
-                                <div class="instalation">
-                                    <p>montaż na budowie:</p>
-                                    <p class="time-important">do 7 dni</p>
-                                </div>
+                    </div>
+                    <div class="offer-price">
+                        <div class="price">
+                                <p class="price-first">cena prezentowanego biura</p>
+                                <p class="price-medium"><span class="price-big">245</span>&nbsp;tys. brutto</p>
+                                <p class="price-to-m2">(1500 zł za 1m
+                                    <sup class="number-square">2</sup>)
+                                </p>
+                                <p class="price-info">wersja niskoenergetyczna</p>
+                            <div class="price-second">
+                                <p class="price-medium"><span class="price-big">345</span>&nbsp;tys. brutto</p>
+                                <p class="price-to-m2">(1500 zł za 1m<sup class="number-square">2</sup>)</p>
+                                <p class="price-info price-info-second nowrap">wersja w technologii obiektu pasywnego</p>
                             </div>
                         </div>
-
+                        <div class="time">
+                            <div>
+                                <p>czas przygotowania:</p>
+                                <p class="time-important">12 tygodni</p>
+                            </div>
+                            <div class="instalation">
+                                <p>montaż na budowie:</p>
+                                <p class="time-important">do 7 dni</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="offer-photo img-shadow">
-                        <img src="../img/offer/office_general.jpg" alt="Wizualizacja budynku przeznaczonego na biura">
-                        <div>
-                            <img class="shadow-mirror" src="../img/offer/office_mirror_ref.png"
-                                alt="lustrzane odbicie zdjęcia w tle">
-                        </div>
-                        <div id="lightgallery5">
-                            <a href="../img/offer/office_zoom1.jpg" class="gallery-btn">
-                                <p>WIĘCEJ ZDJĘĆ</p>
-                                <div class="square-decoration">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </a>
-                            <a href="../img/offer/office_zoom2.jpg"></a>
-                            <a href="../img/offer/office_zoom3.jpg"></a>
-                            <a href="../img/offer/office_zoom4.jpg"></a>
-                            <a href="../img/offer/office_zoom5.jpg"></a>
+                </div>
 
-                        </div>
+                <div class="offer-photo img-shadow">
+                    <img src="../img/offer/office_general.jpg" alt="Wizualizacja budynku przeznaczonego na biura">
+                    <div>
+                        <img class="shadow-mirror" src="../img/offer/office_mirror_ref.png"
+                            alt="lustrzane odbicie zdjęcia w tle">
+                    </div>
+                    <div id="lightgallery5">
+                        <a href="../img/offer/office_zoom1.jpg" class="gallery-btn">
+                            <p>WIĘCEJ ZDJĘĆ</p>
+                            <div class="square-decoration">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <a href="../img/offer/office_zoom2.jpg"></a>
+                        <a href="../img/offer/office_zoom3.jpg"></a>
+                        <a href="../img/offer/office_zoom4.jpg"></a>
+                        <a href="../img/offer/office_zoom5.jpg"></a>
+
                     </div>
                 </div>
             </div>
-
-
         </section>
     </main>
 
