@@ -616,7 +616,7 @@ a {
 
 @media (max-width: 980px) and (orientation: portrait) {
   .nav-belt .nav-belt-container p {
-    font-size: 1.4em;
+    font-size: 1.1em;
     color: white;
     font-weight: 300;
     line-height: 3em;
@@ -765,10 +765,8 @@ a {
     z-index: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     background-repeat: no-repeat;
     background-size: 155vw 70%;
     background-position: 24% top;
