@@ -2655,7 +2655,7 @@ footer p {
 
 #GARAGE {
   padding-bottom: 13.5em;
-  margin-bottom: 13em;
+  margin-bottom: 20.7em;
 }
 
 #GARAGE .offer-title {
@@ -2721,5 +2721,74 @@ footer p {
   height: 22%;
   bottom: -8.5em;
   left: 0;
+}
+
+#OFFICE {
+  padding-bottom: 16.9em;
+  margin-bottom: 16em;
+}
+
+#OFFICE .offer-title p {
+  width: 53.4em;
+  margin-top: 4.4em;
+  line-height: 1.7em;
+}
+
+#OFFICE .offer-background {
+  top: 17.1em;
+  width: 83.4%;
+  height: 80.5%;
+  height: 79.5%;
+  left: 1.2em;
+}
+
+#OFFICE .price {
+  padding-left: 2.2em;
+  padding-right: 0;
+}
+
+#OFFICE .price .price-first {
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+#OFFICE .price .price-medium {
+  margin-bottom: 0.1em;
+  letter-spacing: 0.05em;
+}
+
+#OFFICE .price .price-to-m2 {
+  padding-left: 0.6em;
+}
+
+#OFFICE .price .price-info {
+  margin-bottom: 2.5em;
+  padding-left: 1.3em;
+  letter-spacing: 0.07em;
+}
+
+#OFFICE .price .price-second .price-medium {
+  margin: 0;
+}
+
+#OFFICE .price .price-second .price-info {
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+#OFFICE .time {
+  position: relative;
+  left: -1.5em;
+}
+
+#OFFICE .shadow-mirror {
+  width: 105%;
+  bottom: -15.8em;
+  left: -1.6em;
+  height: 37%;
+}
+
+.container-offer:before {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

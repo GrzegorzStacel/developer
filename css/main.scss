@@ -2201,7 +2201,7 @@ footer {
 
 #GARAGE {
     padding-bottom: 13.5em;
-    margin-bottom: 13em;
+    margin-bottom: 20.7em;
 
     .offer-title {
         justify-content: space-between;
@@ -2267,132 +2267,76 @@ footer {
     }
 }
 
+#OFFICE {
+    padding-bottom: 16.9em;
+    margin-bottom: 16em;
+
+    .offer-title {
+        p {
+            width: 53.4em;
+            margin-top: 4.4em;
+            line-height: 1.7em;
+        }
+    }
+
+    .offer-background {
+        top: 17.1em;
+        width: 83.4%;
+        height: 80.5%;
+        height: 79.5%;
+        left: 1.2em;
+    }
+
+    .price {
+        padding-left: 2.2em;
+        padding-right: 0;
+
+        .price-first {
+            padding-left: 1em;
+            margin-bottom: 2em;
+        }
+
+        .price-medium {
+            margin-bottom: 0.1em;
+            letter-spacing: 0.05em;
+        }
+
+        .price-to-m2 {
+            padding-left: 0.6em;
+        }
+
+        .price-info {
+            margin-bottom: 2.5em;
+            padding-left: 1.3em;
+            letter-spacing: 0.07em;
+        }
+
+        .price-second {
+            .price-medium {
+                margin: 0;
+            }
+
+            .price-info {
+                letter-spacing: 0.02em;
+                margin: 0;
+            }
+        }
+    }
+
+    .time {
+        position: relative;
+        left: -1.5em;
+    }
+
+    .shadow-mirror {
+        width: 105%;
+        bottom: -15.8em;
+        left: -1.6em;
+        height: 37%;
+    }
+}
 
 
-// .office-section {
-//     padding-bottom: 6.5em;
-//     border-bottom: 1px solid #e7e8e5;
-
-
-//     .offer-title {
-//         margin-top: 7.9em;
-
-//         h2 {
-//             right: 1.3em;
-//         }
-
-//         p {
-//             margin-top: 8em;
-//             width: 53.1em;
-//             line-height: 1.7;
-//         }
-
-//         &::after {
-//             top: 6.6em;
-//         }
-
-//         &::before {
-//             bottom: -3.2em;
-//             width: 91.5%;
-//         }
-//     }
-
-//     .offer-box {
-//         background: none;
-//         top: -2.9em;
-
-//         .img-background {
-//             position: absolute;
-//             width: 86.4%;
-//             bottom: -9.4em;
-//             transform: skewX(-2deg);
-//             z-index: -1;
-//         }
-
-//         .offer-box-wrapper {
-//             padding-top: 10.7em;
-//             border-bottom: none;
-
-//             .offer-info {
-//                 position: relative;
-//                 top: 1.3em;
-
-//                 .offer-box-price {
-//                     margin-top: 3.7em;
-//                     width: 38.4em;
-//                     padding-top: 0em;
-//                     padding-bottom: 1.8em;
-
-//                     p {
-//                         line-height: 2.7em;
-//                         padding-left: 0.8em;
-//                         letter-spacing: 0.1em;
-//                     }
-
-//                     .price-medium {
-//                         padding-left: 0.1em;
-//                         line-height: 1.6em;
-//                         margin-top: 0em;
-//                         margin-bottom: 0.2em;
-
-//                         .price-separate {
-//                             letter-spacing: 0.05em;
-//                             padding-left: 0.1em;
-//                         }
-//                     }
-
-//                     .price-info {
-//                         margin: 0;
-//                         line-height: 0.5em;
-//                         letter-spacing: 0.06em;
-//                         color: #ffffff;
-//                         font-weight: 600;
-//                     }
-
-//                     .price-second {
-//                         margin-top: 2.3em;
-
-//                         p {
-//                             padding-left: 0em;
-//                             letter-spacing: 0em;
-//                         }
-//                     }
-
-//                     .time {
-//                         position: absolute;
-//                         right: 1.5em;
-//                         top: 2.5em;
-
-//                         p {
-//                             padding-left: 0;
-//                         }
-//                     }
-//                 }
-//             }
-
-//             .offer-photo {
-//                 top: 2.3em;
-//                 display: table;
-
-//                 img {
-//                     height: auto;
-//                 }
-
-//                 .shadow-mirror {
-//                     bottom: -12.2em;
-//                 }
-//             }
-
-//         }
-//     }
-// }
-// // }
-
-// section .container-offer {
-//     padding-top: 16em;
-//     padding-bottom: 6em;
-
-//     &:before {
-//         display: none;
-//     }
-// }
+.container-offer:before {
+    display: none;
+}
