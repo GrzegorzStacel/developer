@@ -133,7 +133,6 @@ a {
             @media(max-width: 640px) and (orientation: portrait) {
                 font-size: 1.74em;
                 line-height: 1.6em;
-                font-style: italic;
                 text-align: right;
                 width: 55%;
             }
@@ -160,11 +159,7 @@ a {
         }
 
         .bold {
-            font-weight: bold;
-
-            @media(max-width: 980px) and (orientation: portrait) {
-                font-weight: 400;
-            }
+            font-weight: 400;
         }
 
         .cd-address {
@@ -578,8 +573,6 @@ a {
     flex-wrap: wrap;
     justify-content: center;
 
-
-
     @media(max-width: 980px) and (orientation: portrait) {
         height: calc(100vh - 96px);
         position: relative;
@@ -614,74 +607,12 @@ a {
         font-size: 0.99vh;
     }
 
-    // @media(min-width: 1024px) and (min-height: 1366px){
-    //     font-size: 0.99vh;
-    // }
-
     >div {
         z-index: 1;
         color: white;
         position: relative;
         flex-basis: 50%;
         font-family: "Poppins";
-
-        h1 {
-            font-size: 5.1em;
-            margin-top: 0.4em;
-            margin-bottom: 0.3em;
-            padding-right: 0.61em;
-            line-height: 1.2em;
-            letter-spacing: -0.03em;
-            font-weight: 700;
-        }
-
-        .box-blue {
-            background: rgba(21, 35, 56, .6);
-            padding: 1em 3em 1em 3em;
-            white-space: nowrap;
-            font-weight: 300;
-            font-size: 1.4em;
-
-            @media(max-width: 980px) and (orientation: portrait) {
-                margin-right: 3em;
-            }
-
-            @media(max-width: 980px) and (orientation: portrait) {
-                font-size: 2em;
-                text-align: right;
-            }
-
-        }
-
-        .box-yellow {
-            background: $color-yellow;
-            color: #162132;
-            font-weight: 600;
-            display: inline-block;
-            padding: 0.62em 3em 0.62em;
-            font-size: 1.3em;
-
-            @media(max-width: 980px) and (orientation: portrait) {
-                padding: 0.8em 2.8em 0.8em 2.8em;
-                font-size: 2em;
-                margin-right: 3em;
-            }
-
-            @media(max-width: 640px) and (orientation: portrait) {
-                background: none;
-                width: 90%;
-                color: #ffc300;
-                margin: 0 auto;
-                padding: 1em 0;
-                text-align: center;
-                border-top: #ffc30040 1px solid;
-                border-bottom: #ffc30040 1px solid;
-                font-size: 3vw;
-                position: fixed;
-                bottom: 25vh;
-                left: 5%;
-            }
-        }
     }
 
     .main-left {
@@ -719,7 +650,33 @@ a {
             margin-top: 22em;
         }
 
+        &::before {
+            content: '';
+            display: block;
+            border-top: 3px solid white;
+            width: 40em;
+            position: absolute;
+            right: 0;
+
+            @media(max-width: 980px) and (orientation: portrait) {
+                @include horizontally-center();
+                width: 84%;
+            }
+
+            @media(max-width: 640px) and (orientation: portrait) {
+                display: none;
+            }
+        }
+        
         h1 {
+            font-size: 5.1em;
+            margin-top: 0.4em;
+            margin-bottom: 0.3em;
+            padding-right: 0.61em;
+            line-height: 1.2em;
+            letter-spacing: -0.03em;
+            font-weight: 700;
+
             @media(max-width: 980px) and (orientation: portrait) {
                 padding-right: 0em;
                 font-size: 8em;
@@ -739,26 +696,50 @@ a {
         }
 
         .box-blue {
+            background: rgba(21, 35, 56, .6);
+            padding: 1em 3em 1em 3em;
+            white-space: nowrap;
+            font-weight: 300;
+            font-size: 1.4em;
+
+            @media(max-width: 980px) and (orientation: portrait) {
+                margin-right: 3em;
+                font-size: 2em;
+                text-align: right;
+            }
+
             @media(max-width: 640px) and (orientation: portrait) {
                 display: none;
             }
         }
 
-        &::before {
-            content: '';
-            display: block;
-            border-top: 3px solid white;
-            width: 40em;
-            position: absolute;
-            right: 0;
+        .box-yellow {
+            background: $color-yellow;
+            color: #162132;
+            font-weight: 600;
+            display: inline-block;
+            padding: 0.62em 3em 0.62em;
+            font-size: 1.3em;
 
             @media(max-width: 980px) and (orientation: portrait) {
-                @include horizontally-center();
-                width: 84%;
+                padding: 0.8em 2.8em 0.8em 2.8em;
+                font-size: 2em;
+                margin-right: 3em;
             }
 
             @media(max-width: 640px) and (orientation: portrait) {
-                display: none;
+                background: none;
+                width: 90%;
+                color: #ffc300;
+                margin: 0 auto;
+                padding: 1em 0;
+                text-align: center;
+                border-top: #ffc30040 1px solid;
+                border-bottom: #ffc30040 1px solid;
+                font-size: 3vw;
+                position: fixed;
+                bottom: 25vh;
+                left: 5%;
             }
         }
     }
@@ -1970,7 +1951,7 @@ footer {
         }
 
         .price-medium {
-            font: italic normal 1.5em/1.1em "Poppins", sans-serif;
+            font: italic 400 1.5em/1.1em "Poppins", sans-serif;
             color: #ffd200;
             margin-top: 0.9em;
             letter-spacing: 0.11em;
@@ -1979,11 +1960,6 @@ footer {
             .price-big {
                 font-weight: 700;
                 font-size: 2.5em;
-            }
-
-            .price-separate {
-                padding-left: 4.1em;
-                font-weight: 300;
             }
         }
 
