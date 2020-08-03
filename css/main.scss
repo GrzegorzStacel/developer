@@ -444,7 +444,7 @@ a {
         width: 100%;
     }
 
-    &::after  {
+    &::after {
         @media (max-width: 640px) and (orientation:portrait) {
             content: '';
             width: 90%;
@@ -467,6 +467,7 @@ a {
         position: absolute;
         top: -37px;
         right: 1em;
+
         @media (max-width: 640px) and (orientation:portrait) {
             justify-content: space-around;
             display: flex;
@@ -496,18 +497,20 @@ a {
 
             @media (max-width: 640px) and (orientation:portrait) {
                 margin: 0 0 0 3.8em;
-                color:#333;
+                color: #333;
                 font-size: 1.4em;
                 line-height: 2em;
                 font-weight: 400;
-                a{
-                    color:#333 !important;
-                }   
+
+                a {
+                    color: #333 !important;
+                }
             }
 
             a {
-                color:white;
+                color: white;
                 text-decoration: none;
+
                 &.cd-address {
                     @media(max-width: 640px) and (orientation: portrait) {
                         display: flex;
@@ -517,7 +520,7 @@ a {
                     @media(max-width: 640px) and (orientation: portrait) {
                         padding-top: 0.5em;
                     }
-                    
+
                     >span {
                         @media(max-width: 640px) and (orientation: portrait) {
                             line-height: 1.6em;
@@ -525,8 +528,9 @@ a {
                     }
                 }
             }
-            @media (max-width:480px){
-                span.label{
+
+            @media (max-width:480px) {
+                span.label {
                     display: none;
                 }
             }
@@ -667,7 +671,7 @@ a {
                 display: none;
             }
         }
-        
+
         h1 {
             font-size: 5.1em;
             margin-top: 0.4em;
@@ -1014,35 +1018,43 @@ a {
     padding-top: 2em;
     padding-bottom: 0.5em;
     margin: 0;
-    > *{
+
+    >* {
         padding-bottom: 0.2em;
     }
-    .text{
-        flex:0 1 1400px;
+
+    .text {
+        flex: 0 1 1400px;
         padding-left: 0.4em;
         margin-left: 0.4em;
-        border-bottom: 2px solid rgba(black,0.1);
-    }
-    .left, .right{
-        flex-grow: 1;
-    }
-    .right{
-        border-bottom: 2px solid rgba(black,0.1);
+        border-bottom: 2px solid rgba(black, 0.1);
     }
 
-    @media (max-width: 1400px){
-        .text{
-            margin:0 0.2em;
+    .left,
+    .right {
+        flex-grow: 1;
+    }
+
+    .right {
+        border-bottom: 2px solid rgba(black, 0.1);
+    }
+
+    @media (max-width: 1400px) {
+        .text {
+            margin: 0 0.2em;
             padding-left: 0.2em;
         }
-        .left, .right{
+
+        .left,
+        .right {
             display: none;
         }
     }
 
     @media (max-width: 375px) {
         padding-top: 3em;
-        .text{
+
+        .text {
             border-bottom-width: 1px;
         }
     }
@@ -1484,12 +1496,12 @@ footer {
         flex-direction: column;
         justify-self: center;
         position: relative;
-        flex:0 1 400px;
+        flex: 0 1 400px;
 
         picture {
             height: 120px;
             display: flex;
-            
+
             img {
                 max-width: 100%;
                 margin: auto;
@@ -1506,32 +1518,39 @@ footer {
             padding: 30px 24px 0 24px;
         }
     }
-    @media(max-width:980px){
+
+    @media(max-width:980px) {
         .item {
-            picture{
+            picture {
                 height: 12vw;
-                img{
+
+                img {
                     max-height: 100%;
                 }
             }
 
-            p{
+            p {
                 font-size: 1.4vw;
                 line-height: 2em;
                 padding-top: 1em;
             }
-        }   
+        }
     }
+
     @media(max-width:640px) {
         display: block;
+
         .item {
-            margin:10em auto;
-        p{
+            margin: 10em auto;
+
+            p {
                 font-size: 12px;
             }
-            picture{
+
+            picture {
                 height: auto;
-                img{
+
+                img {
                     height: auto;
                 }
             }
@@ -1630,6 +1649,7 @@ footer {
         .tech-desc p {
             font-size: 1.6vw;
         }
+
         .big-label .widthLimiter {
             font-size: 1.5vw
         }
@@ -1640,6 +1660,7 @@ footer {
 
         .tech-desc {
             width: auto;
+
             p {
                 font-size: 13px;
             }
@@ -1679,7 +1700,7 @@ footer {
 
         }
     }
-    
+
     @media(max-width: 375px) {
         .tech-desc p {
             font-size: 12px;
@@ -1696,8 +1717,21 @@ footer {
 .main-offer {
     font-size: 0.834vw;
 
-    .title .text{
-        font-size: 1.6em;
+    @media(max-width: 980px) and (orientation:portrait) {
+        .title {
+            padding-top: 100px;
+            padding-bottom: 30px;
+
+            .text {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    @media(max-width: 640px) and (orientation:portrait) {
+        .title .text {
+            font-size: 2.1em;
+        }
     }
 
     .main-offer-header {
@@ -1707,14 +1741,6 @@ footer {
         flex-basis: 100%;
         font-size: 1.2em;
 
-        @media(max-width: 1200px) {
-            font-size: 16px;
-        }
-
-        @media(max-width: 980px) {
-            font-size: 14px;
-        }
-
         p {
             letter-spacing: 0.12em;
             line-height: 1.6em;
@@ -1722,19 +1748,6 @@ footer {
             width: 84.5vw;
             margin: 0;
             align-self: flex-end;
-
-            @media(max-width: 1200px) {
-                align-self: center;
-            }
-
-            // @media (max-width: 980px) and (orientation:portrait) {
-                // font-size: 1.6em;
-                // font-size: 14px;
-            // }
-
-            // @media (max-width: 640px) and (orientation:portrait) {
-                // font-size: 12px;
-            // }
         }
 
         .main-yellow-box {
@@ -1756,12 +1769,27 @@ footer {
                 line-height: 30px;
                 color: #ffc300;
                 margin: 1em;
-                
-   
-                @media (max-width: 800px) and (orientation:portrait) {
+            }
+
+            @media (max-width: 980px) and (orientation:portrait) {
+                margin-bottom: 8em;
+
+                a {
                     min-width: 170px;
                 }
             }
+        }
+
+        @media(max-width: 1200px) {
+            font-size: 16px;
+
+            p {
+                align-self: center;
+            }
+        }
+
+        @media(max-width: 980px) and (orientation:portrait) {
+            font-size: 12px;
         }
     }
 
@@ -1836,6 +1864,41 @@ footer {
                 padding: 0;
                 margin: 0;
             }
+
+
+            @media (max-width: 980px) and (orientation:portrait) {
+                flex-direction: column;
+                align-items: flex-start;
+
+                >p {
+                    text-align: left;
+                    padding-left: 0;
+                    align-self: flex-start;
+                    margin-top: 1em;
+                }
+            }
+        }
+
+        @media (max-width: 980px) and (orientation:portrait) {
+            flex-direction: column;
+            align-items: flex-end;
+            height: auto;
+
+            h2 {
+                font-size: 9em;
+            }
+
+            p {
+                text-align: right;
+                align-self: flex-end;
+                font-size: 12px;
+                width: 93%;
+                padding-bottom: 1em;
+            }
+
+            &::after {
+                height: 85%;
+            }
         }
     }
 
@@ -1874,6 +1937,10 @@ footer {
         width: 100%;
         height: 70%;
         z-index: -1;
+
+        @media (max-width: 980px) and (orientation:portrait) {
+            top: 26em;
+        }
     }
 
     .offer-box {
@@ -1885,6 +1952,15 @@ footer {
             flex-direction: row-reverse;
             padding-top: 3.7em;
         }
+
+        @media (max-width: 980px) and (orientation:portrait) {
+            flex-direction: column;
+            align-items: center;
+
+            &.OB-reverse {
+                flex-direction: column;
+            }
+        }
     }
 
     .offer-info {
@@ -1894,6 +1970,13 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         width: 35.5%;
+
+        @media (max-width: 980px) and (orientation:portrait) {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+            padding-bottom: 30px;
+        }
     }
 
     .details {
@@ -1953,6 +2036,12 @@ footer {
                 }
             }
         }
+
+        // @media (max-width: 980px) and (orientation:portrait) {
+        //     h3{
+        //         font-size: 14px;
+        //     }
+        // }
     }
 
     .offer-price {
@@ -2028,6 +2117,11 @@ footer {
             p {
                 line-height: 1.3em;
             }
+        }
+
+        @media (max-width: 980px) and (orientation:portrait) {
+            width: 50%;
+            justify-content: space-around;
         }
     }
 
@@ -2112,6 +2206,10 @@ footer {
                 bottom: 1.3em;
             }
         }
+
+        @media (max-width: 980px) and (orientation:portrait) {
+            width: 80%;
+        }
     }
 }
 
@@ -2138,6 +2236,10 @@ footer {
 
     .offer-info {
         padding-left: 1em;
+
+        @media (max-width: 980px) and (orientation:portrait) {
+            padding-left: 0;
+        }
     }
 
     .price {
@@ -2227,6 +2329,19 @@ footer {
         left: 0;
         height: 29%;
     }
+
+    @media (max-width: 980px) and (orientation:portrait) {
+           
+        .offer-title{
+            &::after{
+                height: 85%;
+            }
+        }
+
+        .offer-info{
+            width: 80%;
+        }
+    }
 }
 
 #GARAGE {
@@ -2295,6 +2410,17 @@ footer {
         bottom: -8.5em;
         left: 0;
     }
+
+    @media (max-width: 980px) and (orientation:portrait) {
+           
+        .offer-title{
+
+            .OT-p-desc{
+                width: 93%;
+                margin-top: 1em;
+            }
+        }
+    }
 }
 
 #OFFICE {
@@ -2362,6 +2488,16 @@ footer {
         bottom: -15.8em;
         left: -1.6em;
         height: 37%;
+    }
+
+    @media (max-width: 980px) and (orientation:portrait) {
+           
+        .offer-title{
+
+            p{
+                width: 93%;
+            }
+        }
     }
 }
 
