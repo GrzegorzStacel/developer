@@ -2911,16 +2911,14 @@ footer {
     padding-bottom: 16.9em;
     margin-bottom: 16em;
 
-    .offer-title {
-        p {
+    .offer-title p {
             width: 53.4em;
             margin-top: 4.4em;
             line-height: 1.7em;
         }
-    }
 
     .offer-background {
-        top: 17.1em;
+        top: 17em;
         width: 83.4%;
         height: 79.4%;
         left: 1.2em;
@@ -2975,16 +2973,65 @@ footer {
     }
 
     @media (max-width: 980px) and (orientation:portrait) {
+        padding-bottom: 20em;
+        margin-bottom: 10em;
 
         .offer-title {
-
             p {
                 width: 93%;
+                margin-top: 0;
+            }
+            h2{
+                padding-bottom: 15px;
+            }
+        }
+        
+        .offer-background{
+            top: auto;
+            bottom: 0;
+            height: 83%;
+        }
+
+        .offer-price{
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .price{
+                padding-left: 0;
+            }
+
+            .time{
+                margin-right: 0;
+                margin-bottom: 3em;
+            }
+        }
+
+        .shadow-mirror{
+            bottom: -11.1em;
+            height: 180%;
+            object-fit: fill;
+            left: -2.5em;
+        }
+    }
+
+    @media(max-width: 640px) and (orientation:portrait) {
+        .offer-price{
+            flex-direction: row;
+        }
+    }
+
+    @media(max-width: 420px) and (orientation:portrait) {
+        .offer-price{
+            flex-direction: column;
+            
+            .time{
+                margin-top: 6em;
+                margin-bottom: 6em;
             }
         }
     }
 }
-
 
 .container-offer:before {
     display: none;
