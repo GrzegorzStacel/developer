@@ -1760,8 +1760,6 @@ footer {
         border-bottom: 1px solid #e7e8e5;
         position: relative;
         z-index: 0;
-        padding-bottom: 10.7em;
-        margin-bottom: 6.1em;
     }
 
     .offer-title {
@@ -2164,7 +2162,7 @@ footer {
         }
 
         .offer-section {
-            padding-bottom: 0;
+            padding-bottom: 16em;
             margin-bottom: 10em;
         }
 
@@ -2222,18 +2220,19 @@ footer {
         }
 
         .offer-box {
-            flex-direction: column;
-            align-items: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            padding-top: 30px;
 
             &.offer-left {
-                .offer-price {
-                    right: auto;
-                    left: 0;
-                }
+                flex-direction: row-reverse;
             }
         }
 
         .details {
+            position: relative;
+
             h3 {
                 font-size: 15px;
             }
@@ -2258,11 +2257,7 @@ footer {
 
         .offer-price {
             width: 60%;
-            justify-content: space-between;
-            bottom: auto;
-            left: auto;
-            top: 0;
-            right: 0;
+            position: relative;
 
             .price {
                 padding: 4em 2em 4em 5em;
@@ -2300,7 +2295,6 @@ footer {
                 .time-important {
                     font-size: 17px;
                     padding-bottom: 1em;
-
                 }
 
                 .instalation .time-important {
@@ -2311,8 +2305,7 @@ footer {
 
         .offer-photo {
             width: 100%;
-            padding-top: 300px;
-
+            padding-top: 30px;
 
             .shadow {
                 height: 16em;
@@ -2329,7 +2322,7 @@ footer {
             .gallery-btn {
                 width: 250px;
                 height: 60px;
-                bottom: 19.5em;
+                bottom: 3em;
                 right: 3.3em;
                 padding-top: 0;
                 padding-bottom: 0;
@@ -2362,6 +2355,8 @@ footer {
     }
 
     @media(max-width: 640px) and (orientation:portrait) {
+        margin-bottom: 70px;
+
         .title .text {
             font-size: 2.1em;
         }
@@ -2371,16 +2366,39 @@ footer {
         }
 
         .offer-section {
-            padding-bottom: 260px;
             margin-bottom: 70px;
+            padding-bottom: 0;
+        }
+
+        .offer-title {
+            margin-bottom: 0;
+
+            .OT-yellow-beam {
+                width: 220px;
+
+                p {
+                    font-size: 11px;
+                }
+            }
         }
 
         .offer-background {
             bottom: 37em;
         }
 
+        .offer-box {
+            flex-direction: column;
+            padding-top: 60px;
+
+            &.offer-left {
+                margin-top: 0;
+                flex-direction: column;
+            }
+        }
+
         .details {
             width: 100%;
+            padding-bottom: 20px;
 
             h3 {
                 font-size: 14px;
@@ -2397,12 +2415,10 @@ footer {
         }
 
         .offer-price {
-            bottom: -230px;
-            top: auto;
-            left: auto;
-            right: auto;
             width: 100%;
             justify-content: space-evenly;
+            order: 3;
+            margin-bottom: 40px;
 
             .price {
                 padding-top: 6em;
@@ -2431,11 +2447,12 @@ footer {
         }
 
         .offer-photo {
-            padding-top: 210px;
+            padding: 0;
 
             .gallery-btn {
                 width: 200px;
                 height: 50px;
+                bottom: 19.5em;
 
                 p {
                     font-size: 12px;
@@ -2457,7 +2474,6 @@ footer {
                     &:nth-child(3) {
                         bottom: 9px;
                     }
-
                 }
             }
         }
