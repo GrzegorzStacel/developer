@@ -2795,9 +2795,9 @@ footer {
 
     .offer-background {
         left: 18.8%;
-        top: 20.4%;
+        top: 21.4%;
         width: 81.2%;
-        height: 79.6%;
+        height: 78.6%;
     }
 
     .price {
@@ -2833,12 +2833,75 @@ footer {
     }
 
     @media (max-width: 980px) and (orientation:portrait) {
+        padding-bottom: 16em;
+        margin-bottom: 10em;
 
         .offer-title {
+            .OF-h2 p{
+                padding-top: 0.5em;
+                font-size: 5em;
+            }
 
             .OT-p-desc {
                 width: 93%;
                 margin-top: 1em;
+            }
+        }
+
+        .offer-background{
+            height: 85%;
+            top: 15%;
+        }
+
+        .offer-price-container{
+            width: 56%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .offer-price{
+                width: 100%;
+                padding: 3em 0;
+
+                .price p{
+                        padding-left: 0;
+                    }
+
+                &.OP-second{
+                    top: auto;
+                    margin-top: 15px;
+                }
+            }
+        }
+        
+        .shadow-mirror{
+            height: 101%;
+            bottom: 1.2em;
+        }
+    }
+
+    @media(max-width: 640px) and (orientation:portrait) {
+        padding-bottom: 0;
+
+        .offer-title .OF-h2 p{
+                font-size: 6em;
+            }
+
+        .offer-background{
+            object-fit: cover;
+            left: 0;
+            top: 15.2%;
+            height: 84.8%;
+            width: 100%;
+        }
+
+        .offer-price-container{
+            order: 3;
+            width: 100%;
+            margin-bottom: 40px;
+
+            .offer-price{
+                margin-bottom: 0;
             }
         }
     }
