@@ -2163,10 +2163,16 @@ footer {
             }
         }
 
+        .offer-section {
+            padding-bottom: 0;
+            margin-bottom: 10em;
+        }
+
         .offer-title {
             flex-direction: column;
             align-items: flex-end;
             height: auto;
+            margin-bottom: 9em;
 
             h2 {
                 font-size: 9em;
@@ -2198,24 +2204,32 @@ footer {
             }
         }
 
+        .OT-yellow-beam {
+            height: 30px;
+            bottom: -1.8em;
+            width: 330px;
+
+            p {
+                font-size: 13px;
+                line-height: 2.5em;
+            }
+        }
+
         .offer-background {
-            top: 26em;
+            top: auto;
+            bottom: 30em;
         }
 
         .offer-box {
             flex-direction: column;
             align-items: center;
 
-            &.OB-reverse {
-                flex-direction: column;
+            &.offer-left {
+                .offer-price {
+                    right: auto;
+                    left: 0;
+                }
             }
-        }
-
-        .offer-info {
-            flex-direction: row;
-            justify-content: space-between;
-            width: 90%;
-            padding-bottom: 30px;
         }
 
         .details {
@@ -2223,18 +2237,126 @@ footer {
                 font-size: 15px;
             }
 
-            p{
+            p {
                 font-size: 14px;
+                margin-left: 1.5em;
+
+                &:after {
+                    width: 0.4em;
+                    height: 0.4em;
+                    left: -1.2em;
+                }
+
+                &:before {
+                    width: 0.2em;
+                    height: 0.2em;
+                    left: -0.9em;
+                }
             }
         }
 
         .offer-price {
-            width: 50%;
-            justify-content: space-around;
+            width: 60%;
+            justify-content: space-between;
+            bottom: auto;
+            left: auto;
+            top: 0;
+            right: 0;
+
+            .price {
+                padding: 4em 2em 4em 5em;
+
+                div:first-child {
+                    padding-bottom: 1.5em;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+
+                .price-medium {
+                    font-size: 14px;
+
+                    .price-big {
+                        font-size: 40px;
+                    }
+                }
+
+                .price-to-m2 {
+                    font-size: 14px;
+                    padding-left: 0;
+                }
+            }
+
+            .time {
+                margin-right: 3em;
+                padding: 3em;
+
+                p {
+                    font-size: 12px;
+                }
+
+                .time-important {
+                    font-size: 17px;
+                    padding-bottom: 1em;
+
+                }
+
+                .instalation .time-important {
+                    padding-bottom: 0;
+                }
+            }
         }
 
         .offer-photo {
-            width: 90%;
+            width: 100%;
+            padding-top: 300px;
+
+
+            .shadow {
+                height: 16em;
+                position: relative;
+
+                .shadow-mirror {
+                    bottom: 8px;
+                    bottom: 0;
+                    height: 100%;
+                    left: -2.4em;
+                }
+            }
+
+            .gallery-btn {
+                width: 250px;
+                height: 60px;
+                bottom: 19.5em;
+                right: 3.3em;
+                padding-top: 0;
+                padding-bottom: 0;
+
+                p {
+                    font-size: 14px;
+                    line-height: 60px;
+                }
+
+                span {
+                    width: 20px;
+                    height: 20px;
+
+                    &:nth-child(1) {
+                        right: 24px;
+                        bottom: 25px;
+                    }
+
+                    &:nth-child(2) {
+                        right: 10px;
+                        bottom: 18px;
+                    }
+
+                    &:nth-child(3) {
+                        right: 19px;
+                    }
+                }
+            }
         }
     }
 
