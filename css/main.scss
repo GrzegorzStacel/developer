@@ -75,6 +75,10 @@ a {
         flex: 1 10 300px;
         padding-left: 2em;
 
+        &.logo-cp {
+            flex: 1.5;
+        }
+
         @media(max-width: 980px) and (orientation: portrait) {
             padding-left: 4em;
             flex-grow: 0;
