@@ -2831,7 +2831,7 @@ footer p {
     font-size: 13px;
   }
   .main-offer .offer-price .time {
-    margin-right: 7em;
+    margin: 5em 7em 5em 0;
   }
   .main-offer .offer-photo {
     padding: 0;
