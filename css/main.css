@@ -65,6 +65,14 @@ a {
   color: #151720;
 }
 
+@media (max-width: 980px) and (orientation: portrait) {
+  .header-top {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .header-top .logo {
   text-align: right;
   -webkit-box-flex: 1;
@@ -73,16 +81,14 @@ a {
   padding-left: 2em;
 }
 
-.header-top .logo.logo-cp {
-  -webkit-box-flex: 1.5;
-      -ms-flex: 1.5;
-          flex: 1.5;
-}
-
 @media (max-width: 980px) and (orientation: portrait) {
   .header-top .logo {
-    text-align-last: left;
     padding-left: 4em;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 }
 
