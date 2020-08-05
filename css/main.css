@@ -65,6 +65,14 @@ a {
   color: #151720;
 }
 
+@media (max-width: 980px) and (orientation: portrait) {
+  .header-top {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .header-top .logo {
   text-align: right;
   -webkit-box-flex: 1;
@@ -81,8 +89,13 @@ a {
 
 @media (max-width: 980px) and (orientation: portrait) {
   .header-top .logo {
-    text-align-last: left;
     padding-left: 4em;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    text-align: left;
   }
 }
 
@@ -773,6 +786,8 @@ a {
   position: relative;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  -ms-flex-preferred-size: 46%;
+      flex-basis: 46%;
   font-family: "Poppins";
 }
 
@@ -794,8 +809,8 @@ a {
 
 @media (orientation: portrait) {
   .main-page .main-left {
-    -ms-flex-preferred-size: 55%;
-        flex-basis: 55%;
+    -ms-flex-preferred-size: 54%;
+        flex-basis: 54%;
   }
 }
 
@@ -991,6 +1006,14 @@ a {
   }
 }
 
+@media (orientation: portrait) {
+  .main-page .main-right {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 @media (max-width: 980px) and (orientation: portrait) {
   .main-page .main-right .main-right-container {
     text-align: center;
@@ -1006,7 +1029,7 @@ a {
     width: 90%;
     margin: 0 5%;
     bottom: auto;
-    top: 25em;
+    top: 35em;
   }
 }
 

@@ -66,6 +66,9 @@ a {
     align-items: center;
     justify-content: space-evenly;
     color: #151720;
+    @media(max-width: 980px) and (orientation: portrait) {
+        justify-content: space-between;
+    }
 
     .logo {
         text-align: right;
@@ -77,8 +80,10 @@ a {
         }
 
         @media(max-width: 980px) and (orientation: portrait) {
-            text-align-last: left;
             padding-left: 4em;
+            flex-grow: 0;
+            flex-basis: auto;
+            text-align: left;
         }
 
         img {
@@ -616,6 +621,7 @@ a {
         color: white;
         position: relative;
         flex-basis: 50%;
+        flex-basis: 46%;
         font-family: "Poppins";
     }
 
@@ -630,7 +636,7 @@ a {
         }
 
         @media(orientation: portrait) {
-            flex-basis: 55%;
+            flex-basis: 54%;
         }
 
         @media(max-width: 980px) and (orientation: portrait) {
@@ -779,6 +785,10 @@ a {
             margin-top: 11.5em;
         }
 
+        @media(orientation: portrait) {
+            align-self: center;
+        }
+
         .main-right-container {
             @media(max-width: 980px) and (orientation: portrait) {
                 text-align: center;
@@ -792,7 +802,7 @@ a {
                 width: 90%;
                 margin: 0 5%;
                 bottom: auto;
-                top: 25em
+                top: 35em
             }
 
             p {
