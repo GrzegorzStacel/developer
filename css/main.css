@@ -282,7 +282,7 @@ a {
   }
 }
 
-#hamburgermenu {
+#hamburgerMenu {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -296,12 +296,12 @@ a {
 }
 
 @media (max-width: 980px) and (orientation: portrait) {
-  #hamburgermenu {
+  #hamburgerMenu {
     display: block;
   }
 }
 
-#hamburgermenu .bar {
+#hamburgerMenu .bar {
   width: 30px;
   height: 3px;
   background-color: #333;
@@ -315,11 +315,11 @@ a {
   transition: .3s;
 }
 
-#hamburgermenu .bar.mobile {
+#hamburgerMenu .bar.mobile {
   top: 15px;
 }
 
-#hamburgermenu .bar:before, #hamburgermenu .bar:after {
+#hamburgerMenu .bar:before, #hamburgerMenu .bar:after {
   border-radius: 2px;
   content: "";
   width: 30px;
@@ -331,22 +331,22 @@ a {
   transition: .3s;
 }
 
-#hamburgermenu .bar:after {
+#hamburgerMenu .bar:after {
   top: 10px;
 }
 
-#hamburgermenu .bar.active {
+#hamburgerMenu .bar.active {
   width: 0;
   top: 50%;
 }
 
-#hamburgermenu .bar.active:before {
+#hamburgerMenu .bar.active:before {
   -webkit-transform: rotate(45deg) scaleX(1.2);
           transform: rotate(45deg) scaleX(1.2);
   top: 0px;
 }
 
-#hamburgermenu .bar.active:after {
+#hamburgerMenu .bar.active:after {
   -webkit-transform: rotate(-45deg) scaleX(1.2);
           transform: rotate(-45deg) scaleX(1.2);
   top: 0px;
@@ -1018,7 +1018,7 @@ a {
   margin: 0;
   position: relative;
   font-weight: 700;
-  text-shadow: 0 0 60px #000, 0 0 100px #000;
+  text-shadow: 0 0 60px #000, 0 0 100px #000;
 }
 
 @media (max-width: 980px) and (orientation: portrait) {
@@ -2338,8 +2338,8 @@ footer p {
   position: absolute;
   left: -1.7em;
   top: 1em;
-  -webkit-box-shadow: 0px 0px 3px 0.5px #c3c3c3, 0px 0px 5px 2.5px #c3c3c3;
-          box-shadow: 0px 0px 3px 0.5px #c3c3c3, 0px 0px 5px 2.5px #c3c3c3;
+  -webkit-box-shadow: 0px 0px 3px 0.5px #c3c3c3, 0px 0px 5px 2.5px #c3c3c3;
+          box-shadow: 0px 0px 3px 0.5px #c3c3c3, 0px 0px 5px 2.5px #c3c3c3;
 }
 
 .main-offer .details p .size-medium {
