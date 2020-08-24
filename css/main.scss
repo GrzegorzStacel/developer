@@ -66,6 +66,9 @@ a {
     align-items: center;
     justify-content: space-evenly;
     color: #151720;
+    @media(max-width: 980px) and (orientation: portrait) {
+        justify-content: space-between;
+    }
 
     .logo {
         text-align: right;
@@ -77,8 +80,10 @@ a {
         }
 
         @media(max-width: 980px) and (orientation: portrait) {
-            text-align-last: left;
             padding-left: 4em;
+            flex-grow: 0;
+            flex-basis: auto;
+            text-align: left;
         }
 
         img {
@@ -227,7 +232,7 @@ a {
     }
 }
 
-#hamburgerMenu {
+#hamburgermenu {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -616,6 +621,7 @@ a {
         color: white;
         position: relative;
         flex-basis: 50%;
+        flex-basis: 46%;
         font-family: "Poppins";
     }
 
@@ -630,7 +636,7 @@ a {
         }
 
         @media(orientation: portrait) {
-            flex-basis: 55%;
+            flex-basis: 54%;
         }
 
         @media(max-width: 980px) and (orientation: portrait) {
@@ -779,6 +785,10 @@ a {
             margin-top: 11.5em;
         }
 
+        @media(orientation: portrait) {
+            align-self: center;
+        }
+
         .main-right-container {
             @media(max-width: 980px) and (orientation: portrait) {
                 text-align: center;
@@ -792,7 +802,7 @@ a {
                 width: 90%;
                 margin: 0 5%;
                 bottom: auto;
-                top: 25em
+                top: 35em
             }
 
             p {
@@ -926,65 +936,27 @@ a {
                     }
                 }
 
-                // TODO hover do refaktoryzacji
-
                 &:hover {
-                    @media(min-width: 800px) {
-                        background: rgba(black, 0.9);
-                        transition: 0.1s;
-                    }
-
-                    // #1 z 4
-                    @media(max-width: 800px) and (max-height: 800px) {
-                        background: rgba(black, 0.9);
-                        transition: 0.1s;
-                    }
+                    background: rgba(black, 0.9);
+                    transition: 0.1s;
 
                     a {
-                        @media(min-width: 800px) {
-                            color: $color-yellow;
-                        }
-
-                        // #2 z 4
-                        @media(max-width: 800px) and (max-height: 800px) {
-                            color: $color-yellow;
-                        }
+                        color: $color-yellow;
                     }
 
                     &::before {
-
-                        @media(min-width: 800px) {
-                            box-shadow: 0px 0px 15px 4px #ffc500, -9px 0px 50px 14px rgba(255, 195, 0, 0.73);
-                            transition: 0.2s;
-                        }
-
-                        // #3 z 4
-                        @media(max-width: 800px) and (max-height: 800px) {
-                            box-shadow: 0px 0px 15px 4px #ffc500, -9px 0px 50px 14px rgba(255, 195, 0, 0.73);
-                        }
+                        box-shadow: 0px 0px 15px 4px #ffc500, -9px 0px 50px 14px rgba(255, 195, 0, 0.73);
+                        transition: 0.2s;
                     }
                 }
 
                 &:before {
-
-                    @media(min-width: 800px) {
-                        content: '';
-                        border-left: 6px solid $color-yellow;
-                        position: absolute;
-                        left: -8px;
-                        margin-right: 0.7em;
-                        height: 100%;
-                    }
-
-                    // #4 z 4
-                    @media(max-width: 800px) and (max-height: 800px) {
-                        content: '';
-                        border-left: 6px solid $color-yellow;
-                        position: absolute;
-                        left: -8px;
-                        margin-right: 0.7em;
-                        height: 100%;
-                    }
+                    content: '';
+                    border-left: 6px solid $color-yellow;
+                    position: absolute;
+                    left: -8px;
+                    margin-right: 0.7em;
+                    height: 100%;
                 }
             }
         }
@@ -1735,7 +1707,7 @@ footer {
 
         .main-yellow-box {
             margin: 4.2em 0 14em 0;
-            padding: 4em 0;
+            padding: 1.5em 0;
             background: #ffc300;
             text-align: center;
             display: flex;
@@ -2441,7 +2413,7 @@ footer {
             }
 
             .time {
-                margin-right: 7em;
+                margin: 5em 7em 5em 0;
             }
         }
 
@@ -2479,7 +2451,7 @@ footer {
     }
 }
 
-#HOUSE{
+#HOUSE {
     margin-bottom: 9em;
     padding-bottom: 10.5em;
 
@@ -2491,7 +2463,7 @@ footer {
         padding-bottom: 0;
         margin-bottom: 70px;
 
-        .offer-box{
+        .offer-box {
             padding-top: 40px;
         }
     }
@@ -2554,7 +2526,7 @@ footer {
             height: 34%;
         }
 
-        .off-bg-bottom{
+        .off-bg-bottom {
             height: 30%;
         }
 
@@ -2748,7 +2720,7 @@ footer {
     @media (max-width: 640px) and (orientation:portrait) {
         padding-bottom: 0;
 
-        .offer-background{
+        .offer-background {
             height: 30%;
             top: auto;
             bottom: 42%;
@@ -2836,7 +2808,7 @@ footer {
         margin-bottom: 10em;
 
         .offer-title {
-            .OF-h2 p{
+            .OF-h2 p {
                 padding-top: 0.5em;
                 font-size: 5em;
             }
@@ -2847,33 +2819,33 @@ footer {
             }
         }
 
-        .offer-background{
+        .offer-background {
             height: 85%;
             top: 15%;
         }
 
-        .offer-price-container{
+        .offer-price-container {
             width: 56%;
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            .offer-price{
+            .offer-price {
                 width: 100%;
                 padding: 3em 0;
 
-                .price p{
-                        padding-left: 0;
-                    }
+                .price p {
+                    padding-left: 0;
+                }
 
-                &.OP-second{
+                &.OP-second {
                     top: auto;
                     margin-top: 15px;
                 }
             }
         }
-        
-        .shadow-mirror{
+
+        .shadow-mirror {
             height: 101%;
             bottom: 1.2em;
         }
@@ -2882,11 +2854,11 @@ footer {
     @media(max-width: 640px) and (orientation:portrait) {
         padding-bottom: 0;
 
-        .offer-title .OF-h2 p{
-                font-size: 6em;
-            }
+        .offer-title .OF-h2 p {
+            font-size: 6em;
+        }
 
-        .offer-background{
+        .offer-background {
             object-fit: cover;
             left: 0;
             top: 15.2%;
@@ -2894,12 +2866,12 @@ footer {
             width: 100%;
         }
 
-        .offer-price-container{
+        .offer-price-container {
             order: 3;
             width: 100%;
             margin-bottom: 40px;
 
-            .offer-price{
+            .offer-price {
                 margin-bottom: 0;
             }
         }
@@ -2911,10 +2883,10 @@ footer {
     margin-bottom: 16em;
 
     .offer-title p {
-            width: 53.4em;
-            margin-top: 4.4em;
-            line-height: 1.7em;
-        }
+        width: 53.4em;
+        margin-top: 4.4em;
+        line-height: 1.7em;
+    }
 
     .offer-background {
         top: 17em;
@@ -2980,33 +2952,34 @@ footer {
                 width: 93%;
                 margin-top: 0;
             }
-            h2{
+
+            h2 {
                 padding-bottom: 15px;
             }
         }
-        
-        .offer-background{
+
+        .offer-background {
             top: auto;
             bottom: 0;
             height: 83%;
         }
 
-        .offer-price{
+        .offer-price {
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
 
-            .price{
+            .price {
                 padding-left: 0;
             }
 
-            .time{
+            .time {
                 margin-right: 0;
                 margin-bottom: 3em;
             }
         }
 
-        .shadow-mirror{
+        .shadow-mirror {
             bottom: -11.1em;
             height: 180%;
             object-fit: fill;
@@ -3015,16 +2988,16 @@ footer {
     }
 
     @media(max-width: 640px) and (orientation:portrait) {
-        .offer-price{
+        .offer-price {
             flex-direction: row;
         }
     }
 
     @media(max-width: 420px) and (orientation:portrait) {
-        .offer-price{
+        .offer-price {
             flex-direction: column;
-            
-            .time{
+
+            .time {
                 margin-top: 6em;
                 margin-bottom: 6em;
             }
