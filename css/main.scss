@@ -85,7 +85,7 @@ a {
         padding-left: 20px;
     }
     .logo {
-
+        margin-left: 3em;
         &.logo-cp {
             flex: 1.5;
         }
@@ -99,6 +99,7 @@ a {
 
         img {
             max-width: 210px;
+            width: 100%;
 
             @media(max-height: 450px) and (max-width: 910px) {
                 width: 150px;
@@ -615,23 +616,24 @@ a {
         font-size: 0.99vh;
     }
 
-    >div {
+    .panels {
         z-index: 1;
         color: white;
         position: relative;
-        flex-basis: 50%;
-        flex-basis: 46%;
         font-family: "Poppins";
-    }
-
-    .main-left {
-        text-align: right;
+        display: flex;
+        align-items: center;
         margin-top: 5em;
+        width: 100%;
+    }
+    
+    .main-left {
+        flex-basis: 62%;
+        text-align: right;
         align-self: center;
 
         @media(max-width: 1366px) {
-            flex-basis: 54%;
-            font-size: 1vw;
+            font-size: 0.9vw;
         }
 
         @media(orientation: portrait) {
@@ -659,32 +661,29 @@ a {
             margin-top: 22em;
         }
 
-        &::before {
-            content: '';
-            display: block;
-            border-top: 3px solid white;
-            width: 40em;
-            position: absolute;
-            right: 0;
-
-            @media(max-width: 980px) and (orientation: portrait) {
-                @include horizontally-center();
-                width: 84%;
-            }
-
-            @media(max-width: 640px) and (orientation: portrait) {
-                display: none;
-            }
-        }
 
         h1 {
-            font-size: 5.1em;
+            display: inline-block;
+            font-size: 4.2em;
             margin-top: 0.4em;
             margin-bottom: 0.3em;
-            padding-right: 0.61em;
+            padding-right: 4vw;
             line-height: 1.2em;
             letter-spacing: -0.03em;
             font-weight: 700;
+            position: relative;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        border-top: 3px solid white;
+                        position: absolute;
+                        width: 100%;
+                        right: 0;
+                        top: -0.5em;
+                        padding-left: 3vw;
+                    }
+
 
             @media(max-width: 980px) and (orientation: portrait) {
                 padding-right: 0em;
@@ -706,7 +705,7 @@ a {
 
         .box-blue {
             background: rgba(21, 35, 56, .6);
-            padding: 1em 3em 1em 3em;
+            padding: 1em 4vw 1em 3em;
             white-space: nowrap;
             font-weight: 300;
             font-size: 1.4em;
@@ -727,7 +726,7 @@ a {
             color: #162132;
             font-weight: 600;
             display: inline-block;
-            padding: 0.62em 3em 0.62em;
+            padding: 0.62em 4vw 0.62em;
             font-size: 1.3em;
 
             @media(max-width: 980px) and (orientation: portrait) {
@@ -754,11 +753,7 @@ a {
     }
 
     .main-right {
-        align-self: flex-end;
-        margin-bottom: 1em;
-
         @media(max-width: 1366px) {
-            margin-bottom: 40px;
             flex-basis: 46%;
             font-size: 1vw;
         }
@@ -805,15 +800,16 @@ a {
             }
 
             p {
-                font-size: 2.7em;
+                font-size: 2.3em;
+                white-space: nowrap;
                 display: block;
                 padding-left: 3.2em;
-                line-height: 1.72em;
+                line-height: 2em;
                 margin: 0;
                 position: relative;
                 font-weight: 700;
-                text-shadow: 0 0 60px #000,
-                    0 0 100px #000;
+                text-shadow: 0 0 60px rgba(black,0.4),
+                    0 0 20px #000;
 
 
                 @media(max-width: 980px) and (orientation: portrait) {
@@ -974,7 +970,6 @@ a {
 
         .nav-belt-middle {
             position: relative;
-            bottom: 4vw;
             width: 72.6%;
             border-right: 2.2em solid transparent;
             border-top: 4.5em solid #49515c;
@@ -1248,6 +1243,7 @@ a {
 
 aside {
     background: $color-yellow;
+    display: none;
 
     div {
         position: relative;
@@ -1782,6 +1778,10 @@ footer {
             letter-spacing: 0.11em;
             margin: 0.4em 0 1.6em 1.5em;
         }
+        h4{
+            margin-top: 3em;
+            text-indent: 2.1em;
+        }
 
         p {
             letter-spacing: 0.1em;
@@ -1797,6 +1797,10 @@ footer {
                 &::before {
                     top: 1.3em;
                 }
+            }
+            &.indent{
+                // margin-left: 4.2em;
+                
             }
 
             &::after {
@@ -1820,6 +1824,9 @@ footer {
                 box-shadow:
                     0px 0px 3px 0.5px #c3c3c3,
                     0px 0px 5px 2.5px #c3c3c3;
+            }
+            &.indent::after{
+                background-color: #4885bd;
             }
 
             .size-medium {
